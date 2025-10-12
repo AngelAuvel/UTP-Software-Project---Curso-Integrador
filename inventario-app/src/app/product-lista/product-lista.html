@@ -1,0 +1,28 @@
+Tabla
+<div class="container text-center" style="margin: 30px;">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">DESCRIPCION</th>
+                <th scope="col">EXISTENCIA</th>
+                <th scope="col">PRECIO</th>
+                <th scope="col" class="text-center">ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (producto of productos; track producto.idProducto) {
+                <tr>
+                    <th scope="row">{{producto.idProducto}}</th>
+                    <td>{{producto.descripcion}}</td>
+                    <td>{{producto.existencia}}</td>
+                    <td>{{producto.precio}}</td>
+                    <td class="text-center">
+                        <button (click)="editarProducto( producto.idProducto)" class="btn btn-warning">Editar</button>&nbsp;&nbsp;
+                        <button (click)="eliminarProducto( producto.idProducto)" class="btn btn-danger  ">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
