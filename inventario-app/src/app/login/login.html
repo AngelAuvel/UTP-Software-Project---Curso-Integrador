@@ -1,0 +1,64 @@
+<div class="container-fluid d-flex justify-content-center align-items-center min-vh-100" style="background-color: 
+#E3E3E3
+">
+    <div class="card p-4 shadow" style="width: 100%; max-width: 400px; background-color: #ffffff; color: #212529;">
+        
+        <div class="text-center mb-4">
+            <!-- Icono del sistema -->
+            <div class="fs-1 mb-2">
+                <i class="fas fa-hospital-alt"></i> 
+            </div>
+            
+            <h1 class="fs-4 fw-bold">Sistema de Inventario</h1>
+            <p class="fw-bold">Clínica San Juan Bautista</p>
+        </div>
+        
+        <!-- Alerta personalizada de Bootstrap para mostrar el error -->
+        <div *ngIf="mensajeError" class="alert alert-danger text-center mb-3" role="alert">
+            {{ mensajeError }}
+        </div>
+        <!-- Fin Alerta -->
+
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+            <div class="mb-3">
+                <label for="nombre" class="form-label visually-hidden">Correo electrónico</label>
+                <input 
+                    type="text" 
+                    class="form-control form-control-lg" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Usuario"
+                    required
+                    [(ngModel)]="usuario.nombre"
+                    (input)="onInputChange()"
+                    style="background-color: #343a40; border-color: #495057; color: white;"
+                >
+            </div>
+
+            <div class="mb-4">
+                <label for="clave" class="form-label visually-hidden">Contraseña</label>
+                <input 
+                    type="password" 
+                    class="form-control form-control-lg" 
+                    id="clave" 
+                    name="clave" 
+                    placeholder="Contraseña"
+                    required
+                    [(ngModel)]="usuario.clave"
+                    (input)="onInputChange()"
+                    style="background-color: #343a40; border-color: #495057; color: white;"
+                >
+            </div>
+
+            <button 
+                type="submit" 
+                class="btn btn-primary btn-lg w-100 mb-3"
+                [disabled]="loginForm.invalid"
+                style="background-color: #1a252f; border-color: #1a252f;"
+            >
+                Iniciar Sesión
+            </button>
+        </form>
+    </div>
+</div>

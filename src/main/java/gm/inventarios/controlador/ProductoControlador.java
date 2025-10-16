@@ -1,8 +1,8 @@
-    package gm.inventarios.controlador;
+package gm.inventarios.controlador;
 
-    import gm.inventarios.modelo.Producto;
-    import gm.inventarios.repositorio.ProductoRepositorio;
-    import gm.inventarios.servicio.IProductoServicio;
+import gm.inventarios.modelo.Producto;
+import gm.inventarios.repositorio.ProductoRepositorio;
+import gm.inventarios.servicio.IProductoServicio;
 import gm.inventarios.servicio.ProductoServicio;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
