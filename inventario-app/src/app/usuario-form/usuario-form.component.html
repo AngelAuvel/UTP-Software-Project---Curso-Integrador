@@ -1,0 +1,64 @@
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+  <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-2xl mx-auto relative">
+    <ng-container *ngIf="user">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800">{{ isEditMode ? 'Editar Usuario' : 'Agregar Usuario' }}</h2>
+
+      <form (ngSubmit)="saveUser()">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Columna 1 -->
+          <div>
+            <label for="nombres" class="block text-sm font-medium text-gray-700">Nombres</label>
+            <input id="nombres" type="text" [(ngModel)]="user.nombres" name="nombres" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="apellidos" class="block text-sm font-medium text-gray-700">Apellidos</label>
+            <input id="apellidos" type="text" [(ngModel)]="user.apellidos" name="apellidos" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="correo" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+            <input id="correo" type="email" [(ngModel)]="user.correo" name="correo" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div *ngIf="!isEditMode">
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input id="password" type="password" [(ngModel)]="user.password" name="password" [required]="!isEditMode" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+
+          <!-- Columna 2 -->
+          <div>
+            <label for="dni" class="block text-sm font-medium text-gray-700">DNI</label>
+            <input id="dni" type="text" [(ngModel)]="user.dni" name="dni" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
+            <input id="telefono" type="text" [(ngModel)]="user.telefono" name="telefono" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="direccion" class="block text-sm font-medium text-gray-700">Dirección</label>
+            <input id="direccion" type="text" [(ngModel)]="user.direccion" name="direccion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label for="area" class="block text-sm font-medium text-gray-700">Área</label>
+            <select id="area" [(ngModel)]="user.area" name="area" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+              <option *ngFor="let area of availableAreas" [value]="area.nombre">{{ area.nombre }}</option>
+            </select>
+          </div>
+          <div>
+            <label for="rol" class="block text-sm font-medium text-gray-700">Rol</label>
+            <select id="rol" [(ngModel)]="user.rol" name="rol" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+              <option value="ADMIN">Admin</option>
+              <option value="USUARIO">User</option>
+              <option value="LOGISTICA">Logística</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="mt-8 flex justify-end space-x-3">
+          <button type="button" (click)="closeModal()" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300">Cancelar</button>
+          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700">Guardar</button>
+        </div>
+      </form>
+    </ng-container>
+  </div>
+</div>

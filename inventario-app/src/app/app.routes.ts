@@ -8,6 +8,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ProductLista } from './product-lista/product-lista';
 import { ProveedorListaComponent } from './proveedor-lista/proveedor-lista.component';
 import { CategoriaListaComponent } from './categoria-lista/categoria-lista.component';
+import { UsuarioListaComponent } from './usuario-lista/usuario-lista.component';
+import { AreaListaComponent } from './area-lista/area-lista.component';
 
 export const routes: Routes = [
     // Rutas de autenticación (sin barra lateral)
@@ -31,6 +33,8 @@ export const routes: Routes = [
             { path: 'productos', component: ProductLista },
             { path: 'proveedores', component: ProveedorListaComponent },
             { path: 'categorias', component: CategoriaListaComponent },
+            { path: 'usuarios', component: UsuarioListaComponent },
+            { path: 'areas', component: AreaListaComponent },
         ]
     },
 

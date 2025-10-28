@@ -1,15 +1,13 @@
 export interface Usuario {
   idUsuario: number;
-  nombres: string;
-  apellidos: string;
-  dni: string;
-  correo: string;
-  telefono: string;
-  direccion: string;
+  correo?: string; // Ahora opcional
+  rol?: string;    // Ahora opcional
   fechaRegistro: string; // O Date
-  ultimoAcceso: string; // O Date
-  debeCambiarContraseña: boolean;
-  rol: 'ADMIN' | 'LOGISTICA' | 'USUARIO';
-  area: string;
-  estado: string;
+  nombres?: string;
+  apellidos?: string;
+  dni?: string;
+  telefono?: string;
+  direccion?: string;
+  area?: string;
+  estado?: string;
 }

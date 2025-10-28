@@ -14,7 +14,7 @@ import org.springframework.web.cors.CorsConfiguration;
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity
+@EnableMethodSecurity(prePostEnabled = true) // Habilitar @PreAuthorize
 public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
@@ -39,7 +39,9 @@ public class SecurityConfig {
                 }))
                 .authorizeHttpRequests(authRequest ->
                         authRequest
+                                // Endpoints de autenticación públicos
                                 .requestMatchers("/auth/**").permitAll()
+                                // Todas las demás rutas requieren autenticación
                                 .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManager ->

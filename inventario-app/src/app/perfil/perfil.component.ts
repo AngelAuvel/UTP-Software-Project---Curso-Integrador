@@ -36,8 +36,8 @@ export class PerfilComponent implements OnInit {
     this.apiService.getCurrentUser().subscribe({
       next: (user) => {
         this.currentUser = user;
-        this.telefono = user.telefono;
-        this.direccion = user.direccion;
+        this.telefono = user.telefono || ''; // Asignar valor o cadena vacía si es undefined
+        this.direccion = user.direccion || ''; // Asignar valor o cadena vacía si es undefined
         this.loading = false;
       },
       error: (err) => {
@@ -51,7 +51,7 @@ export class PerfilComponent implements OnInit {
     if (!this.currentUser) return;
 
     this.loading = true;
-    const updatedData = { telefono: this.telefono, direccion: this.direccion };
+    const updatedData: Partial<Usuario> = { telefono: this.telefono, direccion: this.direccion };
 
     this.apiService.updateCurrentUser(updatedData).subscribe({
       next: () => {

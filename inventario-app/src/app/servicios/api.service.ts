@@ -126,22 +126,34 @@ export class ApiService {
 
   // Catalogos
   getAreas(): Observable<Area[]> {
-    return this.http.get<Area[]>(`${this.baseUrl}/api/catalogs/areas`, { headers: this.getAuthHeaders() });
+    return this.http.get<Area[]>(`${this.baseUrl}/api/areas`, { headers: this.getAuthHeaders() });
+  }
+
+  createArea(areaData: any): Observable<Area> {
+    return this.http.post<Area>(`${this.baseUrl}/api/areas`, areaData, { headers: this.getAuthHeaders() });
+  }
+
+  updateArea(id: number, areaData: any): Observable<Area> {
+    return this.http.put<Area>(`${this.baseUrl}/api/areas/${id}`, areaData, { headers: this.getAuthHeaders() });
+  }
+
+  deleteArea(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/api/areas/${id}`, { headers: this.getAuthHeaders() });
   }
 
   getCategories(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>(`${this.baseUrl}/api/catalogs/categories`, { headers: this.getAuthHeaders() });
+    return this.http.get<Categoria[]>(`${this.baseUrl}/api/categorias`, { headers: this.getAuthHeaders() });
   }
 
   createCategory(categoryData: any): Observable<Categoria> {
-    return this.http.post<Categoria>(`${this.baseUrl}/api/categories`, categoryData, { headers: this.getAuthHeaders() });
+    return this.http.post<Categoria>(`${this.baseUrl}/api/categorias`, categoryData, { headers: this.getAuthHeaders() });
   }
 
   updateCategory(id: number, categoryData: any): Observable<Categoria> {
-    return this.http.put<Categoria>(`${this.baseUrl}/api/categories/${id}`, categoryData, { headers: this.getAuthHeaders() });
+    return this.http.put<Categoria>(`${this.baseUrl}/api/categorias/${id}`, categoryData, { headers: this.getAuthHeaders() });
   }
 
   deleteCategory(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/api/categories/${id}`, { headers: this.getAuthHeaders() });
+    return this.http.delete<void>(`${this.baseUrl}/api/categorias/${id}`, { headers: this.getAuthHeaders() });
   }
 }

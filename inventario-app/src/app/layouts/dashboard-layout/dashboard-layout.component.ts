@@ -18,12 +18,13 @@ import { Usuario } from '../../modelos/usuario';
           <a routerLink=\"/productos\" routerLinkActive=\"bg-gray-700\" class=\"block px-4 py-2 rounded-lg hover:bg-gray-700\">Productos</a>
           <a routerLink=\"/proveedores\" routerLinkActive=\"bg-gray-700\" class=\"block px-4 py-2 rounded-lg hover:bg-gray-700\">Proveedores</a>
           <a routerLink=\"/categorias\" routerLinkActive=\"bg-gray-700\" class=\"block px-4 py-2 rounded-lg hover:bg-gray-700\">Categorías</a>
-          <!-- Agrega aquí más enlaces según los roles -->
+          <a *ngIf=\"currentUser?.rol === 'ADMIN'\" routerLink=\"/usuarios\" routerLinkActive=\"bg-gray-700\" class=\"block px-4 py-2 rounded-lg hover:bg-gray-700\">Usuarios</a>
+          <a *ngIf=\"currentUser?.rol === 'ADMIN'\" routerLink=\"/areas\" routerLinkActive=\"bg-gray-700\" class=\"block px-4 py-2 rounded-lg hover:bg-gray-700\">Áreas</a>
         </nav>
         <div class=\"p-4 border-t border-gray-700\">
           <div *ngIf=\"currentUser\" class=\"mb-4\">
-            <p class=\"text-sm font-medium\">{{ currentUser.nombres }} {{ currentUser.apellidos }}</p>
-            <p class=\"text-xs text-gray-400\">{{ currentUser.rol }}</p>
+            <p class=\"text-sm font-medium\">{{ currentUser.nombres ?? '' }} {{ currentUser.apellidos ?? '' }}</p>
+            <p class=\"text-xs text-gray-400\">{{ currentUser.rol ?? '' }}</p>
           </div>
           <a routerLink=\"/perfil\" class=\"block text-center w-full px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 mb-2\">Mi Perfil</a>
           <button (click)=\"logout()\" class=\"w-full px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700\">
@@ -53,8 +54,8 @@ export class DashboardLayoutComponent {
     const token = localStorage.getItem('token');
     if (token) {
       this.apiService.getCurrentUser().subscribe({
-        next: user => this.currentUser = user,
-        error: () => this.logout() // Si el token no es válido, cerramos sesión
+        next: (user: Usuario) => this.currentUser = user,
+        error: () => this.logout()
       });
     }
   }
