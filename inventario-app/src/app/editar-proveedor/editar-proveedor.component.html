@@ -1,0 +1,43 @@
+<div class="p-6">
+  <h1 class="text-3xl font-bold text-gray-800 mb-6">Editar Proveedor</h1>
+
+  <div *ngIf="loading && !proveedor" class="text-center">
+    <p>Cargando proveedor...</p>
+  </div>
+
+  <form *ngIf="proveedor" (ngSubmit)="updateProveedor()" class="max-w-lg bg-white p-8 rounded-lg shadow-sm border">
+    <div class="space-y-6">
+      <div>
+        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+        <input id="nombre" type="text" [(ngModel)]="proveedor.nombre" name="nombre" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div>
+        <label for="ruc" class="block text-sm font-medium text-gray-700">RUC</label>
+        <input id="ruc" type="text" [(ngModel)]="proveedor.ruc" name="ruc" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div>
+        <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
+        <input id="telefono" type="text" [(ngModel)]="proveedor.telefono" name="telefono" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div>
+        <label for="direccion" class="block text-sm font-medium text-gray-700">Dirección</label>
+        <input id="direccion" type="text" [(ngModel)]="proveedor.direccion" name="direccion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div>
+        <label for="estado" class="block text-sm font-medium text-gray-700">Estado</label>
+        <select id="estado" [(ngModel)]="proveedor.estado" name="estado" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+          <option value="ACTIVO">Activo</option>
+          <option value="INACTIVO">Inactivo</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mt-8 flex justify-end space-x-3">
+      <a routerLink="/proveedores" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300">Cancelar</a>
+      <button type="submit" [disabled]="loading" class="px-4 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700 disabled:opacity-50">
+        <span *ngIf="loading" class="inline-block w-4 h-4 border-2 border-white border-solid rounded-full animate-spin border-r-transparent mr-2"></span>
+        {{ loading ? 'Guardando...' : 'Guardar Cambios' }}
+      </button>
+    </div>
+  </form>
+</div>

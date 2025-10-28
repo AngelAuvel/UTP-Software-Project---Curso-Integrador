@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importar las directivas de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Aquí puedes añadir estilos globales personalizados o sobreescribir estilos base si es necesario.
+  Por ejemplo:
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+*/

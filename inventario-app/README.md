@@ -1,59 +1,74 @@
-# InventarioApp
+# Inventario App (Frontend Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
+Este directorio contiene el código fuente del proyecto frontend para el **Sistema de Gestión Logística**, desarrollado con Angular.
 
-## Development server
+Para una visión general de la arquitectura completa del proyecto (incluyendo el backend), por favor consulta el [README principal del proyecto](../README.md).
 
-To start a local development server, run:
+---
+
+## 🚀 Puesta en Marcha (Frontend)
+
+Sigue estos pasos para ejecutar la aplicación de Angular en tu entorno local.
+
+### Requisitos Previos
+
+- Node.js (versión 20 o superior)
+- npm (generalmente se instala con Node.js)
+
+### 1. Instalación de Dependencias
+
+Navega a este directorio (`inventario-app`) en tu terminal e instala las dependencias del proyecto:
+
+```bash
+npm install
+```
+
+### 2. Servidor de Desarrollo
+
+Una vez instaladas las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo de Angular:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navega a `http://localhost:4200/` en tu navegador. La aplicación se recargará automáticamente si realizas cambios en los archivos de código fuente.
 
-## Code scaffolding
+### ❗️ Importante: Conexión con el Backend
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Esta aplicación frontend está diseñada para comunicarse con el backend de Spring Boot. Para que la aplicación funcione completamente (login, carga de datos, etc.), **el servidor backend debe estar en ejecución**.
 
-```bash
-ng generate component component-name
-```
+Por defecto, la aplicación intentará conectarse a `http://localhost:8080`. Asegúrate de que el backend esté corriendo en esa dirección.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## ⚙️ Comandos Útiles de Angular CLI
 
-## Building
+- **Generar Componentes:**
+  ```bash
+  ng generate component nombre-del-componente
+  ```
 
-To build the project run:
+- **Generar Servicios:**
+  ```bash
+  ng generate service nombre-del-servicio
+  ```
 
-```bash
-ng build
-```
+- **Construir para Producción (Build):**
+  ```bash
+  ng build
+  ```
+  Los artefactos de la compilación se almacenarán en el directorio `dist/`.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Ejecutar Pruebas Unitarias:**
+  ```bash
+  ng test
+  ```
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📂 Estructura del Proyecto
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- `src/app/components/` o `src/app/[nombre-componente]/`: Contiene los componentes reutilizables de la aplicación.
+- `src/app/modelos/`: Contiene las interfaces de TypeScript que definen la estructura de los datos (ej. `Usuario`, `Producto`).
+- `src/app/servicios/`: Contiene los servicios de Angular, incluyendo `api.service.ts` que centraliza la comunicación con el backend.
+- `src/app/app.routes.ts`: Define las rutas de navegación de la aplicación.

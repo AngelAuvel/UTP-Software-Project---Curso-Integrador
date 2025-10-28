@@ -1,28 +1,63 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Producto } from '../modelos/producto.model';
-import { ProductoServicio } from '../servicios/producto.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { ApiService } from '../servicios/api.service';
+import { Categoria } from '../modelos/categoria';
+import { Proveedor } from '../modelos/proveedor';
 
 @Component({
   selector: 'app-agregar-producto',
-  imports: [FormsModule],
-  templateUrl: './agregar-producto.html'  
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterModule],
+  templateUrl: './agregar-producto.html',
 })
-export class AgregarProducto {
-  producto: Producto = new Producto();
-  private productoServicio = inject(ProductoServicio);
-  private enrutador = inject(Router);
-  onSubmit(){
-    this.guardarProducto();
+export class AgregarProducto implements OnInit {
+  private apiService = inject(ApiService);
+  private router = inject(Router);
+
+  producto = {
+    nombre: '',
+    categoriaId: null,
+    cantidadStock: 0,
+    stockMinimo: 0,
+    precio: 0,
+    codigo: '',
+    proveedorId: null,
+    descripcion: '',
+    estado: 'ACTIVO'
+  };
+  categorias: Categoria[] = [];
+  proveedores: Proveedor[] = [];
+  loading = false;
+
+  ngOnInit() {
+    this.loadCategoriasYProveedores();
   }
-  guardarProducto(){
-    this.productoServicio.agregarProducto(this.producto).subscribe({
-      next: (datos) => this.irListarProductos(),
-      error: (error) => console.log("Error: ", error)
+
+  loadCategoriasYProveedores() {
+    this.loading = true;
+    this.apiService.getCategories().subscribe((cats: Categoria[]) => this.categorias = cats);
+    this.apiService.getProveedores().subscribe((provs: Proveedor[]) => { // Corregido
+      this.proveedores = provs;
+      this.loading = false;
     });
   }
-  irListarProductos(){
-    this.enrutador.navigate(['/productos']);
+
+  createProducto() { // Corregido
+    this.loading = true;
+    this.apiService.createProduct(this.producto).subscribe({
+      next: () => {
+        this.router.navigate(['/productos']);
+      },
+      error: (err: any) => {
+        console.error('Error al crear producto', err);
+        this.loading = false;
+      }
+    });
+  }
+
+  cancelar() {
+    this.router.navigate(['/productos']);
   }
 }

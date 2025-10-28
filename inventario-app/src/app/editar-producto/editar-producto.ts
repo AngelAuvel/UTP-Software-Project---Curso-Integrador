@@ -1,41 +1,70 @@
-import { Component, inject } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Producto } from '../modelos/producto.model';
-import { ProductoServicio } from '../servicios/producto.service';
+import { Component, inject, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { ApiService } from '../servicios/api.service';
+import { Producto } from '../modelos/producto';
+import { Categoria } from '../modelos/categoria';
+import { Proveedor } from '../modelos/proveedor';
 
 @Component({
   selector: 'app-editar-producto',
-  imports: [FormsModule],
-  templateUrl: './editar-producto.html'
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterModule],
+  templateUrl: './editar-producto.html',
 })
-export class EditarProducto {
-  id!: number;
-  producto: Producto = new Producto;
-  private ruta = inject(ActivatedRoute);
-  private productoServicio = inject(ProductoServicio);
-  private enrutador = inject(Router)
+export class EditarProducto implements OnInit {
+  private apiService = inject(ApiService);
+  private router = inject(Router);
+  private route = inject(ActivatedRoute);
 
-  ngOnInit(){
-   this.id = this.ruta.snapshot.params['id'];
-   this.productoServicio.obtenerProductoPorId(this.id).subscribe({
-    next:(datos)=>this.producto=datos,
-    error:(error)=>console.log("Error:", error)
-   });
+  producto: Producto | null = null;
+  categorias: Categoria[] = [];
+  proveedores: Proveedor[] = [];
+  loading = true;
+  productoId!: number;
+
+  ngOnInit() {
+    this.productoId = this.route.snapshot.params['id'];
+    this.loadCategoriasYProveedores();
+    this.loadProducto();
   }
 
-  onSubmit(){
-    this.guardarProducto();
+  loadCategoriasYProveedores() {
+    this.apiService.getCategories().subscribe((cats: Categoria[]) => this.categorias = cats);
+    this.apiService.getProveedores().subscribe((provs: Proveedor[]) => this.proveedores = provs); // Corregido
   }
 
-  guardarProducto(){
-    this.productoServicio.editarProducto(this.id, this.producto).subscribe({
-      next: (datos)=>this.irListaProductos(),
-      error: (error)=>console.log("Error:", error)
-    })
+  loadProducto() {
+    this.loading = true;
+    this.apiService.getProductById(this.productoId).subscribe({ // Corregido
+      next: (data: Producto) => {
+        this.producto = data;
+        this.loading = false;
+      },
+      error: (err: any) => {
+        console.error('Error al cargar producto', err);
+        this.loading = false;
+      }
+    });
   }
 
-  irListaProductos(){
-    this.enrutador.navigate(['/productos']);
+  updateProducto() { // Corregido
+    if (!this.producto) return;
+
+    this.loading = true;
+    this.apiService.updateProduct(this.productoId, this.producto).subscribe({
+      next: () => {
+        this.router.navigate(['/productos']);
+      },
+      error: (err: any) => {
+        console.error('Error al actualizar producto', err);
+        this.loading = false;
+      }
+    });
+  }
+
+  cancelar() {
+    this.router.navigate(['/productos']);
   }
 }
