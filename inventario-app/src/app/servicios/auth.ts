@@ -1,58 +1,118 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Usuario } from '../modelos/usuario.model'; // Asegúrate de que esta ruta sea correcta
+import { tap } from 'rxjs/operators';
+import { Usuario } from '../modelos/usuario.model';
+
+// Definición de la respuesta esperada del backend (debe contener el token y el usuario)
+interface LoginResponse {
+  usuario: Usuario; 
+  token: string;   
+}
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'
 })
 export class Auth {
-  
-  // URL base de tu backend Spring Boot (el path de tu controlador principal)
-  private urlBase = 'http://localhost:8080/inventario-app';
+  
+  private urlBase = 'http://localhost:8080/inventario-app';
+  // Variable para almacenar el ID en memoria (opcional, pero útil)
+  private userLoggedInId: number | null = null; 
 
-  // 1. Constructor: Inyectamos el HttpClient
-  constructor(private clienteHttp: HttpClient) { }
+  constructor(private clienteHttp: HttpClient) { 
+     // Intentamos recuperar el ID del usuario si existe en localStorage al inicio
+     this.loadUserIdFromStorage();
+  }
 
-  /**
-   * Realiza la solicitud de logeo al endpoint /login del backend.
-   * @param nombre El nombre de usuario ingresado.
-   * @param clave La clave de acceso ingresada.
-   * @returns Un Observable con el objeto Usuario si el logeo es exitoso.
-   */
-  login(nombre: string, clave: string): Observable<Usuario> {
-    
-    // Objeto con las credenciales que se enviarán en el cuerpo (Body) del POST
-    const loginPayload: Partial<Usuario> = {
-      nombre: nombre, 
-      clave: clave
-    };
+  login(nombre: string, clave: string): Observable<LoginResponse> {
+    const loginPayload = { nombre, clave };
 
-    // Llama al endpoint POST: http://localhost:8080/inventario-app/login
-    // El backend espera el objeto {nombre, clave} y devuelve un objeto Usuario
-    return this.clienteHttp.post<Usuario>(`${this.urlBase}/login`, loginPayload);
-  }
+    // CLAVE: Asegúrate de que la URL sea correcta (usando /auth/login)
+    return this.clienteHttp.post<LoginResponse>(`${this.urlBase}/login`, loginPayload).pipe(
+      tap(response => {
+        console.log('[AUTH] Respuesta recibida del backend:', response);
+        if (response && response.token) {
+          // Pasamos el usuario completo a la función de manejo
+          this.handleSuccessfulLogin(response.token, response.usuario);
+        } else {
+            console.error('[AUTH] Error: Respuesta de Login incompleta. Faltan token o datos de usuario.');
+        }
+      })
+    );
+  }
 
-  // --- Funciones Adicionales Esenciales ---
+  /**
+   * Maneja el login exitoso: guarda el token Y el ID del usuario.
+   * @param token El token JWT recibido del backend.
+   * @param usuario El objeto usuario recibido del backend (debe contener id).
+   */
+  private handleSuccessfulLogin(token: string, usuario: Usuario): void {
+    localStorage.setItem('jwt_token', token); 
+    
+    // CORRECCIÓN CLAVE: Volvemos a usar 'id' para coincidir con el modelo Usuario
+    if (usuario.id) {
+        // Guardar el ID del usuario en localStorage y memoria
+        this.userLoggedInId = usuario.id;
+        localStorage.setItem('user_id', String(usuario.id)); 
+        console.log(`[AUTH] ID de usuario (${usuario.id}) guardado en localStorage.`);
+    } else {
+        console.error('[AUTH] ADVERTENCIA: Token guardado, pero ID (usuario.id) no encontrado en el objeto de usuario. Asegúrate de que tu backend lo envíe.');
+    }
+    
+    console.log('Login exitoso. Token JWT e ID de usuario guardados.');
+  }
 
-  /**
-   * Cierra la sesión del usuario (limpia el token/sesión almacenada en el navegador).
-   */
-  logout(): void {
-    // En un sistema con tokens JWT, aquí es donde se elimina el token 
-    // almacenado (ej. en localStorage) para invalidar la sesión del cliente.
-    localStorage.removeItem('jwt_token'); 
-    // Puedes agregar más lógica de limpieza si es necesario.
-    console.log('Sesión cerrada y token eliminado.');
-  }
+  /**
+   * Carga el ID del usuario desde localStorage al iniciar el servicio.
+   */
+  private loadUserIdFromStorage(): void {
+    const id = localStorage.getItem('user_id');
+    if (id) {
+        this.userLoggedInId = Number(id);
+        console.log(`[AUTH] ID de usuario cargado desde localStorage: ${this.userLoggedInId}`);
+    } else {
+        console.log('[AUTH] No hay ID de usuario en localStorage.');
+    }
+  }
 
-  /**
-   * Verifica si el usuario está actualmente autenticado.
-   * @returns boolean
-   */
-  isAuthenticated(): boolean {
-    // La forma más simple es verificar si existe un token de sesión.
-    // Esto es vital para proteger las rutas de tu aplicación Angular.
-    return !!localStorage.getItem('jwt_token');
-  }
+  /**
+   * Obtiene el ID del usuario actualmente logueado.
+   * @returns El ID del usuario o null si no está logueado.
+   */
+  getUserId(): number | null {
+    // Si ya lo tenemos en memoria, lo devolvemos
+    if (this.userLoggedInId !== null) {
+        return this.userLoggedInId;
+    }
+    
+    // Si no, intentamos cargarlo del localStorage (esta función también actualiza userLoggedInId)
+    this.loadUserIdFromStorage(); 
+    return this.userLoggedInId;
+  }
+
+  /**
+   * Obtiene el token JWT del almacenamiento local.
+   * @returns El token JWT o null si no existe.
+   */
+  getToken(): string | null {
+    return localStorage.getItem('jwt_token');
+  }
+
+  /**
+   * Cierra la sesión del usuario (elimina el token y el ID almacenado).
+   */
+  logout(): void {
+    localStorage.removeItem('jwt_token'); 
+    localStorage.removeItem('user_id'); // CLAVE: Limpiar el ID
+    this.userLoggedInId = null; 
+    console.log('Sesión cerrada, token y ID eliminados.');
+  }
+
+  /**
+   * Verifica si el usuario está actualmente autenticado revisando la existencia del token.
+   * @returns boolean
+   */
+  isAuthenticated(): boolean {
+    return !!this.getToken();
+  }
 }

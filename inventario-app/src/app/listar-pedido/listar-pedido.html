@@ -1,0 +1,43 @@
+<div class="container text-center" style="margin: 30px;">
+    
+    <h3>Lista de Pedidos</h3>
+
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col">ID Pedido</th>
+                <th scope="col">Fecha Solicitud</th>
+                <th scope="col">Fecha Aprobación</th>
+                <th scope="col">Área</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Usuario</th>
+                <th scope="col" class="text-center">ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 
+              Usamos el nuevo @for loop de Angular.
+              Iteramos sobre 'pedidos' (definido en tu listar-pedido.ts)
+              y rastreamos por 'idPedido' (definido en tu pedido.model.ts)
+            -->
+            @for (pedido of pedidos; track pedido.id) {
+                <tr>
+                    <th scope="row">{{pedido.id}}</th>
+                    <td>{{pedido.fechaSolicitud}}</td>
+                    <td>{{pedido.fechaAprobacion}}</td>
+                    <td>{{pedido.area?.nombre}}</td>
+                    <td>{{pedido.estado?.nombre}}</td>
+                    <td>{{pedido.usuario?.nombre}}</td>
+                    <td class="text-center">
+                        <!-- 
+                          Estos botones llaman a las funciones definidas 
+                          en tu listar-pedido.ts
+                        -->
+                        <button (click)="editarPedido(pedido.id!)" class="btn btn-warning">Editar</button>&nbsp;&nbsp;
+                        <button (click)="eliminarPedido(pedido.id!)" class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

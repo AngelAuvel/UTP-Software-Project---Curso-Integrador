@@ -41,6 +41,26 @@
           </ul>
         </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-box-open me-2"></i> Pedidos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: static; border: none; background-color: #343a40;">
+            <!-- Opción 1.1: Listar Productos -->
+            <li>
+              <a class="dropdown-item text-white" href="/pedidos" routerLink="productos" routerLinkActive="active">
+                <i class="fas fa-list-ul me-2"></i> Ver pedidos
+              </a>
+            </li>
+            <!-- Opción 1.2: Agregar Producto -->
+            <li>
+              <a class="dropdown-item text-white" href="/agregar-pedidos" routerLink="/agregar-pedidos" routerLinkActive="active">
+                <i class="fas fa-plus me-2"></i> Agregar pedidos
+              </a>
+            </li>
+          </ul>
+        </li>
+
         <!-- Opción 2: Cerrar Sesión (Opción individual) -->
         <li class="nav-item mt-auto">
           <a class="nav-link text-white" (click)="logout()" style="cursor: pointer;">

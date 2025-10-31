@@ -1,0 +1,175 @@
+<div class="container" style="margin-top: 30px;">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-8">
+            
+            <h3 class="text-center mb-4">Registrar Nuevo Pedido</h3>
+
+            <!-- 
+              Formulario vinculado a las funciones del componente .ts
+              (ngSubmit) llama a onSubmit()
+              #pedidoForm="ngForm" da una referencia al formulario
+              -->
+            <form (ngSubmit)="onSubmit()" #pedidoForm="ngForm">
+                
+                <!-- Sección de Información General del Pedido -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        Información General
+                    </div>
+                    <div class="card-body">
+                        <!-- Campo Fecha Solicitud -->
+                        <div class="mb-3">
+                            <label for="fecha_solicitud" class="form-label">Fecha de Solicitud</label>
+                            <input type="date" class="form-control" id="fecha_solicitud" 
+                                    name="fecha_solicitud" [(ngModel)]="pedido.fechaSolicitud" required>
+                        </div>
+
+                        <!-- Campo Área (SELECT) -->
+                        <div class="mb-3">
+                            <label for="id_area" class="form-label">Área Solicitante</label>
+                            <select class="form-select" id="id_area" 
+                                    name="id_area" [(ngModel)]="pedido.id_area" required>
+                                <option [ngValue]="null" disabled selected>Seleccione un área...</option>
+                                
+                                <!-- Iteramos sobre el array 'areas' cargado en el .ts -->
+                                @for (area of areas; track area.id) {
+                                    <option [value]="area.id">{{ area.nombre }}</option>
+                                }
+                            </select>
+                        </div>
+
+                        <!-- Campo Estado (SELECT) -->
+                        <div class="mb-3">
+                            <label for="id_estado" class="form-label">Estado Inicial</label>
+                            <select class="form-select" id="id_estado" 
+                                    name="id_estado" [(ngModel)]="pedido.id_estado" required>
+                                <option [ngValue]="null" disabled selected>Seleccione un estado...</option>
+                                
+                                <!-- Iteramos sobre el array 'estados' cargado en el .ts -->
+                                @for (estado of estados; track estado.id) {
+                                    <option [value]="estado.id">{{ estado.nombre }}</option>
+                                }
+                            </select>
+                        </div>
+
+                        <!-- Campo Fecha Aprobación (Opcional, puede llenarse después) -->
+                        <div class="mb-3">
+                            <label for="fecha_aprobacion" class="form-label">Fecha de Aprobación</label>
+                            <!-- Nota: No es obligatorio, pero es mejor vincularlo a un campo en el modelo -->
+                            <input type="date" class="form-control" id="fecha_aprobacion" 
+                                    name="fecha_aprobacion" [(ngModel)]="pedido.fechaAprobacion">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ****************************************************** -->
+                <!-- SECCIÓN DE DETALLE DEL PEDIDO (Agregar Ítems) -->
+                <!-- ****************************************************** -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-secondary text-white">
+                        Detalle del Pedido (Ítems)
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="row g-3 align-items-end">
+                            <!-- Columna 1: Artículo (SELECT) -->
+                            <div class="col-md-4">
+                                <label for="id_articulo" class="form-label">Artículo</label>
+                                <select class="form-select" id="id_articulo" 
+                                        name="id_articulo" [(ngModel)]="nuevoItem.id_articulo" 
+                                        (change)="seleccionarArticulo()" required>
+                                    <option [ngValue]="null" disabled selected>Seleccionar Artículo</option>
+                                    @for (articulo of articulos; track articulo.id) {
+                                        <option [value]="articulo.id">{{ articulo.nombre }}</option>
+                                    }
+                                </select>
+                            </div>
+                            
+                            <!-- Columna 2: Cantidad -->
+                            <div class="col-md-2">
+                                <label for="cantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidad" 
+                                        name="cantidad" [(ngModel)]="nuevoItem.cantidad" 
+                                         min="1" required>
+                            </div>
+
+                            <!-- Glosa (para detalles adicionales del artículo) -->
+                            <div class="col-md-4">
+                                <div class="col-12">
+                                    <label for="glosa" class="form-label">Glosa</label>
+                                    <input type="text" class="form-control" id="glosa" 
+                                            name="glosa" [(ngModel)]="nuevoItem.glosa">
+                                </div>
+                            </div>
+                            
+                            <!-- Columna 5: Botón Agregar -->
+                            <div class="col-md-1 d-flex align-items-end">
+                                <button type="button" class="btn btn-success w-100" 
+                                        (click)="agregarItem()"
+                                        >
+                                    <i class="fa fa-plus"></i> <!-- Icono para agregar -->
+                                </button>
+                            </div>
+                        </div>
+
+                        
+                        
+                        <hr class="my-4">
+
+                        <!-- Tabla de Ítems Agregados -->
+                        <h5>Ítems Agregados</h5>
+                        
+                        @if (pedido.items.length > 0) {
+                            <div class="table-responsive">
+                                <table class="table table-striped table-sm">
+                                    <thead class="table-dark text-center">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Artículo</th>
+                                            <th>Cantidad</th>
+                                            <th>Glosa</th>
+                                            <th>Acción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        @for (item of pedido.items; track $index) {
+                                            <tr>
+                                                <td>{{ $index + 1 }}</td>
+                                                <td>{{ item.nombreArticulo }}</td>
+                                                <td>{{ item.cantidad }}</td>
+                                                <td class="text-end">{{ item.glosa }}</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-danger" 
+                                                            (click)="eliminarItem($index)">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                    <tfoot>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        } @else {
+                            <div class="alert alert-info text-center" role="alert">
+                                No se han agregado ítems al pedido todavía.
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- Botón Guardar y Regresar -->
+                <div class="text-center mt-4 mb-5">
+                    <button type="submit" class="btn btn-warning btn-lg me-3" 
+                            >
+                        Guardar Pedido
+                    </button>
+                    <!-- Botón Regresar (navega a la lista de pedidos) -->
+                    <a routerLink="/listar-pedidos" class="btn btn-danger btn-lg">Regresar</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

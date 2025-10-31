@@ -1,9 +1,11 @@
 package gm.inventarios.controlador;
 
+import gm.inventarios.dto.PedidoDTO;
 import gm.inventarios.modelo.Pedido;
 import gm.inventarios.servicio.IPedidoServicio;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,46 +49,62 @@ public class PedidoControlador {
     // POST: Guardar (Crear) un nuevo pedido
     // URL: http://localhost:8080/inventario-app/pedidos
     @PostMapping("/pedidos")
-    public Pedido guardarPedido(@RequestBody Pedido pedido) {
-        logger.info("Guardando pedido: " + pedido);
-        return pedidoServicio.guardarPedido(pedido);
+    public ResponseEntity<Pedido> guardarPedido(@RequestBody PedidoDTO pedidoDto) {
+        logger.info("Pedido DTO a guardar: " + pedidoDto);
+
+        // CORRECCIÓN: Llamamos directamente al método del servicio que recibe el DTO
+        // y devuelve la entidad guardada, eliminando la llamada a 'convertirDtoAEntidad'.
+        try {
+            Pedido nuevoPedido = pedidoServicio.guardarPedido(pedidoDto);
+            return new ResponseEntity<>(nuevoPedido, HttpStatus.CREATED);
+        } catch (IllegalArgumentException e) {
+            logger.error("Error al guardar el pedido (Datos Inválidos): " + e.getMessage());
+            // Devuelve un error 400 Bad Request si faltan IDs, etc.
+            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            logger.error("Error interno al guardar el pedido: ", e);
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     // PUT: Actualizar un pedido existente
     // URL: http://localhost:8080/inventario-app/pedidos/{id}
     @PutMapping("/pedidos/{id}")
-    public ResponseEntity<Pedido> actualizarPedido(@PathVariable Integer id, @RequestBody Pedido pedidoRecibido) {
+    public ResponseEntity<Pedido> actualizarPedido(@PathVariable Integer id, @RequestBody PedidoDTO pedidoDto) {
+        logger.info("Pedido DTO a actualizar (ID: " + id + "): " + pedidoDto);
+
+        // 1. Asignar el ID de la ruta al DTO para que el servicio lo reconozca como actualización
+        pedidoDto.setId(id);
+
         try {
-            // 1. Verifica que el pedido exista
-            Pedido pedidoExistente = pedidoServicio.buscarPedidoPorId(id);
-            if (pedidoExistente == null) {
+            // 2. Reutilizar el método guardarPedido() que maneja la lógica de actualización/creación
+            Pedido pedidoActualizado = pedidoServicio.guardarPedido(pedidoDto);
+
+            if (pedidoActualizado != null) {
+                return ResponseEntity.ok(pedidoActualizado);
+            } else {
+                // Esto podría ocurrir si el ID es nulo o no se encuentra el recurso
                 return ResponseEntity.notFound().build();
             }
-
-            // 2. Establece el ID de la ruta en el objeto recibido
-            pedidoRecibido.setId(id);
-
-            // 3. Guarda (Actualiza) los cambios
-            Pedido pedidoActualizado = pedidoServicio.guardarPedido(pedidoRecibido);
-            return ResponseEntity.ok(pedidoActualizado);
-
-        } catch (NoSuchElementException e) {
-            // Captura si el servicio lanza la excepción
-            return ResponseEntity.notFound().build();
+        } catch (IllegalArgumentException e) {
+            logger.error("Error al actualizar el pedido (Datos Inválidos): " + e.getMessage());
+            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            logger.error("Error interno al actualizar el pedido: ", e);
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     // DELETE: Eliminar un pedido por ID
     // URL: http://localhost:8080/inventario-app/pedidos/{id}
     @DeleteMapping("/pedidos/{id}")
-    public ResponseEntity<Void> eliminarPedido(@PathVariable Integer id) {
-        try {
-            pedidoServicio.eliminarPedidoPorId(id);
-            // Devuelve 204 No Content para indicar eliminación exitosa
-            return ResponseEntity.noContent().build();
-        } catch (NoSuchElementException e) {
-            // Devuelve 404 Not Found si no existe el pedido
-            return ResponseEntity.notFound().build();
+    public ResponseEntity<HttpStatus> eliminarPedido(@PathVariable Integer id) {
+        Pedido pedido = pedidoServicio.buscarPedidoPorId(id);
+        if (pedido != null) {
+            pedidoServicio.eliminarPedido(pedido);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT); // 204 No Content
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND); // 404 Not Found
         }
     }
 }

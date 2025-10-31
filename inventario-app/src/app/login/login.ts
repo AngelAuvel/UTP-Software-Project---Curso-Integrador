@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common'; // 👈 IMPORTACIÓN NECESARIA
 export class Login { 
 
   // Asumimos Solución 2 para el error de tipo anterior
-  usuario: Usuario = { idUsuario: 0, nombre: '', clave: '' }; 
+  usuario: Usuario = { id: 0, nombre: '', clave: '' }; 
 
   mensajeError: string | null = null; 
 

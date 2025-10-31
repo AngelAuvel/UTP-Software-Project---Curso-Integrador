@@ -4,6 +4,7 @@ import { Producto } from '../modelos/producto.model';
 import { ProductoServicio } from '../servicios/producto.service';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-agregar-producto',
   imports: [FormsModule],
@@ -13,6 +14,7 @@ export class AgregarProducto {
   producto: Producto = new Producto();
   private productoServicio = inject(ProductoServicio);
   private enrutador = inject(Router);
+  
   onSubmit(){
     this.guardarProducto();
   }
