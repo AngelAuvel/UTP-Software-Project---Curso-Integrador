@@ -1,16 +1,31 @@
-export interface Producto {
+export interface Categoria {
   id: number;
   nombre: string;
-  categoriaId: number | null;
-  categoriaNombre: string | null;
-  cantidadStock: number;
-  stockMinimo: number;
-  precio: number;
-  precioTotal?: number;
+  descripcion?: string;
+  colorIdentificador?: string;
+  icono?: string;
+}
+
+export enum UnidadMedida {
+  UNIDAD = 'UNIDAD',
+  CAJA = 'CAJA',
+  PAQUETE = 'PAQUETE',
+  RESMA = 'RESMA',
+  LITRO = 'LITRO',
+  KILO = 'KILO',
+  METRO = 'METRO'
+}
+
+export interface Producto {
+  id: number;
   codigo: string;
-  proveedorId: number | null;
-  proveedorNombre: string | null;
-  descripcion: string;
+  nombre: string;
+  descripcion?: string;
+  categoria: Categoria;
+  unidadMedida: UnidadMedida;
+  precioUnitario: number;
+  stockMinimo: number;
+  stockMaximo: number;
+  imagen?: string;
   estado: string;
-  fechaRegistro: string; // O Date
 }

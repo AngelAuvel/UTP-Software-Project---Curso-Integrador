@@ -1,0 +1,2941 @@
+Clínica San Juan Bautista
+________________________________________
+LEAN CANVAS
+1. Segmentos de Clientes (Customer Segments)
+Cliente principal (foco actual):
+•	Clínica San Juan Bautista - Área administrativa que requiere control y gestión de recursos logísticos
+Usuarios internos directos (usuarios del sistema):
+•	Jefe de Logística: Responsable de la gestión integral del área, aprobaciones y control presupuestal
+•	Personal de Almacén: Encargados de recepciones, despachos y control de inventarios
+•	Coordinadores de Compras: Gestión de proveedores y órdenes de compra
+Usuarios internos secundarios:
+•	Jefes de Departamentos Administrativos: Finanzas, RRHH, Servicios Generales, Administración
+•	Asistentes Administrativos: Personal que realiza solicitudes de materiales y recursos
+•	Gerencia/Dirección: Supervisión de indicadores, costos y reportes ejecutivos
+•	Contabilidad: Seguimiento de gastos y valorización de inventarios
+Usuarios de consulta:
+•	Personal Administrativo General: Consulta de estado de solicitudes
+•	Auditores Internos: Revisión de movimientos y trazabilidad
+Segmentos de futura expansión (si el sistema escala):
+•	Otras sedes de la Clínica San Juan Bautista (si planea expandirse)
+•	Otras clínicas pequeñas o medianas que busquen un sistema similar
+•	Centros médicos con área administrativa similar
+Justificación de la Segmentación
+Esta segmentación se basa en:
+Segmentación por rol funcional: Cada tipo de usuario tiene necesidades, permisos y funcionalidades específicas dentro del sistema
+Segmentación por nivel de responsabilidad: Desde usuarios operativos (almacén) hasta nivel estratégico (gerencia)
+Segmentación por frecuencia de uso: Usuarios diarios (logística, almacén) vs usuarios ocasionales (consultores, auditores)
+Segmentación por tipo de decisión: Usuarios que solicitan, aprueban, ejecutan o supervisan
+Esta estructura de segmentación permite diseñar interfaces, permisos y funcionalidades adaptadas a cada perfil, maximizando la usabilidad y eficiencia del sistema para la Clínica San Juan Bautista.
+2. Psicografía del Cliente
+Aspecto	Descripción	Implicaciones en el sistema
+Mentalidad	Personal administrativo que valora simplicidad, rapidez y precisión. Buscan soluciones prácticas que no compliquen su trabajo diario.
+El sistema debe ser intuitivo, con interfaz clara y procesos que no requieran múltiples pasos. Menús directos, accesos rápidos y navegación sencilla.
+Aspiraciones	Desean enfocarse en la atención administrativa de calidad (no en procesos logísticos tediosos). Buscan profesionalizar su área y demostrar eficiencia a la gerencia.
+El sistema debe automatizar procesos repetitivos (solicitudes, reportes, alertas) y liberar tiempo del personal para tareas estratégicas.
+Temores	Miedo a sistemas complejos con curva de aprendizaje alta. Preocupación por costos ocultos de implementación y mantenimiento. Temor a perder control de los procesos durante la transición.
+Ofrecer capacitación incluida, manual de usuario claro, soporte técnico accesible y migración de datos asistida. Implementación por fases sin interrumpir operaciones.
+Hábitos tecnológicos	Personal administrativo con uso básico de computadoras (Excel, correo). Algunos usan smartphones, pero se intimidan con software especializado.
+Diseño responsive (accesible desde PC y móvil). Interfaz similar a aplicaciones conocidas. Videos tutoriales cortos y asistencia contextual dentro del sistema.
+
+
+3. Problemas (Pains)
+Problemas críticos identificados en gestión logística administrativa de clínicas:
+1.	Datos de inventario inexactos e incompletos (~15-20% de discrepancias entre físico y registros)
+•	Control manual en cuadernos por turno
+•	Falta de visibilidad en tiempo real
+•	Desconocimiento de stock real en almacén
+2.	Tiempo excesivo en procesos logísticos manuales (10-15 horas semanales perdidas)
+•	Búsqueda manual de documentos y solicitudes
+•	Llenado repetitivo de formatos en papel
+•	Consolidación manual de reportes
+3.	Dificultad para rastrear solicitudes y responsables
+•	No hay trazabilidad de quién solicitó, aprobó o entregó
+•	Solicitudes perdidas o extraviadas
+•	Falta de seguimiento de estado de pedidos
+4.	Procesos de aprobación lentos y sin control
+•	Solicitudes que tardan días en ser atendidas
+•	Falta de notificaciones automáticas
+•	Cuello de botella en aprobaciones
+5.	Exceso de papel y documentación perdida (14-17% de casos)
+•	Órdenes de compra, facturas y solicitudes en papel
+•	Problemas de almacenamiento físico
+•	Pérdida de historial de movimientos
+6.	Falta de datos confiables para toma de decisiones
+•	No hay reportes consolidados de consumo por área
+•	Imposibilidad de proyectar demandas futuras
+•	Dificultad para negociar con proveedores sin datos históricos
+7.	Descoordinación entre departamentos administrativos
+•	Falta de comunicación fluida entre áreas
+•	Duplicación de solicitudes o compras
+•	Silos de información por departamento
+8.	Control deficiente de costos logísticos
+•	Desconocimiento del gasto real por área
+•	Productos vencidos o sin uso
+•	Sobre-stock de algunos productos y falta de otros
+________________________________________
+4. Resultados Deseados (Gains)
+Beneficios esperados con la implementación del sistema:
+1.	Reducción de discrepancias de inventario a menos del 2%
+•	Inventario en tiempo real con alertas automáticas
+•	Trazabilidad completa de movimientos
+•	Sincronización entre almacén y sistema
+2.	Ahorro de más de 12 horas semanales en gestión logística
+•	Automatización de solicitudes y aprobaciones
+•	Generación automática de reportes
+•	Eliminación de procesos manuales repetitivos
+3.	Trazabilidad del 100% de solicitudes y movimientos
+•	Registro digital de quién, cuándo y por qué
+•	Histórico completo de operaciones
+•	Auditoría facilitada
+4.	Reducción del tiempo de atención de solicitudes en 60-70%
+•	Flujo automatizado de aprobaciones
+•	Notificaciones en tiempo real
+•	Visibilidad del estado para todos los involucrados
+
+5.	Reportes automáticos para decisiones estratégicas
+•	Consumo por departamento y periodo
+•	Identificación de productos críticos
+•	Proyección de demanda basada en históricos
+•	Evaluación de desempeño de proveedores
+6.	Reducción de costos operativos logísticos en 15-25%
+•	Eliminación de sobre-stock y productos sin rotación
+•	Optimización de compras por volumen
+•	Reducción de desperdicios y vencimientos
+•	Mejor negociación con proveedores por datos históricos
+7.	Mejora en la coordinación interdepartamental
+•	Comunicación centralizada en el sistema
+•	Visibilidad compartida de recursos
+•	Estandarización de procesos
+8.	Mayor satisfacción del personal administrativo
+•	Menos tareas manuales y repetitivas
+•	Herramientas digitales profesionales
+•	Reconocimiento de eficiencia
+9.	Control presupuestal efectivo por área
+•	Seguimiento de gastos en tiempo real
+•	Alertas de límites presupuestales
+•	Conciliación simplificada con contabilidad
+10.	Cumplimiento de normativas y auditorías facilitado
+•	Documentación digital respaldada
+•	Trazabilidad completa para auditorías
+•	Reportes de cumplimiento automáticos
+ 
+ANÁLISIS DETALLADO DE PROBLEMAS PARA ÁREA ADMINISTRATIVA DE CLÍNICA
+Top 1: Gestión manual de solicitudes de materiales que genera pérdidas de tiempo y desabastecimiento
+Causas principales
+•	Uso de formatos en papel que pueden perderse, dañarse o no llegar al área de logística
+•	Comunicación telefónica o por mensajería entre departamentos que genera falta de registro formal
+•	Ausencia de sistema centralizado, obligando a llevar control en cuadernos o Excel por cada área
+•	Múltiples puntos de solicitud sin seguimiento (correos, llamadas, notas físicas), generando inconsistencias
+•	Falta de estandarización en formatos de solicitud entre departamentos
+Consecuencias específicas
+•	Tasa de error en solicitudes: 12-18% (cantidades incorrectas, productos equivocados)
+•	Tiempo promedio de atención de solicitud: 3-7 días cuando debería ser 24-48 horas
+•	5-10 solicitudes extraviadas mensualmente en clínicas medianas
+•	Duplicación de pedidos por falta de visibilidad del estado de la solicitud
+•	Desabastecimiento crítico en 2-4 ocasiones al mes por solicitudes no procesadas
+•	Mayor carga administrativa: personal invirtiendo 8-12 horas semanales solo en seguimiento de solicitudes
+Situaciones críticas donde más se manifiesta
+•	Fin de mes: acumulación de solicitudes para cierre presupuestal
+•	Auditorías: imposibilidad de rastrear el histórico de solicitudes y justificaciones
+•	Urgencias administrativas: falta de tóner para impresoras, material de limpieza crítico
+•	Cambios de personal: pérdida de continuidad en solicitudes pendientes
+•	Solicitudes interdepartamentales: falta de coordinación entre áreas
+Top 2: Falta de control integrado de inventario administrativo en tiempo real
+Causas principales
+•	Registro manual en cuadernos por turno o en hojas Excel desactualizadas
+•	Conteos físicos esporádicos (mensuales o trimestrales) que no reflejan movimientos diarios
+•	Descoordinación entre recepción, almacén y distribución de materiales
+•	Ausencia de alertas automáticas para niveles mínimos de stock crítico
+•	Múltiples almacenes sin visibilidad centralizada del inventario total
+Consecuencias específicas
+•	Discrepancia inventario físico vs registros: 15-25% en promedio
+•	Sobre-stock de productos de baja rotación: 20-30% del inventario total sin movimiento
+•	Desabastecimiento crítico de material de oficina básico 3-5 veces al mes
+•	Compras de emergencia con sobreprecio (+25-40%) para cubrir faltantes urgentes
+•	Productos vencidos o sin uso: 10-15% del valor total de inventario
+•	Imposibilidad de rastrear responsables de entradas y salidas
+•	Tiempo invertido en búsqueda física de productos en almacén: 5-8 horas semanales
+Impacto financiero estimado (clínica mediana)
+•	Pérdida anual por desperdicios y productos sin uso: S/. 8,000 – S/. 15,000
+•	Costo adicional por compras de emergencia: 25-40% más caro que precio regular
+•	Tiempo invertido en conteo manual: 12-18 horas semanales (costo en horas-hombre)
+•	Costo de oportunidad por desabastecimiento: pérdida de productividad administrativa
+
+Top 3: Ausencia de reportes consolidados y análisis de datos para toma de decisiones
+Causas principales
+•	Datos dispersos en múltiples formatos (papel, Excel, correos, cuadernos)
+•	Limitada capacidad técnica del personal administrativo para procesar datos
+•	Falta de tiempo del jefe de logística para generar reportes manuales consolidados
+•	Herramientas inadecuadas (Excel básico) que no ofrecen análisis automático
+•	Ausencia de indicadores de gestión logística estandarizados
+Consecuencias específicas
+•	Desconocimiento de productos más consumidos por departamento y periodo
+•	Dificultad para identificar patrones de consumo estacional o por área
+•	Incapacidad de medir eficiencia de proveedores (tiempos de entrega, calidad, precio)
+•	Decisiones de compra basadas en intuición, no en datos históricos
+•	Imposibilidad de proyectar presupuesto logístico con precisión
+•	Pérdida de oportunidades de ahorro al no detectar compras consolidadas o mejores proveedores
+Información crítica que no está disponible
+•	Consumo real por departamento y categoría de producto
+•	Rotación de inventario (productos de alta vs baja rotación)
+•	Tiempo promedio de atención de solicitudes por tipo y departamento
+•	Comparativa de precios entre proveedores por producto
+•	Eficiencia logística: indicadores como días de inventario, nivel de servicio, tasa de cumplimiento
+•	Costo logístico por departamento y su evolución mensual
+•	Identificación de desperdicios y mermas no justificadas
+
+Impacto en la toma de decisiones
+•	Presupuestos logísticos sobredimensionados o insuficientes por falta de datos históricos
+•	Contratos con proveedores poco optimizados (no se detectan mejores opciones)
+•	Imposibilidad de justificar inversiones ante gerencia sin evidencia cuantitativa
+•	Dificultad para implementar mejoras sin línea base de indicadores
+•	Oportunidades perdidas de ahorro en compras consolidadas o por volumen
+•	Falta de argumentos sólidos para negociación con proveedores
+•	Desconocimiento de áreas críticas que requieren mayor atención logística
+________________________________________
+Problemas adicionales identificados
+Top 4: Proceso de aprobaciones lento y sin trazabilidad
+Causas: Aprobaciones en papel, dependencia de disponibilidad física del jefe, falta de plazos definidos
+Consecuencias:
+•	Solicitudes que tardan 5-10 días en ser aprobadas
+•	Acumulación de solicitudes pendientes
+•	Falta de registro de quién aprobó y cuándo
+Top 5: Gestión deficiente de proveedores
+Causas: Falta de evaluación objetiva, ausencia de base de datos centralizada, comunicación informal
+Consecuencias:
+•	Dependencia de proveedores únicos sin alternativas
+•	Desconocimiento de desempeño real (entregas, calidad, precio)
+•	Dificultad para negociar mejores condiciones
+
+5. PROPUESTA DE VALOR ÚNICA
+"Sistema de gestión logística administrativa para la Clínica San Juan Bautista que elimina las discrepancias de inventario hasta en un 90% y reduce el tiempo de atención de solicitudes de 7 días a menos de 24 horas, con una interfaz tan intuitiva que el personal administrativo domina en menos de 2 horas."
+6. SOLUCIÓN
+1. Interfaz Adaptable y de Alto Rendimiento
+Compatibilidad universal:
+•	Funciona en cualquier dispositivo: PC de escritorio, laptops, tablets administrativas y smartphones
+•	Acceso desde navegador web moderno (Chrome, Firefox, Safari, Edge)
+•	Diseño responsive que se adapta automáticamente al tamaño de pantalla
+•	Ideal para personal en movimiento entre áreas de la clínica
+Optimización en rendimiento:
+•	Respuesta rápida incluso en horarios de máxima actividad (cambios de turno, cierre de mes)
+•	Consultas en tiempo real sin lentitud o cuelgues del sistema
+•	Caché inteligente para acceso rápido a datos frecuentes
+•	Infraestructura escalable en la nube o servidor on-premise
+Gestión de base de datos simplificada:
+•	El administrador de logística puede configurar categorías de productos, niveles de stock mínimo y proveedores sin necesidad de conocimientos SQL
+•	Panel administrativo intuitivo con menús desplegables y formularios guiados
+•	Permisos diferenciados por rol:
+•	Admin Logística: Control total, configuración del sistema, generación de reportes
+•	Personal Almacén: Registro de entradas, salidas y control físico
+•	Jefes de Departamento: Solicitudes, consulta de estado
+•	Gerencia: Visualización de dashboards y reportes ejecutivos
+Escalabilidad futura:
+•	Preparado para expansión a múltiples sedes de la clínica (si es necesario)
+•	Arquitectura modular que permite agregar nuevos módulos (contabilidad, nómina, etc.)
+Problema que resuelve:
+Errores por sistemas obsoletos o no integrados, y dificultades administrativas en la configuración técnica
+2. Implementación Sencilla e Intuitiva
+Diseño específico para la Clínica San Juan Bautista:
+•	Interfaz diseñada basada en flujos reales del área administrativa
+•	No es una solución genérica, sino adaptada a procesos específicos de la clínica
+•	Colores, terminología y estructura ajustados a la cultura organizacional
+Integración sin fricción:
+•	Instalación rápida: 2-4 horas máximo en la infraestructura de la clínica
+•	Migración de datos asistida: Importación de productos existentes desde Excel o base de datos anterior
+•	Uso operativo inmediato: El equipo puede comenzar a usar el sistema en 24-48 horas después de instalación
+Curva de aprendizaje mínima:
+•	Capacitación en menos de 2 horas: Sesión práctica con ejemplos reales
+•	Manual visual con capturas de pantalla para cada proceso clave
+•	Videos tutoriales cortos (3-5 minutos) disponibles dentro del sistema
+•	Asistencia contextual: Botones de ayuda en cada pantalla explicando opciones
+•	Soporte técnico dedicado durante los primeros 30 días
+Soporte remoto integrado:
+•	Chat de soporte directo dentro de la aplicación
+•	Asistencia técnica por videollamada si es necesario
+•	Documentación actualizada en el portal de help del cliente
+Problema que resuelve:
+Miedo a la complejidad del software y temor por una curva de aprendizaje elevada
+3. Interfaz Visual con Formularios Guiados y Confirmación (SOLUCIÓN ADAPTADA)
+Formularios intuitivos para solicitudes:
+•	Solicitud de materiales en 3 pasos:
+1.	Seleccionar departamento y producto (con búsqueda facilitada)
+2.	Indicar cantidad requerida y justificación breve
+3.	Confirmar y enviar automáticamente al jefe de logística
+•	Uso de desplegables y opciones predefinidas en lugar de campos de texto libre
+•	Validación automática de cantidad mínima y máxima permitida por rol
+•	Iconos y colores para diferenciar tipos de solicitud (urgente, normal, revisión)
+Gestión de inventario visual:
+•	Dashboard de stock en colores:
+•	🟢 Verde: Producto en nivel óptimo
+•	🟡 Amarillo: Stock bajo, requiere atención
+•	🔴 Rojo: Stock crítico, compra urgente
+•	Vista de almacén mostrando ubicaciones físicas de productos
+•	Fotografías de productos para identificación rápida
+Flujo de trabajo simplificado:
+•	Diagrama visual del estado de la solicitud (Pendiente → En Aprobación → Despachada → Entregada)
+•	Notificaciones automáticas en cada cambio de estado
+•	Confirmación con un clic para recepciones o entregas
+Problema que resuelve:
+Errores en solicitudes, confusión con nombres técnicos y tiempos prolongados de procesamiento
+
+4. Gestión de Inventario en Tiempo Real
+Control automatizado de stock:
+•	Cada movimiento actualiza automáticamente el inventario en tiempo real:
+•	Recepción de compra ↑ suma stock
+•	Despacho a departamento ↓ resta stock
+•	Ajuste por dañados o vencidos se registra manualmente con justificación
+•	Sincronización entre almacenes si la clínica tiene múltiples depósitos
+Alertas inteligentes:
+•	Notificaciones automáticas al jefe de logística cuando stock llega al mínimo configurado
+•	Alertas escaladas: si no se atiende en 24 horas, notificación a gerencia
+•	Reporte diario de productos en riesgo de desabastecimiento
+Proyección de demanda (Fase 2):
+•	Basada en históricos de consumo identifica patrones de consumo por área
+•	Sugiere compras preventivas basadas en tendencias
+•	Proyecta necesidad de compra para los próximos 30 días
+Reportes dinámicos de inventario:
+•	Gráficos de rotación: productos rápidos vs lentos
+•	Análisis de desperdicios: productos vencidos o sin movimiento
+•	Valor total de inventario actualizado en tiempo real
+•	Comparativa física vs registros (para auditoría)
+Problema que resuelve:
+Falta de control integrado de inventario, desperdicios por productos olvidados, compras urgentes innecesarias
+
+
+
+
+5. Reportes Automáticos y Analítica para Toma de Decisiones
+Reportes de solicitudes y movimientos en tiempo real:
+•	Estado diario de solicitudes: Cuántas están pendientes, aprobadas, en proceso, entregadas
+•	Tiempo promedio de atención por tipo de solicitud y por área
+•	Tasa de cumplimiento: % de solicitudes entregadas a tiempo vs retrasadas
+•	Identificación de cuellos de botella: Áreas que generan más demora
+Análisis de consumo por departamento:
+•	Consumo mensual por área administrativa
+•	Productos más solicitados por departamento
+•	Comparativa con períodos anteriores (mes anterior, misma época del año pasado)
+•	Proyección de consumo para planificación presupuestal
+Evaluación de proveedores:
+•	Indicadores OTIF (On Time In Full): % de entregas a tiempo y con cantidad correcta
+•	Tiempo promedio de entrega por proveedor
+•	Comparativa de precios entre proveedores para el mismo producto
+•	Tasa de calidad: Devoluciones, productos defectuosos
+Dashboard ejecutivo para gerencia:
+•	Visualización en gráficos fáciles de interpretar:
+•	Costo total de logística del mes
+•	Ahorro vs presupuesto asignado
+•	Productos de mayor rotación
+•	KPIs clave: nivel de servicio, tasa de cumplimiento, costo por movimiento
+•	Alertas visuales para desviaciones del presupuesto o indicadores críticos
+•	Capacidad de exportar a PowerPoint o PDF para presentaciones directivas
+Análisis de eficiencia logística:
+•	Días de inventario promedio (rotación)
+•	Costo administrativo por solicitud procesada
+•	Comparativa de costos de compra actual vs compra consolidada
+•	ROI estimado del sistema (en función de ahorros medidos)
+Problema que resuelve:
+Ausencia de reportes confiables, decisiones basadas en intuición en lugar de datos, imposibilidad de justificar inversiones
+
+Comparación: Solución Anterior vs Sistema de Gestión Logística SJB
+Aspecto	Antes (Manual/Excel)	Sistema SJB	Mejora
+Tiempo Solicitud	5-10 minutos de escritura + espera
+3 minutos en sistema
+50-70% más rápido
+Errores Solicitud	12-18% tasa de error
+<2% tasa de error
+90% reducción
+Trazabilidad	0% documentada
+100% digital respaldada
+Total
+Reportes Manuales	8-12 horas/mes compilando datos
+Automáticos, actualizados en tiempo real
+Eliminado
+Visibilidad Inventario	End-of-day (actualización tardía)
+Tiempo real con alertas
+Mejora crítica
+Compras Emergencia	3-5 por mes con sobrecosto
+<1 por mes
+80% reducción
+Acceso Información	Solo jefe de logística tiene datos
+Multi-usuario, personalizado por rol
+Total
+Capacitación	2-3 días + consultas frecuentes
+2 horas + soporte remoto
+75% reducción
+________________________________________
+Tecnología Utilizada (Backend/Frontend)
+Stack Tecnológico:
+•	Backend: Spring Boot 3.x con arquitectura REST y seguridad JWT
+•	Frontend: Angular 17+ con diseño responsive
+•	Base de Datos: MySQL 8 o PostgreSQL (según infraestructura de clínica)
+•	Reportes: Generación automática en PDF/Excel con Apache POI
+•	Hosting: On-premise o Cloud (AWS, Azure, según preferencia clínica)
+Esta solución transforma la gestión logística administrativa de la Clínica San Juan Bautista de un proceso manual, lento y propenso a errores en un sistema digital automatizado, preciso y escalable
+7. CANALES DE DISTRIBUCIÓN Y ACCESO
+Estrategia: Modelo de Ventas Transaccional B2B
+El sistema de gestión logística se venderá principalmente a través de canales directos, aprovechando el contexto institucional de la Clínica San Juan Bautista:
+1. Venta Directa a Clínica San Juan Bautista (Cliente Principal)
+Estrategia de acercamiento personalizado:
+•	Meeting con Gerencia Administrativa: Presentación del prospecto, problemas identificados y propuesta de valor
+•	Demostración en vivo: Instalación temporal del sistema en las instalaciones de la clínica
+•	Período de prueba: 14-30 días sin costo, con soporte técnico dedicado
+•	Decisión de compra: Cierre con la gerencia después de validación operativa
+Target decisor específico:
+•	Gerente/Director Administrativo (45-60 años)
+•	Jefe de Logística (35-50 años)
+•	Estos perfiles valoran el contacto directo y la confianza en persona
+•	Necesitan ver resultados reales antes de comprometerse
+Ventaja de este canal:
+•	Genera confianza inmediata al resolver problemas específicos identificados
+•	Reduce percepción de riesgo al demostrar directamente la solución
+•	Personalización del sistema según necesidades exactas de la clínica
+•	Cierre más rápido (2-8 semanas desde primer contacto)
+
+2. Demostración Presencial en Instalaciones
+Acciones clave de la demostración:
+•	Instalación rápida: Montaje del sistema en 2-4 horas en infraestructura de la clínica
+•	Capacitación en vivo: Simulación de solicitudes reales con personal de logística
+•	Experiencia práctica: Personal del almacén y jefes de departamento prueban el sistema
+•	Recopilación de feedback: Notas sobre mejoras y ajustes necesarios
+Período de prueba: 14-30 días incluye:
+•	Acceso total a todas las funcionalidades del sistema
+•	Importación de datos existentes (productos, proveedores, históricos)
+•	Soporte técnico remoto 24/5 (correo, teléfono, videollamada)
+•	Capacitación adicional si es necesaria
+•	Sin costo de licencia durante período de prueba
+Impacto esperado:
+•	Tasa de conversión esperada: 65-75% de pruebas terminan en compra si la experiencia es positiva
+•	Eliminación de objeciones: "¿será fácil de usar?" se resuelve con experiencia directa
+•	Generación de enthusiasts internos: El personal que prueba se convierte en promotor
+3. Acceso a través de Plataforma Web Institucional (Futuro)
+Página web dedicada para venta SaaS (desarrollo Fase 2):
+•	Portal de presentación del sistema
+•	Cálculo de ROI en línea (basado en parámetros de la clínica)
+•	Botón de solicitud de demostración presencial
+•	Blog con casos de estudio y mejores prácticas logísticas
+•	Documentación técnica y requerimientos de sistema
+
+4. Canales Secundarios (Expansión Futura)
+Si el sistema escala a otras clínicas pequeñas/medianas:
+Alianzas con consultores administrativos:
+•	Consultores que trabajan con clínicas ofrecen el sistema como solución integrada
+•	Comisión o margen por referencia
+Distribuidores de software médico-administrativo (región):
+•	Partners tecnológicos que venden software a hospitales y clínicas
+•	Modelo de reseller con margen negociado
+Exposiciones y ferias de salud:
+•	Presencia en eventos sanitarios con booth de demostración
+•	Contacto directo con administradores de clínicas
+8. FLUJO DE INGRESOS
+Modelo de Ingresos: Licencia Anual SaaS con Soporte Incluido
+Filosofía del modelo:
+•	Ingresos predecibles y recurrentes (anual)
+•	Cliente paga por acceso a software + servicios, no por propiedad
+•	Alineación de intereses: nuestro éxito depende de satisfacción del cliente
+1. Licencia Anual con Mantenimiento y Soporte Incluido
+Modelo principal de ingreso:
+Componente	Descripción	Incluido
+Acceso al sistema	Uso ilimitado para todos los usuarios autorizados
+✅
+Soporte técnico básico	Resolución de incidencias, dudas frecuentes, guía de uso
+✅
+Actualizaciones menores	Correcciones de bugs y mejoras de seguridad automáticas
+✅
+Actualizaciones funcionales	Nuevas características (2-4 nuevas funciones anuales)
+✅
+Acceso a tutoriales	Biblioteca de videos, manuales digitales e interactive guides
+✅
+Capacitación de nuevos empleados	Sesiones de inducción para personal de rotación
+✅ (hasta 2 sesiones/año)
+Respaldo de datos	Backups automáticos diarios en servidores seguros
+✅
+Reportes ejecutivos	Acceso a dashboards y reportes automáticos
+✅
+Ventaja de este modelo:
+•	Asegura servicio continuo (el cliente nunca queda "abandonado" después de compra)
+•	Reduce miedo del cliente a costos ocultos o sorpresas
+•	Incentiva uso activo del sistema para obtener valor
+2. Estructura de Precios - Propuesta Inicial
+Tarifa anual para Clínica San Juan Bautista:
+Opción 1 - Licencia Estándar: S/. 1,500 - 2,000 anuales (S/. 125 - 167 mensuales)
+Justificación del rango de precio:
+Métrica	Valor	Cálculo
+Costo anual actual por errores/ineficiencia	S/. 15,000 - 25,000	Pérdidas por desabastecimiento, compras emergencia, tiempo administrativo
+Ahorro anual esperado con sistema	S/. 8,000 - 15,000	20-30% reducción de costos logísticos
+ROI del sistema	400-1000% anual	Sistema se paga en 1.5 - 3 meses
+Costo por solicitud procesada hoy	S/. 50 - 100	Manual + tiempo perdido
+Costo por solicitud con sistema	S/. 5 - 10	Automatizado
+Conclusión: El sistema genera retorno en 4-8 semanas, lo que lo hace irresistible como inversión
+Comparación con mercado:
+•	Software ERP hospitalario genérico: S/. 8,000 - 15,000 anuales (muy complejo, no especializado)
+•	Consultoría en mejora logística: S/. 10,000 - 20,000 (única vez, sin sistema)
+•	Sistema SJB (propuesta): S/. 1,500 - 2,000 (especializado, soporte continuo)
+Positioning: "Solución especializada a 1/5 del precio de genéricos, con soporte dedicado"
+3. Opciones de Pago
+Pago único anual (opción recomendada):
+•	Monto: S/. 1,500 - 2,000
+•	Formas de pago:
+•	Transferencia bancaria (descuento 2% por pronto pago)
+•	Tarjeta de crédito
+•	Cheque (dependiendo de política clínica)
+Pago fraccionado (opción flexible para difícil cierre):
+•	2 cuotas semestrales: S/. 775 - 1,025 c/u (sin recargo)
+•	3 cuotas trimestrales: S/. 525 - 700 c/u (con 3% recargo = S/. 1,545 - 2,060 total)
+Ventaja del modelo de pago único:
+•	Simplifica facturación y reconciliación
+•	Sin costo administrativo de múltiples cobros
+•	Cliente aprecia la claridad (sin cargos sorpresas mensuales)
+4. Ciclo de Renovación y Retención
+Modelo de retención cliente:
+1.	Mes 11 de suscripción: Contacto para renovación
+•	Envío de notificación de renovación automática
+•	Recordatorio de beneficios y uso durante el año
+•	Recopilación de feedback para mejoras
+2.	Ofertas de renovación:
+•	Early renewal (2 meses antes): Descuento 10% por renovación anticipada
+•	Renovación normal: Precio estándar
+•	Riesgo de churn: Si no renueva, contacto directo del gerente de cuenta
+3.	Estrategia de upsell (Año 2+):
+•	Si sistema es exitoso, ofrecer módulos adicionales (Finanzas, RRHH)
+•	Modelo de "feature tiering":
+•	Básico (S/. 1,500): Inventario + Solicitudes
+•	Profesional (S/. 2,500): + Reportes Avanzados + API integraciones
+•	Empresarial (S/. 4,000): + Múltiples sedes + Soporte prioritario
+________________________________________
+5. Flujo de Ingresos Proyectado (Clínica SJB + Expansión Futura)
+Año 1 (Clínica SJB):
+•	Ingresos: S/. 1,500 - 2,000 (1 cliente)
+•	Objetivo: Validar modelo, conseguir testimonial, referencias
+Año 2 (Expansión a 3-5 clínicas medianas):
+•	Ingresos: S/. 7,500 - 12,000 (5 clientes × S/. 1,500-2,400)
+•	Objetivo: Consolidar posición, mejorar sistema
+Año 3 (Escalamiento a 10+ clínicas):
+•	Ingresos: S/. 20,000 - 30,000 (10+ clientes)
+•	Objetivo: Rentabilidad operativa, reinvertir en desarrollo
+6. Estrategia de Integración con Canales de Venta
+En visitas directas:
+•	Cierre inmediato de suscripción post-demostración
+•	Firma de contrato SaaS (1-2 páginas)
+•	Primer pago en transferencia bancaria (24-48 horas)
+•	Activación de cuenta en 48 horas
+En redes sociales/web (futuro):
+•	Botón "Solicitar Demostración Gratuita"
+•	Prueba SaaS automática por 7 días (sin tarjeta de crédito)
+•	Cierre de venta por teléfono/email
+Complementos opcionales (con costo adicional):
+•	Instalación presencial + configuración inicial: S/. 500 (transferencia de datos, customización)
+•	Capacitación intensiva (2 días): S/. 800
+•	Consultoría de optimización logística: S/. 100/hora
+Resumen: Canales + Flujo de Ingresos
+Fase	Canal Principal	Modelo Ingreso	Cliente Target	Tasa Conversión
+Fase 1 (Actual)	Venta directa presencial	SaaS anual S/. 1,500-2,000	Clínica SJB	100% (cliente único)
+Fase 2 (6-12 meses)	Venta directa + web + alianzas	SaaS anual escalado	3-5 clínicas medianas	60-70% de demostraciones
+Fase 3 (12-24 meses)	Venta directa + resellers	Feature tiering SaaS	10+ clínicas	40-50% overall
+
+9. MÉTRICAS CLAVE (KPIs) DEL SISTEMA
+Propósito de las Métricas
+Las métricas clave permiten cuantificar objetivamente el desempeño del sistema y validar que se cumplen las promesas de valor hechas a la Clínica San Juan Bautista.
+1. Tiempo Promedio de Atención de Solicitud
+Qué mide: Rapidez en la recepción, procesamiento y atención de solicitudes administrativas desde que se registra hasta que se despacha
+Por qué es clave: Valida la promesa central de tu sistema: "reducir el tiempo de atención de 7 días a menos de 24 horas"
+Cómo medirlo:
+•	Registrar automáticamente timestamp de creación y cierre de solicitud en el sistema
+•	Calcular diferencia en horas
+•	Promediar durante 30 días por tipo de solicitud y departamento
+•	Desglosar por: solicitudes urgentes, normales, revisadas
+Baseline (Situación Actual):
+•	Antes del sistema: 5-7 días (120-168 horas)
+•	Factores de demora: papel perdido, comunicación telefónica, falta de seguimiento, reuniones para aprobación
+Meta con Sistema (Objetivo Mes 3):
+•	Solicitudes normales: < 24 horas (máximo)
+•	Solicitudes urgentes: < 4 horas
+•	Solicitudes en revisión: < 48 horas
+Fórmula KPI:
+Tiempo Promedio = (Fecha/Hora Cierre - Fecha/Hora Creación) / Total Solicitudes
+Meta = ≤ 24 horas para 95% de solicitudes
+Impacto esperado:
+•	Menor frustración del personal administrativo por esperas
+•	Departamentos reciben recursos a tiempo
+•	Reducción de solicitudes duplicadas por impaciencia
+•	Mayor productividad administrativa
+2. Tasa de Errores en Solicitudes
+Qué mide: Porcentaje de solicitudes que llegan con errores de cantidad, producto incorrecto, o información faltante
+Por qué es clave: Refleja la capacidad del sistema de "eliminar errores en solicitudes administrativas" y reducir retrabajos
+Cómo medirlo:
+•	Registrar solicitudes con errores detectados en recepción (cantidad vs solicitado, producto incorrecto)
+•	Registrar solicitudes que requieren aclaración o corrección
+•	Cálculo: (Solicitudes con Error / Total de Solicitudes) × 100
+
+Baseline (Situación Actual):
+•	Antes del sistema: 12-18% de solicitudes con errores o imprecisiones
+•	Causas: escritura manual poco clara, falta de validación, confusión en nombres de productos
+Meta con Sistema (Objetivo Mes 2):
+•	Tasa de error: < 2%
+•	Solicitudes con toda la información correcta: > 98%
+Fórmula KPI:
+Tasa Error = (Solicitudes con Error / Total Solicitudes) × 100
+Meta = ≤ 2%
+Impacto esperado:
+•	Reducción de retrabajos y correcciones (ahorro de 5-8 horas/mes)
+•	Mayor confiabilidad de la información en el sistema
+•	Mejor experiencia de usuario final
+•	Aprovisionamiento más preciso
+3. Tiempo de Capacitación de Nuevos Empleados
+Qué mide: Tiempo requerido para que un nuevo empleado administrativo use el sistema correctamente sin cometer errores en solicitudes
+Por qué es clave: Respalda la promesa de que la interfaz es "tan intuitiva que cualquier empleado domina en menos de 2 horas"
+Cómo medirlo:
+•	Cronometrar tiempo desde inicio de capacitación hasta que el empleado procesa 5 solicitudes correctamente sin errores
+•	Incluir tiempo de lectura de manual + sesión práctica + pruebas
+•	Registrar por cada nuevo contratado
+Baseline (Situación Actual):
+•	Antes del sistema: 3-4 días de capacitación + experiencia en el trabajo = 16-20 horas
+•	Método: "aprender haciendo" con supervisión, muchas correcciones iniciales
+Meta con Sistema (Objetivo Permanente):
+•	Tiempo efectivo de capacitación: ≤ 90 minutos
+•	Desglose:
+•	30 min: Manual visual + videos tutoriales
+•	40 min: Práctica simulada en el sistema
+•	20 min: Prueba con datos reales bajo supervisión
+Fórmula KPI:
+Tiempo Capacitación = Hora Inicio - Hora Fin (hasta competencia)
+Meta = ≤ 90 minutos
+Impacto esperado:
+•	Menor rotación de personal por frustración en aprendizaje
+•	Reducción de costos de entrenamiento (horas-hombre)
+•	Incorporación rápida de empleados temporales (períodos de mayor demanda)
+•	Mejor retención de talento administrativo
+4. Precisión de Inventario (Discrepancia Físico vs Sistema)
+Qué mide: Porcentaje de diferencia entre inventario teórico (en sistema) e inventario físico real
+Por qué es clave: Valida el beneficio de "eliminar discrepancias de inventario hasta 90%", evitando compras de emergencia y desperdicios
+Cómo medirlo:
+•	Realizar conteos físicos mensuales en almacén (seleccionando muestras de productos)
+•	Comparar con registros del sistema
+•	Cálculo: |Stock Físico - Stock Sistema| / Stock Sistema × 100
+Baseline (Situación Actual):
+•	Antes del sistema: 15-25% discrepancia promedio
+•	Causas: entradas/salidas no registradas, movimientos entre áreas no documentados, mermas no justificadas
+
+Meta con Sistema (Objetivo Mes 3):
+•	Discrepancia máxima: < 2%
+•	Confiabilidad del inventario: > 98%
+Fórmula KPI:
+Precisión Inventario = (1 - |Stock Físico - Stock Sistema| / Stock Sistema) × 100
+Meta = ≥ 98%
+Impacto esperado:
+•	Eliminación de compras urgentes por desabastecimiento falso
+•	Reducción de sobre-stock y productos sin movimiento
+•	Auditorías facilitadas con información confiable
+•	Trazabilidad completa de movimientos
+5. Tasa de Cumplimiento de Solicitudes a Tiempo
+Qué mide: Porcentaje de solicitudes que fueron despachadas en el plazo indicado por el solicitante
+Por qué es clave: Refleja la capacidad operativa del sistema y satisfacción del usuario interno
+Cómo medirlo:
+•	Solicitud indica "fecha requerida"
+•	Registrar fecha de despacho real
+•	Cálculo: (Solicitudes Despachadas On Time / Total Solicitudes) × 100
+Baseline (Situación Actual):
+•	Antes del sistema: 60-70% de cumplimiento (muchas demoras no documentadas)
+Meta con Sistema (Objetivo Mes 4):
+•	Tasa de cumplimiento: ≥ 95%
+•	Máxima demora justificada: 5% de solicitudes puede tener 1-2 días de retraso (por disponibilidad proveedor)
+Fórmula KPI:
+Cumplimiento On Time = (Solicitudes Despachadas ≤ Fecha Requerida / Total) × 100
+Meta = ≥ 95%
+Impacto esperado:
+•	Mayor satisfacción de clientes internos (departamentos)
+•	Confianza en la capacidad de logística de planificar entregas
+•	Reducción de urgencias y retrabajos por retrasos
+6. Reducción de Costos Logísticos Anuales
+Qué mide: Ahorro total en costos administrativos logísticos después de implementar el sistema
+Por qué es clave: Es la métrica financiera que justifica la inversión (ROI del proyecto)
+Cómo medirlo:
+•	Comparar costos pre vs post sistema:
+•	Costo de compras de emergencia (sobreprecio 25-40%)
+•	Tiempo administrativo (horas-hombre dedicadas a logística)
+•	Desperdicio por vencimiento/productos sin rotación
+•	Retrabajos por errores
+Baseline (Situación Actual):
+•	Costo anual estimado de ineficiencia: S/. 15,000 - 25,000
+•	Compras emergencia: S/. 8,000 - 12,000
+•	Tiempo administrativo no productivo: S/. 5,000 - 8,000
+•	Desperdicios/vencimientos: S/. 2,000 - 5,000
+Meta con Sistema (Objetivo Año 1):
+•	Reducción de costos: 20-30% (S/. 3,000 - 7,500 ahorrados)
+•	ROI: Sistema se paga en 3-8 meses
+Fórmula KPI:
+Ahorro Anual = Costo Antes - Costo Después
+ROI % = (Ahorro Anual / Costo Licencia) × 100
+Meta = ≥ 200% ROI anual
+
+Impacto esperado:
+•	Justificación clara de inversión ante gerencia
+•	Presupuesto logístico más eficiente
+•	Base para ampliación del sistema a otros departamentos
+Tabla Resumen: KPIs del Sistema
+KPI	Métrica Actual	Meta Mes 3	Meta Año 1	Impacto
+Tiempo Atención Solicitud	5-7 días	< 24 horas	< 24 horas (95%)	70% reducción tiempo
+Tasa Errores Solicitud	12-18%	< 5%	< 2%	90% menos errores
+Capacitación Nueva Empleado	16-20 horas	< 120 min	< 90 min	90% reducción capacitación
+Precisión Inventario	75-85%	> 95%	> 98%	23-33pp mejora
+Cumplimiento On Time	60-70%	> 90%	> 95%	25-35pp mejora
+Reducción Costos Logísticos	Base 100%	-10%	-20-30%	S/. 3,000-7,500 anuales
+
+10. VENTAJA ESPECIAL (DIFERENCIADOR ÚNICO)
+Propuesta Central
+"Sistema desarrollado específicamente para la Clínica San Juan Bautista, incorporando la experiencia real del área administrativa, no un software genérico adaptado."
+1. Experiencia Operativa Real como Diferenciador
+No es un software genérico para hospitales:
+•	Está construido en colaboración directa con el equipo de logística de la Clínica San Juan Bautista
+•	Cada funcionalidad responde a problemas vividos diariamente (solicitudes perdidas, inventario sin control, aprobaciones lentas)
+•	Cada pantalla, cada formulario fue validado por personal administrativo real
+
+Diferencia clave:
+•	Software genérico: "Aquí va un campo de cantidad" → confuso para administrativos
+•	Sistema SJB: "Aquí indicas la cantidad requerida. La máxima es X (basada en tu presupuesto)"
+•	El sistema habla el mismo idioma del negocio administrativo
+Ventaja competitiva:
+•	Solución perfectamente ajustada a procesos de la clínica
+•	Eliminación de "gap" entre lo que el sistema ofrece y lo que realmente necesita la clínica
+2. Interfaz Intuitiva Especializada en Procesos Administrativos
+Implementación pionera en sistemas hospitalarios pequeños/medianos:
+Diseño basado en Research con personal administrativo real:
+•	Colores y terminología adaptados al contexto clínico administrativo
+•	Flujos simplificados basados en observación de procesos reales
+•	Botones y opciones posicionados donde el usuario las espera
+Contraste con competencia:
+•	Sistemas genéricos requieren capacitación extensa (3-5 días)
+•	Sistema SJB: capacitación de 90 minutos + uso inmediato
+Evidencia de usabilidad:
+•	Tasa de error en solicitudes: < 2% (vs 12-18% con procesos manuales)
+•	Tiempo de aprendizaje: 90 min (vs 3-4 días con otros sistemas)
+3. Enfoque 100% en Área Administrativa (No Médica)
+Diferencial importante:
+•	Sistemas hospitalarios generales están diseñados para clínica médica (historias clínicas, citas médicas, etc.)
+•	Sistema SJB está especializado en lo que realmente necesita logística: control de materiales, solicitudes, inventario
+Ventaja:
+•	Interfaz sin ruido: no hay funcionalidades médicas que distraigan
+•	Especialización permite mejor UX y features más específicas
+•	Precio accesible (sin pagar por funciones médicas innecesarias)
+4. Escalabilidad Diseñada desde el Inicio
+Arquitectura preparada para crecer con la clínica:
+Hoy: Módulos básicos (Inventario + Solicitudes + Reportes)
+Futuro: Expansión sin fricción
+•	Integración con proveedores (portal B2B)
+•	Módulo de Contabilidad
+•	Módulo de RRHH
+•	Múltiples sedes (si clínica expande)
+Ventaja competitiva:
+•	No hay "límite" de usuario, almacenes o transacciones
+•	Crecimiento ilimitado sin cambiar de plataforma
+•	Inversión protegida a futuro
+5. Relación Cercana y Ciclo de Mejora Continua
+Community-Driven Development:
+•	Contacto directo con equipo de logística de la clínica
+•	Feedback mensual para mejoras
+•	Nuevas funciones basadas en necesidades reales
+Ciclo de mejora ágil:
+•	Identificación de problema en la clínica
+•	Desarrollo en 2-4 semanas
+•	Deployment y retroalimentación
+•	Iteración basada en resultados
+Ventaja frente a competencia:
+•	Competidores tienen que atender a 100+ clientes (mejoras lentas)
+•	Sistema SJB se adapta rápidamente a necesidades específicas
+•	Barrera de entrada para competidores (relación establecida + customización)
+6. Seguridad y Privacidad Hospitalaria desde Inicio
+Cumplimiento normativo integrado:
+•	Encriptación de datos sensibles (información de compras, proveedores)
+•	Auditoría automática de todos los movimientos
+•	Cumplimiento de políticas de privacidad hospitalaria
+•	Respaldo de datos automático diario
+Ventaja competitiva:
+•	No es un software "genérico" que luego se adapta a seguridad médica
+•	Seguridad hospitalaria diseñada desde la arquitectura
+7. Acceso Integrado desde Cualquier Dispositivo
+Responsivo y preparado para realidad hospitalaria:
+•	PC en oficina de logística
+•	Tablet para verificaciones en almacén
+•	Smartphone para jefes de departamento consultando estado
+•	Sincronización instantánea entre dispositivos
+Ventaja:
+•	Personal administrativo puede trabajar desde cualquier ubicación
+•	Actualizaciones en tiempo real desde cualquier dispositivo
+8. Ventajas Difíciles de Replicar (Moat)
+Combinación única de factores que crean una "barrera de entrada" para competidores:
+Factor	Por Qué es Difícil de Copiar
+Experiencia operativa específica	Requiere meses de investigación en logística hospitalaria
+Relación establecida con clínica	Vínculo de confianza y feedback directo establecido
+Interfaz intuitiva diseñada para admin	Requiere investigación UX profunda (costo y tiempo)
+Datos históricos del cliente	Sistema SJB tiene meses/años de data que competidor no tiene
+Customizaciones específicas	Ajustes únicos para procesos de clínica SJB
+Comunidad de usuarios internos	Champions en logística que promueven el sistema internamente
+Efecto red interno:
+•	A más personas usando el sistema, más datos y mejoras
+•	A más mejoras, más adopción
+•	Ciclo virtuoso que es difícil de romper
+11. TOMA DE REQUERIMIENTOS
+Lista de Módulos del Sistema de Gestión Logística
+El sistema será modular, permitiendo expansión futura. Se implementarán inicialmente 3 módulos (30-40% del proyecto), con opciones de expansión en fases posteriores:
+MÓDULO 1: GESTIÓN DE PRODUCTOS Y CATEGORÍAS (MVP - Mes 1-2)
+Descripción: Catálogo centralizado de productos administrativos disponibles en la clínica
+Requerimientos Funcionales:
+#	Requerimiento	Descripción	Prioridad
+RF-1.1	Crear Categoría de Producto	El administrador logístico puede crear nuevas categorías (Material Oficina, Equipos Cómputo, Mobiliario, Consumibles, Servicios Generales)
+Alta
+RF-1.2	Registrar Nuevo Producto	Ingreso de nuevos productos con: código, nombre, descripción, categoría, unidad de medida, precio unitario, stock mínimo, stock máximo, proveedor principal
+Alta
+RF-1.3	Actualizar Información de Producto	Edición de datos del producto (excepto código para trazabilidad)
+Alta
+RF-1.4	Deshabilitar/Eliminar Producto	Marcar producto como inactivo (no se puede eliminar por auditoría)
+Alta
+RF-1.5	Buscar Producto	Búsqueda por código, nombre o categoría con resultados en tiempo real
+Alta
+RF-1.6	Carga de Imágenes	Cada producto puede tener foto para identificación visual (interfaz simplificada para personal sin experiencia técnica)
+Media
+RF-1.7	Ver Historial de Cambios	Registro de quién modificó qué información y cuándo (auditoría)
+Media
+RF-1.8	Importar Productos desde Excel	Migración de datos existentes desde planillas Excel (solo admin logístico)
+Media
+Requerimientos No Funcionales:
+•	Rendimiento: Búsqueda de productos < 2 segundos (incluso con 5,000+ productos)
+•	Seguridad: Solo admin logístico puede crear/eliminar categorías. Jefes de departamento pueden ver catálogo completo
+•	Disponibilidad: Accesible 24/7 desde cualquier dispositivo
+•	Precisión: Código de producto único (no permitir duplicados)
+MÓDULO 2: GESTIÓN DE SOLICITUDES (MVP - Mes 1-3)
+Descripción: Flujo completo de solicitudes de materiales entre departamentos y logística
+Requerimientos Funcionales:
+#	Requerimiento	Descripción	Prioridad
+RF-2.1	Crear Nueva Solicitud	Empleado administrativo selecciona: departamento, productos, cantidades, fecha requerida, justificación
+Alta
+RF-2.2	Validación Automática de Cantidad	Sistema valida cantidad mínima/máxima según presupuesto del departamento
+Alta
+RF-2.3	Cambio de Estado de Solicitud	Estados: Pendiente → Revisión → Aprobada → Despachada → Entregada → Cancelada
+Alta
+RF-2.4	Notificación de Cambio de Estado	Correo/notificación al solicitante y jefe departamento cuando cambia estado
+Alta
+RF-2.5	Aprobar/Rechazar Solicitud	Jefe de logística revisa y aprueba o rechaza (con motivo si rechaza)
+Alta
+RF-2.6	Registrar Despacho	Almacén registra productos despachados y fecha/hora de entrega
+Alta
+RF-2.7	Confirmar Recepción	Jefe departamento confirma recepción correcta (cantidad y estado de productos)
+Alta
+RF-2.8	Ver Historial Completo	Trazabilidad 100%: quién solicitó, quién aprobó, cuándo se despachó, quién recibió
+Alta
+RF-2.9	Listar Solicitudes Pendientes	Vista filtrada por: estado, departamento, fecha, urgencia
+Alta
+RF-2.10	Marcar Solicitud como Urgente	Opción de priorización con justificación (requiere aprobación del jefe)
+Media
+RF-2.11	Cancelar Solicitud	Solicitante puede cancelar si aún está en estado "Pendiente"
+Media
+RF-2.12	Generar Número de Solicitud	Auto-generación con formato: SJB-FECHA-SECUENCIAL (ej: SJB-20251029-0001)
+Alta
+Requerimientos No Funcionales:
+•	Rendimiento: Carga de lista de solicitudes < 3 segundos
+•	Seguridad:
+•	Solo el solicitante y gerente pueden ver solicitud
+•	Solo jefe logística puede cambiar estado
+•	Solo almacén puede registrar despacho
+•	Precisión: No se pueden crear 2 solicitudes con el mismo número
+•	Auditoría: Registro automático de cada cambio de estado con timestamp y usuario
+MÓDULO 3: GESTIÓN DE INVENTARIO (MVP - Mes 2-3)
+Descripción: Control en tiempo real de stock administrativo
+Requerimientos Funcionales:
+#	Requerimiento	Descripción	Prioridad
+RF-3.1	Registrar Entrada de Compra	Almacén registra recepción de compra: producto, cantidad, lote/serie (si aplica), proveedor, fecha
+Alta
+RF-3.2	Registrar Salida por Solicitud	Sistema actualiza automáticamente stock al registrar despacho de solicitud
+Alta
+RF-3.3	Registrar Ajuste de Inventario	Almacén registra: descuentos por dañado, vencido, pérdida, con justificación (auditoría)
+Alta
+RF-3.4	Consultar Stock Actual	Vista en tiempo real de inventario por producto: cantidad actual, stock mínimo, stock máximo
+Alta
+RF-3.5	Alertas de Stock Mínimo	Notificación automática al jefe logística cuando stock ≤ mínimo
+Alta
+RF-3.6	Alertas de Stock Crítico	Notificación urgente (rojo visual + email) cuando stock = 0
+Alta
+RF-3.7	Movimientos por Ubicación	Registro de ubicación física en almacén (pasillo, estante, caja)
+Media
+RF-3.8	Historial de Movimientos	Trazabilidad completa: qué producto, cuándo, cuánto, quién, tipo de movimiento
+Alta
+RF-3.9	Proyección de Stock	Basada en consumo histórico, estima días de inventario restantes
+Media
+RF-3.10	Conteo Físico Asistido	App para contar físicamente productos en almacén y comparar con sistema
+Media
+RF-3.11	Reporte de Diferencias	Genera reporte de discrepancias: físico vs sistema (auditoría)
+Alta
+RF-3.12	Transferencia entre Áreas	Registro de movimiento de productos entre departamentos (ej: sobra en un área falta en otra)
+Media
+Requerimientos No Funcionales:
+•	Rendimiento: Actualización de stock en < 1 segundo después de cada movimiento
+•	Precisión: ±2% discrepancia permitida (entre físico y sistema)
+•	Seguridad: Solo almacén y jefe logística pueden crear movimientos
+•	Integridad de datos: No se pueden eliminar movimientos (solo registrar correcciones)
+MÓDULO 4: REPORTES Y ANALÍTICA (MVP - Fase 2, Mes 3+)
+Descripción: Generación de reportes automáticos para toma de decisiones
+Requerimientos Funcionales (no prioritarios para MVP 30-40%):
+#	Requerimiento	Descripción	Prioridad
+RF-4.1	Reporte de Solicitudes Atendidas	Por período, departamento, estado (filtrable)
+Media
+RF-4.2	Consumo por Departamento	Qué cantidad gastó cada área en productos (cost allocation)
+Media
+RF-4.3	Productos Más Solicitados	Top 10 productos por frecuencia/cantidad
+Media
+RF-4.4	Rotación de Inventario	Productos de alta rotación vs sin movimiento hace X meses
+Media
+RF-4.5	Análisis de Costos	Comparativa de gasto presupuestado vs real por mes
+Media
+RF-4.6	Tiempo Promedio Atención	KPI: días promedio desde solicitud hasta entrega
+Media
+RF-4.7	Dashboard Ejecutivo	Gráficos interactivos para gerencia: KPIs, alertas, tendencias
+Baja
+RF-4.8	Exportar Reportes	PDF, Excel, con opción de envío por email automático
+Media
+
+MÓDULO 5: ADMINISTRACIÓN Y SEGURIDAD (MVP - Mes 1)
+Descripción: Gestión de usuarios, permisos y auditoría
+Requerimientos Funcionales:
+#	Requerimiento	Descripción	Prioridad
+RF-5.1	Crear Cuenta de Usuario	Registro de empleado: nombre, email, departamento, rol
+Alta
+RF-5.2	Asignar Roles y Permisos	Roles: Admin, Jefe Logística, Personal Almacén, Jefe Departamento, Usuario General
+Alta
+RF-5.3	Login con Email/Contraseña	Autenticación segura con hashing de contraseña
+Alta
+RF-5.4	Recuperar Contraseña	Link de reset enviado por email
+Alta
+RF-5.5	Cambiar Contraseña	Usuario puede cambiar su contraseña
+Media
+RF-5.6	Desactivar Usuario	Admin desactiva cuenta (no se borra, solo se marca como inactiva)
+Alta
+RF-5.7	Registro de Auditoría	Log automático de: quién accedió, cuándo, qué hizo (crear/modificar/eliminar)
+Alta
+RF-5.8	Control de Acceso por Rol	Cada rol solo ve y hace lo que le corresponde
+Alta
+RF-5.9	Sesión Segura	Timeout de inactividad (15 min auto-logout)
+Media
+RF-5.10	Encriptación de Datos	Datos sensibles encriptados en base de datos
+Alta
+Requerimientos No Funcionales:
+•	Seguridad: Cumplimiento básico de OWASP Top 10
+•	Privacidad: No se registran contraseñas en logs
+•	Integridad: Toda modificación requiere autenticación de usuario
+________________________________________
+MÓDULO 6: PROVEEDORES (Opcional - Fase 2+)
+Descripción: Gestión centralizada de datos de proveedores (no prioritario para MVP 30-40%)
+Requerimientos Básicos (Futuro):
+•	RF-6.1: Registrar proveedor con: nombre, RUC, contactos, dirección, condiciones pago
+•	RF-6.2: Historial de compras por proveedor
+•	RF-6.3: Calificación de desempeño (calidad, tiempos, precios)
+•	RF-6.4: Contactos y representantes
+Resumen: Módulos por Fase de Implementación
+Fase	Módulos	Porcentaje del Sistema	Duración	Objetivo
+MVP (Fase 1)	Productos, Solicitudes, Inventario, Seguridad	30-40%	Mes 1-3	Validar concepto con Clínica SJB
+Fase 2	+ Reportes, + Proveedores	60-70%	Mes 4-6	Expansión de funcionalidades
+Fase 3	+ Contabilidad, + RRHH, Multi-sede	90%+	Mes 7-12	Solución integral
+
+REQUERIMIENTOS FUNCIONALES DETALLADOS - SISTEMA DE GESTIÓN LOGÍSTICA
+MÓDULO 1: GESTIÓN DE SOLICITUDES DE MATERIALES
+Descripción: Solicitud y seguimiento de productos administrativos desde cualquier departamento
+1. Registro de Solicitudes
+ID	Requerimiento	Descripción Técnica
+RF-SOL-01	Crear solicitud de producto	Cuando el empleado administrativo seleccione un producto, el sistema deberá añadirlo automáticamente a la lista de solicitud en curso, para que visualice en tiempo real los artículos seleccionados y cantidad solicitada
+RF-SOL-02	Eliminar producto de solicitud	Cuando el empleado elimine un producto de la lista de solicitud, el sistema deberá actualizar automáticamente el detalle y calcular el costo total estimado, para que el solicitante confirme la corrección antes de enviar
+RF-SOL-03	Registrar especificaciones/personalizaciones	Cuando el empleado indique especificaciones en su solicitud (ejemplo: marca específica, color, tamaño, cantidad mínima), el sistema deberá registrar las notas asociadas al producto, para que logística reciba instrucciones claras y se reduzcan errores en un 80%
+RF-SOL-04	Solicitud por link compartido	[NUEVA FUNCIONALIDAD] Cuando el jefe de logística comparta un link público con un formulario pre-llenado de productos frecuentes, los empleados de departamentos podrán acceder sin login y realizar solicitudes rápidas, para simplificar el proceso en horarios de alta demanda
+RF-SOL-05	Solicitud por carga de imagen/documento	[NUEVA FUNCIONALIDAD] Cuando un empleado suba una imagen de un listado físico o un documento (requisición en papel escaneada, PDF), el sistema deberá permitir OCR (extracción de texto) para pre-llenar campos automáticamente y el usuario confirme/corrija antes de enviar, para acelerar digitización de solicitudes manuales
+RF-SOL-06	Validación automática de cantidad	Cuando el empleado ingrese cantidad, el sistema deberá validar cantidad mínima/máxima según presupuesto disponible del departamento, para prevenir solicitudes fuera de límites
+RF-SOL-07	Auto-guardado de solicitud en curso	El sistema deberá guardar automáticamente la solicitud cada 30 segundos mientras se está editando, para prevenir pérdida de datos si hay cierre inesperado
+RF-SOL-08	Generar número de solicitud	Cuando se registre una solicitud, el sistema deberá auto-generar número único con formato: SJB-FECHA-SECUENCIAL (ej: SJB-20251029-0001), para trazabilidad
+2. Visualización de Productos en Formulario
+ID	Requerimiento	Descripción Técnica
+RF-SOL-09	Mostrar catálogo de productos con imágenes	Cuando el empleado acceda a crear solicitud, el sistema deberá mostrar imágenes grandes de los productos disponibles con nombre, código y descripción claramente visibles, para que el solicitante pueda confirmar visualmente su solicitud y reducir errores en un 50%
+RF-SOL-10	Vista previa ampliada de producto	Cuando se seleccione un producto, el sistema deberá mostrar una vista previa con imagen ampliada, descripción completa, stock disponible y opciones de especificación, para que el empleado pueda confirmar la selección antes de añadirla
+RF-SOL-11	Optimizar imágenes automáticamente	Cuando el sistema cargue las imágenes de productos, deberá optimizarlas automáticamente a tamaño y resolución estándar (máx 2MB, 1200x1200px), para garantizar visualización clara en dispositivos táctiles y diferentes pantallas sin afectar rendimiento
+RF-SOL-12	Búsqueda y filtrado de productos	Cuando el empleado busque un producto, el sistema deberá permitir búsqueda por: código, nombre, categoría y mostrar resultados en < 2 segundos, para acelerar selección
+RF-SOL-13	Ver stock disponible en tiempo real	Cuando se visualice un producto, el sistema deberá mostrar stock actual, stock mínimo y estado (disponible/bajo/crítico) con indicador visual de color, para que solicitante sepa si hay disponibilidad inmediata
+
+3. Cambio de Estado y Flujo
+ID	Requerimiento	Descripción Técnica
+RF-SOL-14	Cambio de estado de solicitud	El sistema deberá permitir transiciones de estado: Pendiente → En Revisión → Aprobada → Despachada → Entregada / Cancelada, para seguimiento del flujo
+RF-SOL-15	Notificación de cambio de estado	Cuando cambie el estado de una solicitud, el sistema deberá enviar email/notificación al solicitante, jefe departamento y jefe logística con el nuevo estado y fecha, para mantener informados a todos
+RF-SOL-16	Aprobar/Rechazar solicitud	Cuando el jefe de logística revise una solicitud, podrá aprobarla o rechazarla con motivo (stock insuficiente, fuera de presupuesto, producto descontinuado), para gestionar demandas
+RF-SOL-17	Registrar despacho desde almacén	Cuando el personal de almacén registre el despacho de una solicitud, deberá indicar: productos despachados, cantidades reales, fecha/hora, para actualizar inventario automáticamente
+RF-SOL-18	Confirmar recepción en departamento	Cuando el jefe departamento reciba los materiales, deberá confirmar: cantidad recibida vs solicitada, estado de productos (ok/dañado), para cerrar solicitud y registrar recepción completa
+4. Trazabilidad e Historial
+ID	Requerimiento	Descripción Técnica
+RF-SOL-19	Ver historial completo de solicitud	Cuando se abra una solicitud, el sistema deberá mostrar trazabilidad 100%: quién solicitó, fecha, quién aprobó, cuándo se despachó, quién recibió, con timestamps exactos, para auditoría
+RF-SOL-20	Listar solicitudes pendientes filtradas	El sistema deberá mostrar vista de solicitudes activas filtrable por: estado, departamento, fecha, urgencia, usuario, para gestión eficiente de logística
+RF-SOL-21	Marcar solicitud como urgente	Si una solicitud es crítica, el empleado deberá poder marcarla como "Urgente" con justificación (requiere aprobación del jefe inmediato), para priorización
+RF-SOL-22	Cancelar solicitud	Cuando solicitante marque solicitud como cancelada (si aún está en estado "Pendiente"), el sistema deberá registrar motivo y fecha, manteniendo el historial para auditoría
+RF-SOL-23	Exportar detalle de solicitud	El sistema deberá permitir exportar solicitud a PDF/Excel con todos los detalles: productos, cantidades, especificaciones, estados, fechas, para archivo o comunicación externa
+MÓDULO 2: GESTIÓN DE PRODUCTOS Y CATEGORÍAS
+Descripción: Catálogo centralizado de productos administrativo
+1. Alta, Baja y Modificación de Productos
+ID	Requerimiento	Descripción Técnica
+RF-GP-01	Crear nuevo producto	Cuando el administrador acceda a gestión de productos, el sistema deberá mostrar formulario para registrar: nombre, código único, descripción, categoría, unidad medida, precio unitario, stock mínimo, stock máximo, proveedor principal, para incorporación al catálogo
+RF-GP-02	Editar información de producto	Cuando el administrador seleccione un producto existente, podrá editar: precio, nombre, descripción, disponibilidad (activo/inactivo), especificaciones, para mantener catálogo actualizado
+RF-GP-03	Dar de baja producto	Cuando el administrador elimine un producto, el sistema deberá marcarlo como "inactivo" sin borrar su historial de solicitudes asociadas, para preservar trazabilidad histórica
+RF-GP-04	Validar código único de producto	El sistema deberá rechazar duplicación de códigos de productos, mostrando error claro al usuario, para evitar confusiones en catalogación
+RF-GP-05	Importar productos desde Excel	El sistema deberá permitir importar múltiples productos desde archivo Excel con validación automática de campos requeridos, para migración de datos existentes
+2. Carga y Optimización de Imágenes
+ID	Requerimiento	Descripción Técnica
+RF-GP-06	Cargar imagen de producto	Cuando el administrador suba una imagen de producto, el sistema deberá aceptarla y permitir vista previa antes de guardar, para validación visual
+RF-GP-07	Redimensionamiento automático	El sistema deberá redimensionar automáticamente imágenes a tamaño estándar (1200x1200px) para visualización uniforme en interfaz de solicitud, para consistencia
+RF-GP-08	Optimizar peso y formato	El sistema deberá optimizar el peso del archivo (máx 2MB comprimido) sin perder calidad visual, para no afectar rendimiento en dispositivos móviles o baja conectividad
+RF-GP-09	Validar formato de archivo	El sistema deberá validar tipo de archivo (JPG, PNG) y rechazar formatos no compatibles (BMP, GIF, TIFF), mostrando mensaje de error claro, para evitar problemas de visualización
+RF-GP-10	Permitir múltiples imágenes	El sistema deberá permitir cargar hasta 3 imágenes por producto (frontal, lateral, detalle), para visualización más completa
+3. Categorías de Productos
+ID	Requerimiento	Descripción Técnica
+RF-GP-11	Crear categoría	Cuando el administrador cree una categoría, el sistema deberá permitir asignar: nombre, descripción, color identificador, para organización visual clara
+RF-GP-12	Editar categoría	Cuando se edite información de categoría, el sistema deberá actualizar automáticamente visualización en todos los productos asociados, para consistencia
+RF-GP-13	Eliminar categoría con validación	Cuando el administrador elimine una categoría, el sistema deberá solicitar confirmación y reasignar productos a categoría "Sin Clasificar" automáticamente, para no perder visibilidad
+RF-GP-14	Jerarquía de subcategorías	El sistema deberá permitir crear subcategorías dentro de categorías (ej: Material Oficina → Papel, Material Oficina → Escritura), para mejor organización
+RF-GP-15	Ver productos por categoría	Cuando se seleccione una categoría, el sistema deberá mostrar todos los productos asociados con cantidad de items, para navegación rápida
+MÓDULO 3: GESTIÓN DE INVENTARIO
+Descripción: Control en tiempo real de stock administrativo
+1. Registro de Movimientos
+ID	Requerimiento	Descripción Técnica
+RF-INV-01	Registrar entrada de compra	Cuando el almacén reciba una compra, deberá registrar: producto, cantidad, lote/serie, proveedor, fecha recepción, precio unitario, para actualizar stock automáticamente
+RF-INV-02	Registrar salida por solicitud aprobada	Cuando se apruebe despacho de solicitud, el sistema deberá restar automáticamente del inventario la cantidad despachada, actualizando stock en tiempo real
+RF-INV-03	Registrar ajuste de inventario	Cuando haya discrepancia (dañado, vencido, pérdida), el almacén deberá registrar ajuste con: motivo, cantidad, foto de evidencia (opcional), para auditoría
+RF-INV-04	Transferencia entre áreas	El sistema deberá permitir registrar movimiento de productos entre departamentos (cuando un área tiene sobra y otra falta), generando "salida" en una y "entrada" en otra
+RF-INV-05	Registro de devoluciones	Si un producto no es usado y se devuelve al almacén, el sistema deberá permitir registrarlo como entrada nuevamente, para reutilización
+2. Consulta de Stock y Alertas
+ID	Requerimiento	Descripción Técnica
+RF-INV-06	Consultar stock actual	El sistema deberá mostrar en tiempo real para cada producto: cantidad actual, stock mínimo configurado, stock máximo, estado (disponible/bajo/crítico), para visibilidad
+RF-INV-07	Alertas de stock mínimo	Cuando stock ≤ mínimo configurado, el sistema deberá notificar al jefe logística (email + notificación dentro del sistema) para preparar nueva compra
+RF-INV-08	Alertas de stock crítico	Cuando stock = 0 o próximo a cero, el sistema deberá generar alerta urgente (rojo visual, notificación inmediata) al jefe logística para compra emergente
+RF-INV-09	Proyección de stock	Basada en consumo histórico, el sistema deberá calcular cuántos días de inventario quedan en stock actual, para planeación de compras
+RF-INV-10	Ver movimientos por producto	Cuando se seleccione un producto, el sistema deberá mostrar historial de movimientos (últimos 30 días): fecha, tipo (entrada/salida/ajuste), cantidad, usuario responsable, para trazabilidad
+3. Ubicación y Trazabilidad Física
+ID	Requerimiento	Descripción Técnica
+RF-INV-11	Registrar ubicación física en almacén	Para productos en almacén, el sistema deberá permitir registrar ubicación: pasillo, estante, caja, posición, para búsqueda rápida física
+RF-INV-12	Conteo físico asistido	El sistema deberá permitir conteo físico mediante QR/app móvil: escanear producto, ingresar cantidad contada, comparar con sistema, para auditoria
+RF-INV-13	Reporte de discrepancias	Después de conteo físico, el sistema deberá generar reporte: producto, cantidad esperada vs contada, diferencia, porcentaje variación, para análisis de mermas
+RF-INV-14	Historial de cambios de ubicación	El sistema deberá registrar cada vez que se mueve un producto de ubicación, con fecha y usuario, para trazabilidad física completa
+MÓDULO 4: REPORTES Y ANÁLISIS
+Descripción: Generación automática de reportes para toma de decisiones
+1. Reportes de Solicitudes
+ID	Requerimiento	Descripción Técnica
+RF-REP-01	Reporte de solicitudes por período	Cuando el administrador seleccione rango de fechas, el sistema deberá generar reporte con: total solicitudes, solicitudes aprobadas, rechazadas, en proceso, para evaluar gestión
+RF-REP-02	Reporte de solicitudes por departamento	El sistema deberá mostrar: qué departamento solicitó más, gasto promedio por área, productos más solicitados por departamento, para análisis de consumo
+RF-REP-03	Tiempo promedio de atención	El sistema deberá calcular: días promedio desde solicitud hasta entrega, variación por tipo de producto, para optimización de procesos
+RF-REP-04	Reporte de solicitudes incumplidas	El sistema deberá identificar solicitudes que se despacharon después de fecha requerida, cantidad y causas (stock, aprobación lenta, etc.), para mejora
+RF-REP-05	Exportar reporte a PDF/Excel	Todo reporte deberá permitir exportación a PDF (para presentaciones) o Excel (para análisis externo), con opción de envío automático por email
+2. Análisis de Consumo y Costos
+ID	Requerimiento	Descripción Técnica
+RF-REP-06	Productos más solicitados	El sistema deberá mostrar Top 10 productos por: frecuencia, cantidad, costo total, para identificar ítems críticos
+RF-REP-07	Rotación de inventario	El sistema deberá clasificar productos en: alta rotación (movimiento semanal), rotación media (mensual), baja rotación (sin movimiento > 90 días), para gestión de stock
+RF-REP-08	Análisis de costos por departamento	El sistema deberá mostrar gasto total, gasto promedio por empleado, comparativa con presupuesto asignado, para control presupuestal
+RF-REP-09	Comparativa de costos históricos	El sistema deberá comparar costos actuales vs período anterior (mes anterior, año pasado), mostrando variación porcentual, para identificar tendencias
+RF-REP-10	Productos vencidos o sin rotación	El sistema deberá generar reporte de productos que no se han movido en X meses, para evaluar si deben descontinuarse
+3. Dashboard Ejecutivo
+ID	Requerimiento	Descripción Técnica
+RF-REP-11	Dashboard de KPIs	El sistema deberá mostrar gráficos interactivos con: solicitudes completadas, tiempo promedio atención, precisión inventario, costo mes actual vs presupuesto, tasa error, para visión ejecutiva
+RF-REP-12	Alertas visuales en dashboard	Cuando haya alertas críticas (stock crítico, solicitud vencida, gasto fuera presupuesto), el sistema deberá destacarlas en rojo en el dashboard, para atención inmediata
+RF-REP-13	Tendencias gráficas	El sistema deberá mostrar gráficos de tendencia: consumo mensual, costos, solicitudes por semana, para identificar patrones
+RF-REP-14	Reportes personalizables	El usuario deberá poder crear reportes personalizados seleccionando: período, métricas, filtros, para análisis específico
+MÓDULO 5: ADMINISTRACIÓN Y SEGURIDAD
+Descripción: Gestión de usuarios, permisos y auditoría
+1. Gestión de Usuarios y Roles
+ID	Requerimiento	Descripción Técnica
+RF-AU-01	Crear cuenta de usuario	Cuando el administrador registre un nuevo empleado, el sistema deberá permitir: nombre, email, departamento, puesto, para crear acceso
+RF-AU-02	Asignar rol y permisos	El sistema deberá ofrecer roles predefinidos: Admin Logística, Jefe Departamento, Personal Almacén, Empleado General, permitiendo permisos específicos por rol
+RF-AU-03	Crear roles personalizados	El administrador deberá poder crear un rol nuevo con permisos específicos, para adaptarse a estructura particular de clínica
+RF-AU-04	Desactivar usuario	Cuando un empleado se retire, el administrador deberá desactivar su cuenta (no eliminarlo), para preservar historial de operaciones
+RF-AU-05	Recuperar contraseña	El sistema deberá enviar link de reset de contraseña por email, con expiración de 24 horas, para recuperación segura de acceso
+2. Control de Accesos
+ID	Requerimiento	Descripción Técnica
+RF-AU-06	Login seguro	El sistema deberá requerir email y contraseña, con encriptación de datos y sesión segura, para protección de acceso
+RF-AU-07	Validación de permisos por rol	Cuando un usuario intente acceder a función, el sistema deberá verificar si su rol tiene permiso, rechazando acceso no autorizado, para seguridad
+RF-AU-08	Actualizar permisos de rol	Cuando se modifiquen permisos de un rol, el sistema deberá actualizar automáticamente acceso de todos los empleados con ese rol, para consistencia
+RF-AU-09	Timeout de inactividad	El sistema deberá cerrar sesión automáticamente después de 15 minutos de inactividad, para seguridad en dispositivos compartidos
+RF-AU-10	Cambiar contraseña personal	El usuario deberá poder cambiar su propia contraseña en cualquier momento, requiriendo contraseña antigua para validación
+3. Auditoría y Registro de Actividad
+ID	Requerimiento	Descripción Técnica
+RF-AU-11	Registrar todas las operaciones	El sistema deberá guardar automáticamente cada operación (crear/modificar/eliminar) con: usuario, fecha, hora, qué se hizo, para auditoría completa
+RF-AU-12	Ver historial de actividades	El administrador deberá poder consultar bitácora filtrable por: usuario, fecha, tipo acción, para revisión de operaciones
+RF-AU-13	Alertar de acciones críticas	Cuando se detecte acción crítica (eliminar producto, ajuste manual grande de inventario, cambio de permisos), el sistema deberá notificar al administrador inmediatamente
+RF-AU-14	No permitir eliminación de registros	El sistema no deberá permitir eliminar datos históricos de auditoría (solo marcar como archivado), para preservar evidencia
+RF-AU-15	Exportar reporte de auditoría	El administrador deberá poder exportar historial de auditoría a PDF/Excel para presentación o archivo legal
+MÓDULO 6: PROVEEDORES (Opcional - Fase 2)
+Descripción: Gestión centralizada de datos de proveedores (no priorizado para MVP 30-40%)
+1. Registro de Proveedores
+ID	Requerimiento	Descripción Técnica
+RF-PROV-01	Crear registro de proveedor	Cuando el administrador registre un proveedor, deberá capturar: nombre, RUC, contactos, dirección, condiciones de pago, para gestión centralizada
+RF-PROV-02	Editar información del proveedor	El administrador deberá poder actualizar datos del proveedor sin perder historial de compras asociadas
+RF-PROV-03	Historial de compras por proveedor	El sistema deberá mostrar todas las compras realizadas a cada proveedor, montos, fechas, productos, para análisis
+RF-PROV-04	Calificación de proveedor	El sistema deberá permitir calificar a proveedores según: calidad, tiempos de entrega, precios, para toma de decisiones
+Resumen de Requerimientos Funcionales
+Módulo	Total Requerimientos	Prioridad MVP	Prioridad Fase 2
+Gestión Solicitudes	23 RF	18 (Alta)	5 (Media)
+Gestión Productos	15 RF	12 (Alta)	3 (Media)
+Gestión Inventario	14 RF	10 (Alta)	4 (Media)
+Reportes	14 RF	5 (Alta)	9 (Media)
+Administración	15 RF	12 (Alta)	3 (Media)
+Proveedores	4 RF	0	4 (Media)
+TOTAL	85 RF	57 RF (67%)	28 RF (33%)
+
+DIAGRAMA DE CASOS DE USO — VISIÓN GENERAL
+Sistema de Gestión Logística Administrativa - Clínica San Juan Bautista
+ACTORES PRINCIPALES
+Actor	Rol	Descripción
+👤 Jefe de Logística	Administrador Principal	Responsable de gestionar todo el área logística, aprobar solicitudes, configurar sistema, generar reportes ejecutivos
+👤 Personal de Almacén	Operativo	Encargado de registrar entradas, salidas, controlar inventario físico, despachar solicitudes
+👤 Jefe de Departamento	Solicitante Autorizado	Crea solicitudes para su área, aprueba solicitudes de su equipo, confirma recepciones
+👤 Empleado Administrativo	Usuario General	Crea solicitudes básicas de materiales para su departamento
+👤 Gerente/Dirección	Supervisor Ejecutivo	Consulta reportes ejecutivos, dashboards, aprueba presupuestos y compras mayores
+🌐 Proveedor	Actor Externo	Recibe notificaciones de pedidos, actualiza estado de entregas (opcional - Fase 2)
+🖥️ Sistema de Contabilidad	Sistema Externo	Recibe información de costos y movimientos para integración contable (opcional - Fase 2)
+SUBSISTEMA COMÚN
+🔐 LOGIN / Autenticación
+Descripción: Caso de uso incluido por todos los actores que requieren autenticación
+Precondición: Usuario tiene cuenta creada en el sistema
+Flujo:
+1.	Usuario ingresa email y contraseña
+2.	Sistema valida credenciales
+3.	Sistema verifica permisos según rol
+4.	Sistema crea sesión segura (JWT)
+5.	Usuario accede a funcionalidades permitidas por su rol
+RF relacionados: RF-AU-06, RF-AU-07, RF-AU-09
+Caso de Uso	Actor Principal	Descripción	RF Relacionados
+Crear Solicitud	Empleado Administrativo, Jefe Departamento	Solicitar materiales administrativos seleccionando productos del catálogo
+RF-SOL-01, RF-SOL-02, RF-SOL-03, RF-SOL-06, RF-SOL-08
+Crear Solicitud por Link	Empleado Administrativo	Solicitar productos a través de link compartido sin login requerido
+RF-SOL-04
+Crear Solicitud por Imagen	Empleado Administrativo	Subir imagen/documento escaneado con OCR para digitalizacion automática	RF-SOL-05
+Aprobar/Rechazar Solicitud	Jefe de Logística	Revisar solicitudes pendientes y aprobar o rechazar con justificación
+RF-SOL-16
+Despachar Solicitud	Personal Almacén	Registrar productos despachados y actualizar inventario automáticamente
+RF-SOL-17, RF-INV-02
+Confirmar Recepción	Jefe Departamento	Confirmar que productos fueron recibidos correctamente
+RF-SOL-18
+Consultar Estado Solicitud	Empleado Administrativo, Jefe Departamento	Ver estado actual y trazabilidad completa de solicitud
+RF-SOL-19, RF-SOL-20
+Cancelar Solicitud	Empleado Administrativo	Cancelar solicitud si está en estado "Pendiente"
+RF-SOL-22
+CASOS DE USO PRINCIPALES
+MÓDULO 1: GESTIÓN DE SOLICITUDES
+MÓDULO 2: GESTIÓN DE PRODUCTOS
+Caso de Uso	Actor Principal	Descripción	RF Relacionados
+Ver Catálogo de Productos	Todos los usuarios autenticados	Consultar productos disponibles con imágenes y especificaciones
+RF-SOL-09, RF-SOL-12, RF-GP-01
+Registrar Producto	Jefe de Logística	Crear nuevo producto en el catálogo con datos completos
+RF-GP-01, RF-GP-04
+Modificar Producto	Jefe de Logística	Editar información de producto existente (precio, descripción, stock)
+RF-GP-02
+Deshabilitar Producto	Jefe de Logística	Marcar producto como inactivo sin eliminar historial
+RF-GP-03
+Cargar Imagen de Producto	Jefe de Logística	Subir y optimizar imágenes de productos para catálogo visual
+RF-GP-06, RF-GP-07, RF-GP-08, RF-GP-09
+Gestionar Categorías	Jefe de Logística	Crear, editar, eliminar categorías de productos
+RF-GP-11, RF-GP-12, RF-GP-13
+MÓDULO 3: GESTIÓN DE INVENTARIO
+Caso de Uso	Actor Principal	Descripción	RF Relacionados
+Registrar Entrada de Compra	Personal Almacén	Registrar recepción de productos de proveedores
+RF-INV-01
+Registrar Salida Manual	Personal Almacén	Registrar salida no asociada a solicitud (préstamo, transferencia)
+RF-INV-02
+Registrar Ajuste de Inventario	Personal Almacén, Jefe Logística	Corregir discrepancias por dañados, vencidos, mermas
+RF-INV-03
+Consultar Stock Actual	Todos los usuarios autenticados	Ver inventario en tiempo real con indicadores visuales
+RF-INV-06
+Recibir Alertas de Stock	Jefe de Logística	Notificaciones automáticas cuando stock ≤ mínimo
+RF-INV-07, RF-INV-08
+Realizar Conteo Físico	Personal Almacén	Contar físicamente productos y comparar con sistema
+RF-INV-12
+Ver Movimientos de Inventario	Jefe de Logística, Personal Almacén	Consultar historial completo de movimientos por producto
+RF-INV-10
+Transferir entre Áreas	Personal Almacén	Registrar movimiento de productos entre departamentos
+RF-INV-04
+MÓDULO 4: REPORTES Y ANÁLISIS
+Caso de Uso	Actor Principal	Descripción	RF Relacionados
+Generar Reporte de Solicitudes	Jefe de Logística, Gerencia	Reporte por período, departamento, estado
+RF-REP-01, RF-REP-02
+Analizar Consumo por Departamento	Jefe de Logística, Gerencia	Gasto por área, productos más solicitados
+RF-REP-02, RF-REP-08
+Consultar Tiempo Promedio Atención	Jefe de Logística	KPI de días promedio desde solicitud hasta entrega
+RF-REP-03
+Ver Productos Más/Menos Solicitados	Jefe de Logística	Top 10 productos críticos y sin rotación
+RF-REP-06, RF-REP-10
+Ver Dashboard Ejecutivo	Gerencia, Jefe de Logística	Gráficos interactivos con KPIs principales
+RF-REP-11, RF-REP-12, RF-REP-13
+Exportar Reportes	Jefe de Logística, Gerencia	Exportar a PDF/Excel para presentaciones
+RF-REP-05
+MÓDULO 5: ADMINISTRACIÓN Y SEGURIDAD
+Caso de Uso	Actor Principal	Descripción	RF Relacionados
+Gestionar Empleados	Jefe de Logística	Crear, editar, desactivar cuentas de usuarios
+RF-AU-01, RF-AU-04
+Asignar Roles y Permisos	Jefe de Logística	Configurar roles predefinidos y permisos específicos
+RF-AU-02, RF-AU-03, RF-AU-08
+Ver Bitácora de Auditoría	Jefe de Logística, Gerencia	Consultar registro de todas las operaciones del sistema
+RF-AU-12
+Recuperar Contraseña	Todos los usuarios	Solicitar reset de contraseña por email
+RF-AU-05
+Cambiar Contraseña Personal	Todos los usuarios	Modificar su propia contraseña
+RF-AU-10
+MÓDULO 6: PROVEEDORES (Opcional - Fase 2)
+Caso de Uso	Actor Principal	Descripción	RF Relacionados
+Registrar Proveedor	Jefe de Logística	Crear ficha de proveedor con datos completos	RF-PROV-01
+Calificar Proveedor	Jefe de Logística	Evaluar desempeño (calidad, tiempos, precios)	RF-PROV-04
+Ver Historial de Compras	Jefe de Logística	Consultar compras realizadas a cada proveedor	RF-PROV-03
+RELACIONES IMPORTANTES ENTRE CASOS DE USO
+Relaciones <<include>> (Inclusión - Siempre Ocurre)
+Caso de Uso Base	Incluye	Razón
+Todos los casos de uso	LOGIN / Autenticación	Todos los actores deben autenticarse antes de operar
+Crear Solicitud	Ver Catálogo de Productos	Para solicitar, el usuario debe ver productos disponibles
+Crear Solicitud	Consultar Stock Actual	Para validar disponibilidad antes de solicitar
+Despachar Solicitud	Registrar Salida de Inventario	Despacho automáticamente actualiza inventario
+Registrar Entrada de Compra	Actualizar Stock	Entrada automáticamente suma al inventario
+Generar Reporte	Consultar Movimientos de Inventario	Reportes deben reflejar datos actualizados de inventario
+Aprobar Solicitud	Validar Presupuesto Disponible	Verificar que departamento tiene presupuesto antes de aprobar
+Relaciones <<extend>> (Extensión - Puede Ocurrir)
+Caso de Uso Base	Extensión	Condición
+Registrar Producto	Cargar Imagen de Producto	Solo si admin decide subir imagen (opcional)
+Crear Solicitud	Marcar como Urgente	Solo si es solicitud crítica con justificación
+Consultar Stock Actual	Notificar Proveedor	Solo si stock ≤ mínimo y se requiere compra urgente
+Despachar Solicitud	Registrar Producto Dañado	Solo si durante despacho se detecta producto en mal estado
+Generar Reporte	Enviar por Email Automático	Solo si usuario configura envío programado
+Aprobar Solicitud	Solicitar Autorización Gerencia	Solo si monto supera límite de autorización del jefe logística
+________________________________________
+Relaciones de Generalización (Herencia)
+Caso de Uso General	Casos de Uso Especializados
+Crear Solicitud	- Crear Solicitud Estándar
+- Crear Solicitud por Link
+- Crear Solicitud por Imagen (OCR)
+Registrar Movimiento Inventario	- Registrar Entrada
+- Registrar Salida
+- Registrar Ajuste
+- Registrar Transferencia
+Generar Reporte	- Reporte de Solicitudes
+- Reporte de Consumo
+- Reporte de Costos
+- Reporte de Inventario
+DIAGRAMA DE FLUJO DE SOLICITUD (Caso de Uso Central)
+Flujo Principal: "Crear y Completar Solicitud"
+[Empleado Administrativo] 
+    → LOGIN (include)
+    → Ver Catálogo de Productos (include)
+    → Crear Solicitud
+        ↳ Consultar Stock (include)
+        ↳ Marcar como Urgente (extend - condicional)
+    → Enviar Solicitud
+
+[Jefe de Logística]
+    → LOGIN (include)
+    → Aprobar/Rechazar Solicitud
+        ↳ Validar Presupuesto (include)
+        ↳ Solicitar Autorización Gerencia (extend - si monto alto)
+
+
+[Personal Almacén]
+    → LOGIN (include)
+    → Despachar Solicitud
+        ↳ Registrar Salida Inventario (include)
+        ↳ Registrar Producto Dañado (extend - condicional)
+
+[Jefe Departamento]
+    → LOGIN (include)
+    → Confirmar Recepción
+    → Solicitud COMPLETADA
+RESUMEN DE CASOS DE USO POR ACTOR
+Actor	Casos de Uso Principales	Total
+Jefe de Logística	Gestión completa: productos, solicitudes, inventario, reportes, usuarios	25
+Personal Almacén	Inventario, despachos, entradas, conteos	8
+Jefe Departamento	Solicitudes, aprobaciones, consultas	6
+Empleado Administrativo	Solicitudes básicas, consultas	4
+Gerencia	Reportes ejecutivos, dashboards	5
+Esta estructura de casos de uso está completamente alineada con:
+•	Requerimientos funcionales definidos previamente
+•	Arquitectura MVC con separación de responsabilidades
+•	Principios SOLID aplicados en diseño de clases
+•	TDD para testing de cada caso de uso por separado
+
+ESPECIFICACIÓN DETALLADA DE CASOS DE USO
+Sistema de Gestión Logística Administrativa - Clínica San Juan Bautista
+
+CU-01: Crear Solicitud de Materiales
+ID: CU-SOL-01
+Actor principal: Empleado Administrativo, Jefe de Departamento
+Actores secundarios: Sistema de Inventario (verifica stock disponible)
+Objetivo: Registrar una solicitud de productos administrativos de forma rápida, visual y sin errores, con validación automática de disponibilidad.
+Precondición:
+•	Usuario autenticado con rol permitido (LOGIN realizado - RF-AU-06)
+•	Catálogo de productos cargado y actualizado (RF-GP-01)
+•	Stock disponible consultable en tiempo real (RF-INV-06)
+•	Departamento del usuario configurado en el sistema
+Postcondición:
+•	Solicitud registrada en sistema con número único (SJB-FECHA-SEC) - RF-SOL-08
+•	Estado inicial: "Pendiente"
+•	Notificación enviada al Jefe de Logística (RF-SOL-15)
+•	Productos incluidos visibles con especificaciones
+•	Costo estimado calculado (si aplica)
+Flujo Principal (Éxito):
+1.	Usuario accede a módulo "Nueva Solicitud" → sistema muestra catálogo de productos con imágenes (RF-SOL-09)
+2.	Usuario selecciona categoría → sistema muestra productos de esa categoría con imágenes grandes, nombre, código, stock disponible con indicador visual de color (RF-SOL-10, RF-SOL-13)
+3.	Usuario selecciona producto (un clic en imagen) → sistema añade a lista de solicitud en curso (RF-SOL-01)
+4.	Usuario ingresa cantidad requerida → sistema valida contra stock disponible y límites presupuestales del departamento (RF-SOL-06)
+5.	Usuario añade especificaciones/notas (marca específica, color, tamaño) → sistema asocia notas al producto (RF-SOL-03)
+6.	Sistema recalcula costo estimado total en < 2 segundos (RNF-01.1)
+7.	Usuario confirma solicitud → sistema genera número único y guarda como "Pendiente" (RF-SOL-08)
+8.	Sistema envía notificación al Jefe de Logística (RF-SOL-15)
+9.	Sistema muestra resumen con número de solicitud y estado
+Flujos Alternativos / Excepciones:
+A1: Producto sin stock disponible (RF-INV-06)
+•	Sistema muestra alerta visual: "Stock actual: 0. No disponible para solicitud inmediata"
+•	Permite agregar a solicitud pero marca como "Pendiente de Reabastecimiento"
+•	Sugiere productos alternativos de misma categoría con stock disponible
+A2: Cantidad solicitada excede presupuesto departamento (RF-SOL-06)
+•	Sistema muestra mensaje: "Cantidad solicitada supera límite presupuestal asignado (S/. X disponibles)"
+•	Permite reducir cantidad o marcar como "Requiere autorización especial"
+•	Si marca como especial, se notifica automáticamente al Gerente para aprobación
+A3: Imagen de producto no cargada/optimizada
+•	Sistema muestra placeholder genérico según categoría
+•	Permite selección por código o nombre de producto
+•	Registra incidencia para que admin cargue imagen posteriormente
+A4: Conexión interrumpida durante creación (RNF-02.3)
+•	Sistema guarda solicitud en borrador local cada 30 segundos (RF-SOL-07)
+•	Al recuperar conexión, notifica al usuario: "Solicitud guardada automáticamente. ¿Desea continuar?"
+•	Usuario puede retomar edición sin pérdida de datos
+A5: Solicitud por link compartido (RF-SOL-04)
+•	Jefe de Logística genera link público con formulario pre-llenado
+•	Usuario accede sin login, selecciona productos y envía
+•	Sistema registra IP, fecha/hora y solicita validación posterior del jefe departamento
+A6: Solicitud por carga de imagen/documento (RF-SOL-05)
+•	Usuario sube imagen escaneada de requisición en papel
+•	Sistema usa OCR para extraer: productos, cantidades, especificaciones
+•	Muestra pre-llenado para que usuario confirme/corrija antes de enviar
+•	Si OCR falla, permite digitación manual
+Reglas de Negocio:
+RB1: No se puede confirmar solicitud si no tiene al menos 1 producto
+RB2: Cantidad mínima por producto: 1 unidad
+RB3: Departamentos con presupuesto limitado no pueden solicitar > límite asignado sin aprobación gerencial
+RB4: Solicitudes marcadas como "Urgente" requieren justificación obligatoria (RF-SOL-21)
+RB5: Sistema valida que usuario pertenezca al departamento que solicita (no puede solicitar para otro departamento sin permiso especial)
+Frecuencia esperada: Alta — 20-50 solicitudes diarias en clínica mediana
+RF relacionados: RF-SOL-01, RF-SOL-02, RF-SOL-03, RF-SOL-04, RF-SOL-05, RF-SOL-06, RF-SOL-07, RF-SOL-08, RF-SOL-09, RF-SOL-10, RF-SOL-13, RF-SOL-15, RF-INV-06
+Notas UI / Rendimiento:
+•	Interfaz responsive (funciona en PC, tablet, smartphone)
+•	Botones táctiles de mínimo 44x44 px para facilidad de uso
+•	Tiempo de carga de catálogo: < 3 segundos (RNF-01.1)
+•	Auto-guardado cada 30 segundos para prevenir pérdida de datos (RF-SOL-07)
+•	Búsqueda de productos: resultados en < 2 segundos (RF-SOL-12)
+CU-02: Aprobar o Rechazar Solicitud
+ID: CU-SOL-02
+Actor principal: Jefe de Logística
+Actores secundarios: Sistema de Inventario, Sistema de Notificaciones
+Objetivo: Revisar solicitudes pendientes y aprobarlas o rechazarlas con justificación, actualizando automáticamente el flujo.
+Precondición:
+•	Usuario autenticado con rol "Jefe de Logística" (RF-AU-02)
+•	Solicitud en estado "Pendiente" o "En Revisión"
+•	Stock e información presupuestal disponibles para consulta
+Postcondición:
+•	Solicitud cambia a estado "Aprobada" o "Rechazada" (RF-SOL-14)
+•	Notificación enviada al solicitante y jefe departamento (RF-SOL-15)
+•	Si rechazada, motivo registrado en historial (RF-SOL-19)
+•	Si aprobada, solicitud pasa a cola de despacho del almacén
+Flujo Principal (Aprobación):
+1.	Jefe de Logística accede a módulo "Solicitudes Pendientes" → sistema muestra lista filtrable (RF-SOL-20)
+2.	Jefe selecciona solicitud → sistema muestra detalle completo: productos, cantidades, especificaciones, departamento, fecha requerida, justificación (RF-SOL-19)
+3.	Sistema muestra stock actual de cada producto solicitado (RF-INV-06)
+4.	Jefe revisa y valida disponibilidad
+5.	Jefe hace clic en "Aprobar" → sistema solicita confirmación
+6.	Sistema cambia estado a "Aprobada" (RF-SOL-14)
+7.	Sistema envía notificación al solicitante y al almacén (RF-SOL-15)
+8.	Sistema registra: quién aprobó, fecha/hora en historial de auditoría (RF-SOL-19)
+Flujo Alternativo (Rechazo):
+A1: Jefe rechaza solicitud (RF-SOL-16)
+1.	Jefe hace clic en "Rechazar"
+2.	Sistema solicita motivo obligatorio (opciones: Stock insuficiente, Fuera de presupuesto, Producto descontinuado, Duplicado, Otro)
+3.	Si selecciona "Otro", campo de texto libre para justificación detallada
+4.	Jefe confirma rechazo
+5.	Sistema cambia estado a "Rechazada" (RF-SOL-14)
+6.	Sistema envía notificación al solicitante con motivo (RF-SOL-15)
+7.	Sistema registra en auditoría: quién rechazó, cuándo, motivo (RF-SOL-19)
+Flujos Alternativos / Excepciones:
+A2: Solicitud requiere autorización gerencial por monto alto
+•	Si costo estimado > límite de autorización del jefe logística (ej. > S/. 5,000)
+•	Sistema muestra alerta: "Monto supera su límite de autorización. Requiere aprobación de Gerencia"
+•	Jefe puede "Solicitar Autorización Gerencial" → sistema notifica a Gerente
+•	Gerente aprueba o rechaza → luego jefe logística puede proceder
+A3: Stock insuficiente para cumplir solicitud completa
+•	Sistema muestra alerta: "Stock actual insuficiente para cantidad solicitada"
+•	Jefe tiene opciones:
+o	Aprobar parcialmente (cantidad disponible)
+o	Rechazar y solicitar nueva cotización a proveedor
+o	Aprobar condicionalmente "Pendiente de reabastecimiento"
+A4: Solicitud duplicada detectada por sistema
+•	Sistema identifica solicitud similar (mismo departamento, mismos productos, última semana)
+•	Muestra alerta: "Posible duplicado detectado: [Solicitud SJB-XXX]"
+•	Jefe puede:
+o	Confirmar que es solicitud legítima (no duplicada)
+o	Rechazar por duplicidad
+Reglas de Negocio:
+RB1: Solo Jefe de Logística puede aprobar/rechazar solicitudes (RF-AU-04)
+RB2: Rechazo requiere motivo obligatorio para trazabilidad
+RB3: Solicitudes aprobadas pasan automáticamente a cola de despacho del almacén
+RB4: Solicitudes urgentes deben revisarse en < 4 horas (indicador KPI)
+RB5: Una vez aprobada, solicitud no puede ser rechazada (solo cancelada con justificación especial)
+Frecuencia esperada: Alta — 15-40 aprobaciones diarias
+RF relacionados: RF-SOL-14, RF-SOL-15, RF-SOL-16, RF-SOL-19, RF-SOL-20, RF-INV-06, RF-AU-04
+Notas UI / Rendimiento:
+•	Vista en lista con filtros rápidos: Por estado, Por departamento, Por urgencia, Por fecha
+•	Indicadores visuales: Urgente (rojo), Normal (azul), Vencida (naranja)
+•	Carga de lista de solicitudes: < 3 segundos (RNF-01.1)
+•	Botones de acción rápida: Aprobar (verde), Rechazar (rojo)
+________________________________________
+CU-03: Despachar Solicitud desde Almacén
+ID: CU-SOL-03
+Actor principal: Personal de Almacén
+Actores secundarios: Sistema de Inventario (actualiza stock automáticamente)
+Objetivo: Registrar despacho físico de productos aprobados, actualizar inventario en tiempo real y notificar al departamento receptor.
+Precondición:
+•	Usuario autenticado con rol "Personal Almacén" (RF-AU-02)
+•	Solicitud en estado "Aprobada"
+•	Productos físicamente disponibles en almacén
+•	Stock en sistema actualizado
+Postcondición:
+•	Solicitud cambia a estado "Despachada" (RF-SOL-14)
+•	Inventario actualizado automáticamente: stock reducido por cantidad despachada (RF-INV-02)
+•	Notificación enviada al jefe departamento solicitante (RF-SOL-15)
+•	Fecha/hora de despacho registrada en historial (RF-SOL-19)
+•	Productos listos para entrega física
+Flujo Principal (Éxito):
+1.	Personal de Almacén accede a módulo "Solicitudes Aprobadas Pendientes de Despacho"
+2.	Sistema muestra lista de solicitudes aprobadas ordenadas por: Urgente primero, luego por fecha requerida (RF-SOL-20)
+3.	Personal selecciona solicitud → sistema muestra detalle completo: productos, cantidades, especificaciones, ubicación física en almacén (RF-INV-11)
+4.	Personal localiza físicamente cada producto en almacén usando ubicaciones mostradas
+5.	Personal verifica físicamente cantidad y estado de productos
+6.	Personal registra despacho en sistema:
+o	Confirma cada producto despachado (check individual)
+o	Indica cantidad real despachada (puede ser menor si hay dañados)
+o	Si hay productos dañados, registra motivo y cantidad afectada (RF-INV-03)
+7.	Sistema valida que al menos 1 producto fue despachado
+8.	Personal confirma despacho → sistema solicita confirmación final
+9.	Sistema:
+o	Actualiza stock automáticamente (resta cantidad despachada) - RF-INV-02
+o	Cambia estado a "Despachada" (RF-SOL-14)
+o	Registra fecha/hora y usuario responsable (RF-SOL-17, RF-SOL-19)
+o	Envía notificación al jefe departamento: "Su solicitud [SJB-XXX] ha sido despachada" (RF-SOL-15)
+10.	Sistema genera comprobante de despacho (PDF) imprimible con: productos, cantidades, fecha, responsable
+Flujos Alternativos / Excepciones:
+A1: Cantidad física menor que aprobada (producto dañado/vencido)
+•	Personal indica cantidad real despachada < cantidad aprobada
+•	Sistema solicita motivo: Producto dañado, Vencido, Stock incorrecto, Otro
+•	Personal registra evidencia (foto opcional)
+•	Sistema:
+o	Registra ajuste de inventario con motivo (RF-INV-03)
+o	Alerta al jefe logística sobre discrepancia
+o	Marca solicitud como "Despachada Parcialmente"
+o	Crea nueva tarea: "Completar despacho pendiente"
+A2: Producto no encontrado físicamente en ubicación registrada
+•	Personal marca producto como "No encontrado"
+•	Sistema:
+o	Alerta al jefe logística: "Discrepancia de ubicación detectada"
+o	Crea tarea de "Conteo físico urgente" para ese producto
+o	Permite despachar productos restantes
+o	Solicitud marcada como "Despachada Parcialmente"
+A3: Solicitud cancelada antes de despacho
+•	Si jefe departamento cancela solicitud mientras está en cola de despacho
+•	Sistema muestra alerta: "Solicitud cancelada. No proceder con despacho"
+•	Personal confirma y cierra sin despachar
+•	Estado cambia a "Cancelada" (RF-SOL-22)
+A4: Despacho de solicitud urgente
+•	Si solicitud está marcada como "Urgente"
+•	Sistema muestra indicador visual prioritario (rojo)
+•	Genera alerta sonora/visual para personal de almacén
+•	Registra tiempo transcurrido desde aprobación hasta despacho (KPI)
+Reglas de Negocio:
+RB1: Solo Personal de Almacén puede registrar despachos (RF-AU-04)
+RB2: Despacho parcial debe justificarse obligatoriamente
+RB3: Stock se actualiza automáticamente al confirmar despacho (no requiere proceso manual adicional)
+RB4: Solicitudes urgentes deben despacharse en < 2 horas desde aprobación
+RB5: Cada despacho genera registro auditable con timestamp y usuario (RF-AU-11)
+Frecuencia esperada: Alta — 15-40 despachos diarios
+RF relacionados: RF-SOL-14, RF-SOL-15, RF-SOL-17, RF-SOL-19, RF-SOL-20, RF-INV-02, RF-INV-03, RF-INV-11, RF-AU-04, RF-AU-11
+Notas UI / Rendimiento:
+•	Interfaz optimizada para uso en tablet en almacén
+•	Botones grandes táctiles (min 44x44px)
+•	Posibilidad de escanear código QR/barcode de productos (opcional - Fase 2)
+•	Actualización de inventario: < 1 segundo después de confirmar despacho (RNF-01.1)
+•	Vista de ubicación física clara con mapa visual del almacén
+________________________________________
+CU-04: Confirmar Recepción en Departamento
+ID: CU-SOL-04
+Actor principal: Jefe de Departamento
+Actores secundarios: Ninguno
+Objetivo: Confirmar que los productos despachados fueron recibidos correctamente en cantidad y estado, cerrando el ciclo de la solicitud.
+Precondición:
+•	Usuario autenticado con rol "Jefe de Departamento" (RF-AU-02)
+•	Solicitud en estado "Despachada"
+•	Productos entregados físicamente al departamento
+Postcondición:
+•	Solicitud cambia a estado "Entregada" (cerrada) - RF-SOL-14
+•	Fecha/hora de recepción registrada (RF-SOL-18)
+•	Ciclo completo de solicitud cerrado
+•	Si hay discrepancias, registradas para auditoría (RF-SOL-19)
+Flujo Principal (Recepción Correcta):
+1.	Jefe de Departamento recibe notificación: "Su solicitud [SJB-XXX] ha sido despachada"
+2.	Jefe accede a módulo "Mis Solicitudes Despachadas"
+3.	Sistema muestra lista de solicitudes pendientes de confirmar recepción
+4.	Jefe selecciona solicitud → sistema muestra detalle: productos despachados, cantidades, especificaciones
+5.	Jefe verifica físicamente productos recibidos
+6.	Jefe confirma cada producto:
+o	Cantidad recibida = cantidad despachada: ✅ OK
+o	Estado de productos: ✅ Buen estado
+7.	Jefe hace clic en "Confirmar Recepción Completa"
+8.	Sistema solicita confirmación final
+9.	Sistema:
+o	Cambia estado a "Entregada" (RF-SOL-14)
+o	Registra fecha/hora de recepción y usuario (RF-SOL-18, RF-SOL-19)
+o	Cierra solicitud
+o	Genera comprobante de recepción (PDF) con firma digital del jefe
+10.	Sistema muestra mensaje: "Solicitud completada exitosamente"
+Flujos Alternativos / Excepciones:
+A1: Cantidad recibida menor que despachada
+•	Jefe indica cantidad real recibida < cantidad despachada
+•	Sistema solicita motivo: Producto perdido en tránsito, Producto dañado en entrega, Cantidad incorrecta, Otro
+•	Jefe añade nota explicativa
+•	Sistema:
+o	Registra discrepancia en auditoría (RF-SOL-19)
+o	Alerta al jefe logística sobre incidencia
+o	Marca solicitud como "Entregada con Observaciones"
+o	Genera incidente para investigación
+A2: Productos recibidos en mal estado
+•	Jefe marca productos como "Dañados" o "Defectuosos"
+•	Sistema solicita: Foto de evidencia (opcional), Descripción del daño
+•	Jefe añade detalles
+•	Sistema:
+o	Registra incidencia (RF-SOL-19)
+o	Alerta a logística para devolución/reemplazo
+o	Crea nueva solicitud automática para reposición (si jefe acepta)
+o	Marca solicitud original como "Entregada con Observaciones"
+A3: Productos no recibidos físicamente (solicitud despachada pero no entregada)
+•	Jefe marca: "No he recibido esta solicitud"
+•	Sistema alerta inmediatamente al personal de almacén y jefe logística
+•	Crea incidente de seguimiento urgente
+•	Solicitud queda en estado "Despachada - Pendiente Localización"
+A4: Recepción parcial (algunos productos sí, otros no)
+•	Jefe confirma productos recibidos individualmente
+•	Productos confirmados cierran
+•	Productos no recibidos generan seguimiento automático
+•	Solicitud marcada como "Entregada Parcialmente"
+Reglas de Negocio:
+RB1: Solo Jefe de Departamento solicitante puede confirmar recepción (RF-AU-04)
+RB2: Confirmación debe realizarse dentro de 7 días calendario desde despacho (sino alerta automática)
+RB3: Discrepancias en cantidad/estado requieren registro obligatorio de motivo
+RB4: Solicitudes no confirmadas después de 14 días se cierran automáticamente con alerta a gerencia
+RB5: Cada confirmación genera comprobante PDF descargable para archivo departamental
+Frecuencia esperada: Alta — 15-40 confirmaciones diarias
+RF relacionados: RF-SOL-14, RF-SOL-18, RF-SOL-19, RF-AU-04
+Notas UI / Rendimiento:
+•	Interfaz simple con checkboxes para confirmar productos individualmente
+•	Opción de "Confirmar Todo" para agilizar si recepción es correcta
+•	Posibilidad de subir fotos desde dispositivo móvil (para evidencia de daños)
+•	Notificaciones push/email recordando confirmación pendiente después de 3 días
+CU-05: Consultar Estado de Solicitud
+ID: CU-SOL-05
+Actor principal: Empleado Administrativo, Jefe de Departamento
+Actores secundarios: Ninguno
+Objetivo: Verificar en tiempo real el estado actual de una solicitud y su trazabilidad completa.
+Precondición:
+•	Usuario autenticado
+•	Solicitud registrada en sistema
+Postcondición:
+•	Usuario visualiza estado actualizado de solicitud
+•	Información de trazabilidad disponible
+Flujo Principal:
+1.	Usuario accede a módulo "Mis Solicitudes"
+2.	Sistema muestra lista de solicitudes del departamento (filtrable por: Todas, Pendientes, Aprobadas, Despachadas, Entregadas, Rechazadas) - RF-SOL-20
+3.	Usuario selecciona solicitud específica
+4.	Sistema muestra detalle completo (RF-SOL-19):
+o	Número de solicitud y fecha creación
+o	Estado actual con indicador visual (color)
+o	Productos solicitados con cantidades y especificaciones
+o	Historial completo del flujo:
+	✅ Creada por [Usuario] el [Fecha/Hora]
+	✅ Aprobada por [Jefe Logística] el [Fecha/Hora]
+	✅ Despachada por [Personal Almacén] el [Fecha/Hora]
+	⏳ Pendiente de confirmación de recepción
+o	Tiempo transcurrido desde creación
+o	Fecha estimada de entrega (si aplica)
+5.	Si estado es "Rechazada", sistema muestra motivo del rechazo
+Flujos Alternativos:
+A1: Usuario consulta múltiples solicitudes
+•	Vista en lista con resumen: Número, Fecha, Estado, Productos principales
+•	Filtros rápidos aplicables
+A2: Usuario exporta historial
+•	Opción de descargar detalle de solicitud en PDF (RF-SOL-23)
+Reglas de Negocio:
+RB1: Usuario solo puede ver solicitudes de su departamento (salvo jefe logística y gerencia que ven todas)
+RB2: Historial completo siempre visible para auditoría
+Frecuencia esperada: Media — 30-60 consultas diarias
+RF relacionados: RF-SOL-19, RF-SOL-20, RF-SOL-23
+________________________________________
+CU-06: Registrar Producto en Catálogo
+ID: CU-GP-01
+Actor principal: Jefe de Logística
+Actores secundarios: Ninguno
+Objetivo: Añadir nuevo producto al catálogo administrativo con toda su información y opcionalmente imagen.
+Precondición:
+•	Usuario autenticado con rol "Jefe de Logística" (RF-AU-02)
+•	Categorías de productos ya creadas
+Postcondición:
+•	Producto registrado en catálogo y disponible para solicitudes
+•	Código único asignado
+•	Imagen cargada y optimizada (si se subió)
+•	Producto visible en módulo de solicitudes
+Flujo Principal:
+1.	Jefe de Logística accede a módulo "Gestión de Productos"
+2.	Jefe hace clic en "Nuevo Producto"
+3.	Sistema muestra formulario con campos obligatorios:
+o	Código de producto (auto-generado o manual)
+o	Nombre del producto
+o	Descripción
+o	Categoría (desplegable)
+o	Unidad de medida (Unidad, Caja, Paquete, etc.)
+o	Precio unitario estimado
+o	Stock mínimo
+o	Stock máximo
+o	Proveedor principal (opcional)
+4.	Jefe llena campos obligatorios
+5.	Sistema valida que código no esté duplicado (RF-GP-04)
+6.	Jefe opcionalmente carga imagen del producto (RF-GP-06)
+7.	Si carga imagen:
+o	Sistema valida formato (JPG, PNG) - RF-GP-09
+o	Sistema redimensiona automáticamente a 1200x1200px (RF-GP-07)
+o	Sistema optimiza peso a < 2MB (RF-GP-08)
+o	Muestra preview antes de guardar
+8.	Jefe confirma "Guardar Producto"
+9.	Sistema:
+o	Valida todos los campos obligatorios completos
+o	Guarda producto en base de datos (RF-GP-01)
+o	Genera registro de auditoría: quién creó, cuándo (RF-AU-11)
+o	Muestra mensaje: "Producto [Nombre] registrado exitosamente con código [XXX]"
+10.	Producto queda disponible inmediatamente en catálogo para solicitudes
+Flujos Alternativos:
+A1: Código duplicado detectado (RF-GP-04)
+•	Sistema muestra error: "Código ya existe. Por favor use uno diferente"
+•	No permite guardar hasta corregir
+A2: Imagen en formato no soportado (RF-GP-09)
+•	Sistema rechaza archivo: "Formato no válido. Solo JPG o PNG permitidos"
+•	Permite cargar archivo correcto
+A3: Imagen muy pesada (> 5MB)
+•	Sistema comprime automáticamente sin perder calidad visual
+•	Si no puede comprimir suficiente, alerta: "Imagen muy pesada, elija una más liviana"
+A4: Importación masiva desde Excel (RF-GP-05)
+•	Jefe selecciona "Importar Productos"
+•	Carga archivo Excel con plantilla predefinida
+•	Sistema valida cada fila y muestra errores si hay
+•	Importa productos válidos en lote
+Reglas de Negocio:
+RB1: Solo Jefe de Logística puede crear productos (RF-AU-04)
+RB2: Código de producto debe ser único (no duplicados) - RF-GP-04
+RB3: Nombre y categoría son obligatorios
+RB4: Si no se carga imagen, sistema usa placeholder según categoría
+RB5: Nuevos productos inician con stock = 0 hasta primera entrada
+Frecuencia esperada: Baja — 2-5 productos nuevos por mes
+RF relacionados: RF-GP-01, RF-GP-04, RF-GP-05, RF-GP-06, RF-GP-07, RF-GP-08, RF-GP-09, RF-AU-04, RF-AU-11
+Notas UI / Rendimiento:
+•	Formulario simple con validación en tiempo real
+•	Preview de imagen antes de guardar
+•	Carga de imagen: < 5 segundos incluyendo optimización
+CU-07: Registrar Entrada de Compra al Almacén
+ID: CU-INV-01
+Actor principal: Personal de Almacén
+Actores secundarios: Sistema de Inventario (actualiza stock automáticamente)
+Objetivo: Registrar recepción de productos comprados a proveedores, actualizando inventario en tiempo real.
+Precondición:
+•	Usuario autenticado con rol "Personal Almacén" o "Jefe Logística" (RF-AU-02)
+•	Orden de compra emitida (opcional - Fase 2)
+•	Productos físicamente recibidos en almacén
+•	Productos ya registrados en catálogo
+Postcondición:
+•	Stock actualizado: cantidad recibida sumada al inventario (RF-INV-01)
+•	Movimiento de entrada registrado con trazabilidad completa (RF-INV-10)
+•	Ubicación física asignada (RF-INV-11)
+•	Fecha/hora y usuario responsable registrados (RF-AU-11)
+Flujo Principal:
+1.	Personal de Almacén accede a módulo "Registrar Entrada de Compra"
+2.	Sistema muestra formulario de entrada:
+o	Proveedor (opcional - Fase 2)
+o	Fecha de recepción (auto: hoy)
+o	Número de factura/guía (opcional)
+3.	Personal busca y selecciona productos recibidos del catálogo (RF-SOL-12)
+4.	Para cada producto:
+o	Indica cantidad recibida
+o	Precio unitario de compra (opcional)
+o	Lote/Serie (opcional si aplica)
+o	Fecha de vencimiento (opcional si aplica - medicamentos/consumibles)
+o	Ubicación física en almacén (pasillo, estante, caja) - RF-INV-11
+5.	Sistema valida datos ingresados
+6.	Personal confirma "Registrar Entrada"
+7.	Sistema:
+o	Suma cantidad recibida al stock actual (RF-INV-01)
+o	Genera movimiento tipo "Entrada" en historial (RF-INV-10)
+o	Registra usuario, fecha/hora, proveedor, productos, cantidades (RF-AU-11)
+o	Actualiza ubicación física (RF-INV-11)
+8.	Sistema muestra confirmación: "Entrada registrada exitosamente. Stock actualizado"
+9.	Si había alertas de stock mínimo para esos productos, sistema las desactiva automáticamente
+Flujos Alternativos:
+A1: Cantidad recibida menor que ordenada (Fase 2 con órdenes de compra)
+•	Sistema detecta discrepancia
+•	Solicita justificación: Producto agotado, Pedido parcial, Error proveedor
+•	Registra incidencia para seguimiento
+A2: Producto recibido dañado/defectuoso
+•	Personal marca producto como dañado
+•	Sistema solicita: Cantidad dañada, Foto evidencia (opcional)
+•	Registra entrada solo de cantidad buena
+•	Genera incidente para devolución a proveedor (Fase 2)
+A3: Producto no existe en catálogo
+•	Personal selecciona "Producto no encontrado"
+•	Opción de crear producto rápidamente (RF-GP-01)
+•	Luego continúa con registro de entrada
+Reglas de Negocio:
+RB1: Solo Personal Almacén y Jefe Logística pueden registrar entradas (RF-AU-04)
+RB2: Cantidad recibida debe ser > 0
+RB3: Entrada actualiza stock automáticamente (no requiere confirmación adicional)
+RB4: Cada entrada genera movimiento auditable con timestamp (RF-AU-11)
+RB5: Si stock alcanza nivel mínimo después de entrada, sistema desactiva alertas
+Frecuencia esperada: Media — 5-15 entradas por semana
+RF relacionados: RF-INV-01, RF-INV-10, RF-INV-11, RF-SOL-12, RF-GP-01, RF-AU-04, RF-AU-11
+Notas UI / Rendimiento:
+•	Búsqueda de productos rápida con autocompletado
+•	Posibilidad de escanear código de barras (opcional - Fase 2)
+•	Actualización de stock: < 1 segundo (RNF-01.1)
+•	Interfaz optimizada para tablet en almacén
+________________________________________
+CU-08: Generar Reporte de Solicitudes por Período
+ID: CU-REP-01
+Actor principal: Jefe de Logística, Gerencia
+Actores secundarios: Sistema de Reportes
+Objetivo: Obtener datos consolidados de solicitudes para toma de decisiones, evaluación de gestión y análisis de consumo.
+Precondición:
+•	Usuario autenticado con rol autorizado (RF-AU-02)
+•	Datos de solicitudes disponibles en sistema
+•	Rango de fechas válido seleccionado
+Postcondición:
+•	Reporte generado con métricas consolidadas
+•	Exportable a PDF o Excel (RF-REP-05)
+•	Guardado en historial de reportes para consulta futura
+Flujo Principal:
+1.	Usuario accede a módulo "Reportes y Análisis"
+2.	Selecciona tipo de reporte: "Solicitudes por Período"
+3.	Sistema muestra filtros:
+o	Rango de fechas (desde - hasta)
+o	Departamento (Todos o específico)
+o	Estado (Todos, Aprobadas, Rechazadas, etc.)
+o	Prioridad (Todas, Solo urgentes)
+4.	Usuario configura filtros deseados
+5.	Usuario hace clic en "Generar Reporte"
+6.	Sistema procesa datos (< 5 segundos) y muestra reporte con:
+o	Resumen ejecutivo:
+	Total de solicitudes en período
+	Solicitudes aprobadas (cantidad y %)
+	Solicitudes rechazadas (cantidad y %)
+	Solicitudes pendientes
+	Tiempo promedio de atención (días)
+o	Desglose por departamento (RF-REP-02):
+	Cantidad de solicitudes por área
+	Gasto estimado por área
+	Productos más solicitados por departamento
+o	Análisis de cumplimiento (RF-REP-03, RF-REP-04):
+	Solicitudes entregadas a tiempo vs retrasadas
+	Motivos de rechazo más frecuentes
+	Solicitudes incumplidas (pendientes > X días)
+o	Gráficos visuales:
+	Tendencia de solicitudes por semana
+	Distribución por estado (pie chart)
+	Top 10 productos más solicitados
+7.	Usuario puede:
+o	Exportar a PDF (para presentaciones) - RF-REP-05
+o	Exportar a Excel (para análisis externo) - RF-REP-05
+o	Guardar configuración de reporte como favorito
+o	Programar envío automático por email (semanal/mensual)
+Flujos Alternativos:
+A1: Filtros sin resultados
+•	Sistema muestra mensaje: "No hay datos para los filtros seleccionados"
+•	Sugiere ampliar rango de fechas o cambiar filtros
+A2: Generación de reporte tarda > 10 segundos (muchos datos)
+•	Sistema muestra barra de progreso: "Procesando datos..."
+•	Permite cancelar operación si demora excesiva
+A3: Usuario programa envío automático
+•	Configura frecuencia: Diario, Semanal, Mensual
+•	Indica destinatarios (emails)
+•	Sistema envía reporte automáticamente según programación
+Reglas de Negocio:
+RB1: Solo Jefe de Logística y Gerencia pueden generar reportes consolidados
+RB2: Reportes incluyen solo datos de solicitudes del sistema (no datos externos)
+RB3: Exportación a Excel incluye datos crudos para análisis personalizado
+RB4: Reportes guardados se archivan por 12 meses
+Frecuencia esperada: Media — 10-20 reportes por mes
+RF relacionados: RF-REP-01, RF-REP-02, RF-REP-03, RF-REP-04, RF-REP-05, RF-AU-02
+Notas UI / Rendimiento:
+•	Gráficos interactivos (Chart.js o ApexCharts)
+•	Generación de reporte: < 5 segundos para 1,000 solicitudes (RNF-01.1)
+•	Exportación PDF: < 3 segundos
+•	Dashboard con preview antes de exportar
+________________________________________
+CU-09: Ver Dashboard Ejecutivo de KPIs
+ID: CU-REP-02
+Actor principal: Gerencia, Jefe de Logística
+Actores secundarios: Sistema de Reportes
+Objetivo: Visualizar en tiempo real indicadores clave de desempeño (KPIs) del área logística para supervisión estratégica.
+Precondición:
+•	Usuario autenticado con rol autorizado
+•	Datos actualizados en sistema
+Postcondición:
+•	KPIs mostrados con gráficos interactivos
+•	Alertas críticas visibles
+Flujo Principal:
+1.	Usuario accede a módulo "Dashboard Ejecutivo"
+2.	Sistema carga y muestra en pantalla principal (RF-REP-11):
+o	KPIs Principales (widgets grandes):
+	Solicitudes completadas este mes (número + tendencia vs mes anterior)
+	Tiempo promedio de atención (días + gráfico de tendencia)
+	Precisión de inventario (% + indicador verde/amarillo/rojo)
+	Costo logístico del mes (S/. + comparativa con presupuesto)
+	Tasa de cumplimiento on-time (% + gráfico)
+o	Alertas Críticas (RF-REP-12):
+	🔴 5 productos en stock crítico (≤ 0)
+	🟡 12 solicitudes pendientes > 3 días
+	🟠 Presupuesto del área Finanzas al 95%
+o	Gráficos Interactivos (RF-REP-13):
+	Tendencia de solicitudes (últimos 6 meses)
+	Consumo por departamento (bar chart)
+	Rotación de inventario (productos rápidos vs lentos)
+o	Accesos Rápidos:
+	Ver solicitudes pendientes
+	Ver productos con stock bajo
+	Generar reporte personalizado
+3.	Usuario puede hacer clic en cualquier KPI para ver detalle ampliado
+4.	Dashboard se actualiza automáticamente cada 5 minutos (o manual con botón "Refrescar")
+Flujos Alternativos:
+A1: Usuario hace clic en alerta crítica
+•	Sistema muestra detalle de la alerta (ej: lista de productos en stock crítico)
+•	Ofrece acción directa (ej: "Crear orden de compra")
+A2: Usuario filtra dashboard por período
+•	Cambia visualización: Hoy, Esta semana, Este mes, Últimos 3 meses, Año completo
+•	Gráficos se actualizan dinámicamente
+Reglas de Negocio:
+RB1: Dashboard solo accesible por Gerencia y Jefe Logística
+RB2: Alertas críticas tienen máxima prioridad visual (color rojo)
+RB3: KPIs se calculan en tiempo real desde base de datos
+Frecuencia esperada: Alta — consultado diariamente por gerencia
+RF relacionados: RF-REP-11, RF-REP-12, RF-REP-13
+Notas UI / Rendimiento:
+•	Carga inicial del dashboard: < 3 segundos (RNF-01.1)
+•	Gráficos interactivos con hover tooltips
+•	Responsive para visualización en tablet/laptop
+________________________________________
+CU-10: Gestionar Usuarios y Roles
+ID: CU-AU-01
+Actor principal: Jefe de Logística (Admin del sistema)
+Actores secundarios: Ninguno
+Objetivo: Crear, editar y desactivar cuentas de usuarios, asignar roles y permisos para control de accesos.
+Precondición:
+•	Usuario autenticado con rol "Admin Logística" (RF-AU-02)
+•	Roles predefinidos configurados en sistema
+Postcondición:
+•	Usuario creado/editado/desactivado según acción
+•	Permisos aplicados inmediatamente
+•	Registro en auditoría de cambios (RF-AU-11)
+Flujo Principal (Crear Usuario):
+1.	Admin accede a módulo "Administración de Usuarios"
+2.	Admin hace clic en "Nuevo Usuario"
+3.	Sistema muestra formulario:
+o	Nombre completo
+o	Email (será username)
+o	Departamento (desplegable)
+o	Puesto/Cargo
+o	Rol (desplegable: Admin Logística, Personal Almacén, Jefe Departamento, Empleado General) - RF-AU-02
+4.	Admin llena campos y selecciona rol
+5.	Sistema valida que email no esté duplicado
+6.	Admin confirma "Crear Usuario"
+7.	Sistema:
+o	Genera contraseña temporal aleatoria
+o	Crea cuenta con rol asignado (RF-AU-01)
+o	Envía email al usuario con credenciales temporales y link para cambiar contraseña (RF-AU-05)
+o	Registra en auditoría: quién creó, cuándo (RF-AU-11)
+8.	Sistema muestra mensaje: "Usuario [Nombre] creado exitosamente. Email enviado"
+Flujo Alternativo (Desactivar Usuario):
+A1: Admin desactiva usuario que se retiró
+1.	Admin selecciona usuario de lista
+2.	Admin hace clic en "Desactivar Usuario"
+3.	Sistema solicita confirmación: "¿Está seguro? Usuario no podrá acceder al sistema"
+4.	Admin confirma
+5.	Sistema:
+o	Marca usuario como inactivo (no se elimina) - RF-AU-04
+o	Cierra sesiones activas del usuario
+o	Preserva historial de operaciones realizadas (RF-AU-03)
+o	Registra en auditoría (RF-AU-11)
+Flujo Alternativo (Asignar/Cambiar Rol):
+A2: Admin cambia rol de usuario
+1.	Admin selecciona usuario
+2.	Admin hace clic en "Cambiar Rol"
+3.	Sistema muestra roles disponibles
+4.	Admin selecciona nuevo rol (RF-AU-02, RF-AU-08)
+5.	Sistema aplica cambio inmediatamente
+6.	Si usuario tiene sesión activa, permisos se actualizan en próximo acceso
+Reglas de Negocio:
+RB1: Solo Admin Logística puede gestionar usuarios (RF-AU-04)
+RB2: Email debe ser único (no duplicados)
+RB3: Usuario desactivado preserva historial pero no puede acceder al sistema
+RB4: Cambio de rol aplica inmediatamente (no requiere logout/login forzado)
+RB5: No se pueden eliminar usuarios, solo desactivar (para auditoría)
+Frecuencia esperada: Baja — 2-5 usuarios nuevos por trimestre
+RF relacionados: RF-AU-01, RF-AU-02, RF-AU-03, RF-AU-04, RF-AU-05, RF-AU-08, RF-AU-11
+________________________________________
+MAPEO RÁPIDO: CASOS DE USO → MÓDULOS → REQUERIMIENTOS
+Módulo	Casos de Uso	RF Relacionados
+Gestión Solicitudes	CU-SOL-01 a CU-SOL-05	RF-SOL-01 a RF-SOL-23
+Gestión Productos	CU-GP-01	RF-GP-01 a RF-GP-15
+Gestión Inventario	CU-INV-01	RF-INV-01 a RF-INV-14
+Reportes y Análisis	CU-REP-01, CU-REP-02	RF-REP-01 a RF-REP-14
+Administración	CU-AU-01	RF-AU-01 a RF-AU-15
+Proveedores	(Fase 2)	RF-PROV-01 a RF-PROV-04
+________________________________________
+NOTAS SOBRE EL DIAGRAMA UML
+Representación gráfica recomendada:
+1.	Actores a la izquierda: Empleado Administrativo, Jefe Departamento, Personal Almacén
+2.	Actores a la derecha: Jefe de Logística, Gerencia
+3.	Caso de uso LOGIN en el centro inferior con líneas <<include>> hacia todos los casos que requieren autenticación
+4.	Agrupación por paquetes:
+o	Paquete "Gestión Solicitudes" (verde)
+o	Paquete "Gestión Inventario" (azul)
+o	Paquete "Reportes" (naranja)
+o	Paquete "Administración" (gris)
+5.	Relaciones <<include>>:
+o	Crear Solicitud <<include>> Ver Catálogo Productos
+o	Despachar Solicitud <<include>> Actualizar Inventario
+o	Generar Reporte <<include>> Consultar Datos Actualizados
+6.	Relaciones <<extend>>:
+o	Crear Solicitud <<extend>> Marcar como Urgente
+o	Registrar Producto <<extend>> Cargar Imagen
+o	Aprobar Solicitud <<extend>> Solicitar Autorización Gerencia
+
+MODELO DE DATOS - SISTEMA DE GESTIÓN LOGÍSTICA
+Base de Datos Relacional para Clínica San Juan Bautista
+1. ENTIDADES PRINCIPALES
+🟤 PRODUCTOS (ID-ENT-01)
+Descripción: Catálogo de productos administrativos disponibles en la clínica
+Atributo	Tipo	Restricciones	Descripción
+producto_id	INT	PK, AUTO_INCREMENT	Identificador único del producto
+codigo	VARCHAR(50)	UNIQUE, NOT NULL	Código interno único (ej. "OFF-PAP-001")
+nombre	VARCHAR(200)	NOT NULL	Nombre del producto (ej. "Papel Bond A4 75g")
+descripcion	TEXT	NULL	Descripción detallada del producto
+categoria_id	INT	FK, NOT NULL	Referencia a categoría
+unidad_medida	ENUM	NOT NULL	Valores: 'Unidad', 'Caja', 'Paquete', 'Resma', 'Litro'
+precio_unitario	DECIMAL(10,2)	NOT NULL	Precio estimado de compra
+stock_minimo	INT	NOT NULL	Nivel mínimo de stock antes de alerta
+stock_maximo	INT	NOT NULL	Nivel máximo de stock recomendado
+proveedor_principal_id	INT	FK, NULL	Proveedor preferencial (opcional - Fase 2)
+imagen	VARCHAR(500)	NULL	Ruta de imagen del producto
+estado	ENUM	NOT NULL, DEFAULT 'Activo'	Valores: 'Activo', 'Inactivo'
+fecha_creacion	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Fecha de registro
+fecha_actualizacion	DATETIME	NULL	Última modificación
+🔗 Relaciones:
+•	1..N con DETALLE_SOLICITUDES (un producto puede estar en muchas solicitudes)
+•	N..1 con CATEGORIAS (cada producto pertenece a una categoría)
+•	N..1 con PROVEEDORES (producto tiene proveedor principal) - Fase 2
+•	1..N con MOVIMIENTOS_INVENTARIO (un producto tiene muchos movimientos)
+🟤 SOLICITUDES (ID-ENT-02)
+Descripción: Registro de todas las solicitudes de materiales realizadas por departamentos
+Atributo	Tipo	Restricciones	Descripción
+solicitud_id	INT	PK, AUTO_INCREMENT	Identificador único de solicitud
+numero_solicitud	VARCHAR(50)	UNIQUE, NOT NULL	Número formateado (SJB-20251029-0001)
+departamento_id	INT	FK, NOT NULL	Departamento que solicita
+usuario_solicitante_id	INT	FK, NOT NULL	Usuario que crea la solicitud
+fecha_solicitud	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Fecha/hora de creación
+fecha_requerida	DATE	NOT NULL	Fecha en que se necesitan los productos
+estado	ENUM	NOT NULL, DEFAULT 'Pendiente'	Valores: 'Pendiente', 'En Revisión', 'Aprobada', 'Despachada', 'Entregada', 'Rechazada', 'Cancelada'
+prioridad	ENUM	NOT NULL, DEFAULT 'Normal'	Valores: 'Normal', 'Urgente'
+justificacion	TEXT	NULL	Motivo de la solicitud
+usuario_aprobador_id	INT	FK, NULL	Jefe de logística que aprobó/rechazó
+fecha_aprobacion	DATETIME	NULL	Fecha/hora de aprobación o rechazo
+motivo_rechazo	TEXT	NULL	Si fue rechazada, razón del rechazo
+usuario_despachador_id	INT	FK, NULL	Personal almacén que despachó
+fecha_despacho	DATETIME	NULL	Fecha/hora de despacho
+usuario_receptor_id	INT	FK, NULL	Jefe departamento que confirmó recepción
+fecha_recepcion	DATETIME	NULL	Fecha/hora de confirmación recepción
+observaciones_recepcion	TEXT	NULL	Notas sobre recepción (discrepancias)
+costo_total_estimado	DECIMAL(10,2)	NULL	Suma de costos de productos solicitados
+origen_solicitud	ENUM	NOT NULL, DEFAULT 'Manual'	Valores: 'Manual', 'Link Compartido', 'OCR Imagen'
+🔗 Relaciones:
+•	1..N con DETALLE_SOLICITUDES (una solicitud tiene varios productos)
+•	N..1 con DEPARTAMENTOS (cada solicitud es de un departamento)
+•	N..1 con USUARIOS (solicitante, aprobador, despachador, receptor)
+•	1..N con MOVIMIENTOS_INVENTARIO (solicitud genera movimientos de salida)
+🟤 DETALLE_SOLICITUDES (ID-ENT-03)
+Descripción: Productos incluidos en cada solicitud con especificaciones
+Atributo	Tipo	Restricciones	Descripción
+detalle_id	INT	PK, AUTO_INCREMENT	Identificador único de detalle
+solicitud_id	INT	FK, NOT NULL	Solicitud a la que pertenece
+producto_id	INT	FK, NOT NULL	Producto solicitado
+cantidad_solicitada	INT	NOT NULL	Cantidad requerida
+cantidad_aprobada	INT	NULL	Cantidad aprobada (puede ser menor)
+cantidad_despachada	INT	NULL	Cantidad realmente despachada
+cantidad_recibida	INT	NULL	Cantidad confirmada por receptor
+especificaciones	TEXT	NULL	Notas adicionales (marca, color, tamaño, etc.)
+precio_unitario_estimado	DECIMAL(10,2)	NULL	Precio al momento de solicitud
+subtotal_estimado	DECIMAL(10,2)	NULL	cantidad_solicitada × precio_unitario
+estado_item	ENUM	NOT NULL, DEFAULT 'Pendiente'	Valores: 'Pendiente', 'Aprobado', 'Despachado', 'Recibido', 'Rechazado'
+🔗 Relaciones:
+•	N..1 con SOLICITUDES
+•	N..1 con PRODUCTOS
+Regla de Negocio:
+•	subtotal_estimado = cantidad_solicitada × precio_unitario_estimado (calculado automáticamente)
+🟤 USUARIOS (ID-ENT-04)
+Descripción: Empleados administrativos con acceso al sistema
+Atributo	Tipo	Restricciones	Descripción
+usuario_id	INT	PK, AUTO_INCREMENT	Identificador único de usuario
+nombre	VARCHAR(100)	NOT NULL	Nombre del usuario
+apellido	VARCHAR(100)	NOT NULL	Apellido del usuario
+email	VARCHAR(200)	UNIQUE, NOT NULL	Email (usado como username)
+contraseña_hash	VARCHAR(255)	NOT NULL	Contraseña encriptada (bcrypt)
+departamento_id	INT	FK, NULL	Departamento al que pertenece
+puesto	VARCHAR(100)	NULL	Cargo del empleado
+rol	ENUM	NOT NULL	Valores: 'Admin Logística', 'Personal Almacén', 'Jefe Departamento', 'Empleado General'
+estado	ENUM	NOT NULL, DEFAULT 'Activo'	Valores: 'Activo', 'Inactivo'
+fecha_registro	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Fecha de alta en sistema
+ultimo_acceso	DATETIME	NULL	Última vez que ingresó al sistema
+🔗 Relaciones:
+•	N..1 con DEPARTAMENTOS
+•	1..N con SOLICITUDES (como solicitante, aprobador, despachador, receptor)
+•	1..N con BITACORA_AUDITORIA (seguimiento de acciones)
+•	1..N con MOVIMIENTOS_INVENTARIO (como usuario responsable)
+Nota de Seguridad:
+•	La contraseña nunca se almacena en texto plano
+•	Se usa bcrypt con salt para hashing
+•	Se implementa JWT para autenticación de sesiones
+🟤 DEPARTAMENTOS (ID-ENT-05)
+Descripción: Áreas administrativas de la clínica que solicitan materiales
+Atributo	Tipo	Restricciones	Descripción
+departamento_id	INT	PK, AUTO_INCREMENT	Identificador único de departamento
+nombre	VARCHAR(100)	UNIQUE, NOT NULL	Nombre del departamento (ej. "Administración", "Finanzas")
+codigo	VARCHAR(20)	UNIQUE, NOT NULL	Código corto (ej. "ADM", "FIN")
+descripcion	TEXT	NULL	Descripción del área
+presupuesto_mensual	DECIMAL(10,2)	NULL	Presupuesto logístico asignado al mes
+jefe_departamento_id	INT	FK, NULL	Usuario responsable del departamento
+estado	ENUM	NOT NULL, DEFAULT 'Activo'	Valores: 'Activo', 'Inactivo'
+fecha_creacion	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Fecha de registro
+🔗 Relaciones:
+•	1..N con SOLICITUDES (un departamento hace muchas solicitudes)
+•	1..N con USUARIOS (un departamento tiene varios empleados)
+•	N..1 con USUARIOS (como jefe del departamento)
+🟤 CATEGORIAS (ID-ENT-06)
+Descripción: Clasificación de productos administrativos
+Atributo	Tipo	Restricciones	Descripción
+categoria_id	INT	PK, AUTO_INCREMENT	Identificador único de categoría
+nombre	VARCHAR(100)	UNIQUE, NOT NULL	Nombre de categoría (ej. "Material Oficina")
+descripcion	TEXT	NULL	Descripción de la categoría
+color_identificador	VARCHAR(7)	NULL	Color hexadecimal para UI (ej. "#FF5733")
+icono	VARCHAR(50)	NULL	Nombre de ícono FontAwesome (ej. "fa-clipboard")
+estado	ENUM	NOT NULL, DEFAULT 'Activo'	Valores: 'Activo', 'Inactivo'
+orden_visualizacion	INT	NULL	Orden de presentación en UI
+🔗 Relaciones:
+•	1..N con PRODUCTOS (una categoría agrupa muchos productos)
+Ejemplos de Categorías:
+•	Material de Oficina
+•	Equipos de Cómputo
+•	Mobiliario
+•	Consumibles Generales
+•	Servicios Generales
+•	Material de Limpieza
+________________________________________
+🟤 MOVIMIENTOS_INVENTARIO (ID-ENT-07)
+Descripción: Registro de todas las entradas, salidas y ajustes de inventario
+Atributo	Tipo	Restricciones	Descripción
+movimiento_id	INT	PK, AUTO_INCREMENT	Identificador único de movimiento
+producto_id	INT	FK, NOT NULL	Producto que se movió
+tipo_movimiento	ENUM	NOT NULL	Valores: 'Entrada', 'Salida', 'Ajuste', 'Transferencia'
+cantidad	INT	NOT NULL	Cantidad del movimiento (positiva o negativa)
+stock_anterior	INT	NOT NULL	Stock antes del movimiento (para auditoría)
+stock_nuevo	INT	NOT NULL	Stock después del movimiento
+fecha_movimiento	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Fecha/hora del movimiento
+usuario_responsable_id	INT	FK, NOT NULL	Usuario que registró el movimiento
+solicitud_id	INT	FK, NULL	Si fue por solicitud, referencia a ella
+motivo	VARCHAR(200)	NULL	Razón del movimiento
+observaciones	TEXT	NULL	Notas adicionales
+lote_serie	VARCHAR(100)	NULL	Lote o serie (si aplica)
+fecha_vencimiento	DATE	NULL	Fecha de vencimiento (si aplica)
+ubicacion_fisica	VARCHAR(100)	NULL	Ubicación en almacén (pasillo, estante)
+proveedor_id	INT	FK, NULL	Si es entrada, proveedor origen (Fase 2)
+precio_unitario	DECIMAL(10,2)	NULL	Precio al momento del movimiento
+🔗 Relaciones:
+•	N..1 con PRODUCTOS
+•	N..1 con USUARIOS (responsable)
+•	N..1 con SOLICITUDES (opcional, si movimiento fue por solicitud)
+•	N..1 con PROVEEDORES (opcional, si es entrada - Fase 2)
+Regla de Negocio:
+•	stock_nuevo = stock_anterior + cantidad (si entrada)
+•	stock_nuevo = stock_anterior - cantidad (si salida)
+•	Todo movimiento debe tener usuario responsable y timestamp para auditoría
+________________________________________
+🟤 PROVEEDORES (ID-ENT-08) - Opcional Fase 2
+Descripción: Empresas que suministran productos administrativos
+Atributo	Tipo	Restricciones	Descripción
+proveedor_id	INT	PK, AUTO_INCREMENT	Identificador único de proveedor
+nombre	VARCHAR(200)	NOT NULL	Nombre de la empresa
+ruc	VARCHAR(11)	UNIQUE, NOT NULL	RUC del proveedor
+direccion	TEXT	NULL	Dirección física
+telefono	VARCHAR(20)	NULL	Teléfono principal
+email	VARCHAR(200)	NULL	Email de contacto
+contacto_nombre	VARCHAR(100)	NULL	Nombre del representante
+contacto_telefono	VARCHAR(20)	NULL	Teléfono del representante
+condiciones_pago	TEXT	NULL	Condiciones (contado, 30 días, etc.)
+calificacion	DECIMAL(3,2)	NULL	Calificación promedio (1.00 - 5.00)
+estado	ENUM	NOT NULL, DEFAULT 'Activo'	Valores: 'Activo', 'Inactivo'
+fecha_registro	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Fecha de alta
+🔗 Relaciones:
+•	1..N con PRODUCTOS (un proveedor suministra muchos productos)
+•	1..N con MOVIMIENTOS_INVENTARIO (como origen de entradas)
+🟤 BITACORA_AUDITORIA (ID-ENT-09)
+Descripción: Registro de todas las operaciones realizadas en el sistema para auditoría
+Atributo	Tipo	Restricciones	Descripción
+auditoria_id	INT	PK, AUTO_INCREMENT	Identificador único de registro
+usuario_id	INT	FK, NOT NULL	Usuario que realizó la acción
+accion	VARCHAR(100)	NOT NULL	Tipo de acción (CREATE, UPDATE, DELETE, LOGIN, etc.)
+tabla_afectada	VARCHAR(50)	NOT NULL	Tabla de base de datos modificada
+registro_id	INT	NULL	ID del registro afectado
+valores_anteriores	JSON	NULL	Datos antes del cambio (JSON)
+valores_nuevos	JSON	NULL	Datos después del cambio (JSON)
+fecha_hora	DATETIME	NOT NULL, DEFAULT CURRENT_TIMESTAMP	Timestamp exacto
+ip_address	VARCHAR(45)	NULL	Dirección IP desde donde se realizó
+user_agent	VARCHAR(500)	NULL	Navegador/dispositivo usado
+🔗 Relaciones:
+•	N..1 con USUARIOS (cada acción la realiza un usuario)
+Nota de Seguridad:
+•	Los registros de auditoría NUNCA se eliminan
+•	Solo se pueden consultar (READ-ONLY para usuarios normales)
+•	Admin puede exportar para auditorías externas
+2. RELACIONES CLAVE (Diagrama Entidad-Relación)
+Cardinalidades y Descripciones
+ID Relación	Entidad Origen	Cardinalidad	Entidad Destino	Descripción
+R1	SOLICITUDES	1..N	DETALLE_SOLICITUDES	Una solicitud contiene uno o varios productos
+R2	DETALLE_SOLICITUDES	N..1	PRODUCTOS	Cada detalle de solicitud hace referencia a un producto
+R3	SOLICITUDES	N..1	DEPARTAMENTOS	Cada solicitud pertenece a un departamento
+R4	SOLICITUDES	N..1	USUARIOS (solicitante)	Cada solicitud la crea un usuario
+R5	SOLICITUDES	N..1	USUARIOS (aprobador)	Cada solicitud la aprueba/rechaza el jefe logística (opcional) 
+R6	SOLICITUDES	N..1	USUARIOS (despachador)	Cada solicitud la despacha personal almacén (opcional)
+R7	SOLICITUDES	N..1	USUARIOS (receptor)	Cada solicitud la confirma el jefe departamento (opcional)
+R8	PRODUCTOS	N..1	CATEGORIAS	Cada producto pertenece a una categoría
+R9	PRODUCTOS	1..N	MOVIMIENTOS_INVENTARIO	Un producto tiene muchos movimientos de stock
+R10	MOVIMIENTOS_INVENTARIO	N..1	USUARIOS	Cada movimiento lo registra un usuario 
+R11	MOVIMIENTOS_INVENTARIO	N..1	SOLICITUDES	Movimientos de salida generalmente asociados a solicitudes (opcional)
+R12	USUARIOS	N..1	DEPARTAMENTOS	Cada usuario pertenece a un departamento
+R13	USUARIOS	1..N	BITACORA_AUDITORIA	Cada usuario genera registros de auditoría
+R14	PRODUCTOS	N..1	PROVEEDORES	Cada producto tiene un proveedor principal (opcional - Fase 2) 
+R15	MOVIMIENTOS_INVENTARIO	N..1	PROVEEDORES	Entradas de inventario provienen de proveedores (opcional - Fase 2) 
+
+3. ÍNDICES RECOMENDADOS (Para Optimización de Consultas)
+sql
+-- Índices en PRODUCTOS
+CREATE INDEX idx_productos_codigo ON PRODUCTOS(codigo);
+CREATE INDEX idx_productos_categoria ON PRODUCTOS(categoria_id);
+CREATE INDEX idx_productos_estado ON PRODUCTOS(estado);
+
+-- Índices en SOLICITUDES
+CREATE INDEX idx_solicitudes_numero ON SOLICITUDES(numero_solicitud);
+CREATE INDEX idx_solicitudes_estado ON SOLICITUDES(estado);
+CREATE INDEX idx_solicitudes_departamento ON SOLICITUDES(departamento_id);
+CREATE INDEX idx_solicitudes_solicitante ON SOLICITUDES(usuario_solicitante_id);
+CREATE INDEX idx_solicitudes_fecha ON SOLICITUDES(fecha_solicitud);
+
+-- Índices en MOVIMIENTOS_INVENTARIO
+CREATE INDEX idx_movimientos_producto ON MOVIMIENTOS_INVENTARIO(producto_id);
+CREATE INDEX idx_movimientos_fecha ON MOVIMIENTOS_INVENTARIO(fecha_movimiento);
+CREATE INDEX idx_movimientos_tipo ON MOVIMIENTOS_INVENTARIO(tipo_movimiento);
+
+-- Índices en USUARIOS
+CREATE INDEX idx_usuarios_email ON USUARIOS(email);
+CREATE INDEX idx_usuarios_departamento ON USUARIOS(departamento_id);
+CREATE INDEX idx_usuarios_estado ON USUARIOS(estado);
+________________________________________
+4. VISTAS RECOMENDADAS (Para Simplificar Consultas Complejas)
+Vista: Vista_Solicitudes_Completas
+sql
+CREATE VIEW Vista_Solicitudes_Completas AS
+SELECT 
+    s.solicitud_id,
+    s.numero_solicitud,
+    s.estado,
+    s.prioridad,
+    s.fecha_solicitud,
+    s.fecha_requerida,
+    d.nombre AS departamento,
+    u1.nombre AS solicitante_nombre,
+    u1.apellido AS solicitante_apellido,
+    u2.nombre AS aprobador_nombre,
+    u2.apellido AS aprobador_apellido,
+    COUNT(ds.detalle_id) AS total_productos,
+    SUM(ds.cantidad_solicitada) AS total_cantidad,
+    s.costo_total_estimado
+FROM SOLICITUDES s
+INNER JOIN DEPARTAMENTOS d ON s.departamento_id = d.departamento_id
+INNER JOIN USUARIOS u1 ON s.usuario_solicitante_id = u1.usuario_id
+LEFT JOIN USUARIOS u2 ON s.usuario_aprobador_id = u2.usuario_id
+LEFT JOIN DETALLE_SOLICITUDES ds ON s.solicitud_id = ds.solicitud_id
+GROUP BY s.solicitud_id;
+Vista: Vista_Stock_Actual
+sql
+CREATE VIEW Vista_Stock_Actual AS
+SELECT 
+    p.producto_id,
+    p.codigo,
+    p.nombre,
+    c.nombre AS categoria,
+    p.stock_minimo,
+    p.stock_maximo,
+    COALESCE(SUM(CASE WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+                      WHEN m.tipo_movimiento = 'Salida' THEN -m.cantidad
+                      WHEN m.tipo_movimiento = 'Ajuste' THEN m.cantidad
+                 END), 0) AS stock_actual,
+    CASE 
+        WHEN COALESCE(SUM(CASE WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+                               WHEN m.tipo_movimiento = 'Salida' THEN -m.cantidad
+                               WHEN m.tipo_movimiento = 'Ajuste' THEN m.cantidad
+                          END), 0) = 0 THEN 'Crítico'
+        WHEN COALESCE(SUM(CASE WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+                               WHEN m.tipo_movimiento = 'Salida' THEN -m.cantidad
+                               WHEN m.tipo_movimiento = 'Ajuste' THEN m.cantidad
+                          END), 0) <= p.stock_minimo THEN 'Bajo'
+        ELSE 'Normal'
+    END AS estado_stock
+FROM PRODUCTOS p
+INNER JOIN CATEGORIAS c ON p.categoria_id = c.categoria_id
+LEFT JOIN MOVIMIENTOS_INVENTARIO m ON p.producto_id = m.producto_id
+WHERE p.estado = 'Activo'
+GROUP BY p.producto_id;
+
+MODELO FÍSICO DE BASE DE DATOS
+Sistema de Gestión Logística Administrativa - Clínica San Juan Bautista
+________________________________________
+1. CREACIÓN DE BASE DE DATOS
+sql
+-- ========================================
+-- CREACIÓN DE BASE DE DATOS
+-- ========================================
+CREATE DATABASE IF NOT EXISTS logistica_sjb_db
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE logistica_sjb_db;
+
+-- ========================================
+-- CONFIGURACIONES INICIALES
+-- ========================================
+SET FOREIGN_KEY_CHECKS = 1;
+SET SQL_MODE = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION';
+________________________________________
+2. CREACIÓN DE TABLAS
+🟤 TABLA: CATEGORIAS (ML-TAB-01)
+sql
+CREATE TABLE categorias (
+    categoria_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL UNIQUE,
+    descripcion TEXT,
+    color_identificador VARCHAR(7) COMMENT 'Color hexadecimal (ej: #FF5733)',
+    icono VARCHAR(50) COMMENT 'Icono FontAwesome (ej: fa-clipboard)',
+    orden_visualizacion INT DEFAULT 0,
+    estado ENUM('Activo', 'Inactivo') DEFAULT 'Activo' NOT NULL,
+    fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    INDEX idx_estado (estado),
+    INDEX idx_nombre (nombre)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Categorías de productos administrativos';
+________________________________________
+🟤 TABLA: DEPARTAMENTOS (ML-TAB-02)
+sql
+CREATE TABLE departamentos (
+    departamento_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL UNIQUE,
+    codigo VARCHAR(20) NOT NULL UNIQUE COMMENT 'Código corto (ej: ADM, FIN)',
+    descripcion TEXT,
+    presupuesto_mensual DECIMAL(10,2) DEFAULT 0.00 CHECK (presupuesto_mensual >= 0),
+    jefe_departamento_id INT DEFAULT NULL,
+    estado ENUM('Activo', 'Inactivo') DEFAULT 'Activo' NOT NULL,
+    fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    INDEX idx_codigo (codigo),
+    INDEX idx_estado (estado),
+    INDEX idx_jefe (jefe_departamento_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Departamentos administrativos de la clínica';
+________________________________________
+🟤 TABLA: USUARIOS (ML-TAB-03)
+sql
+CREATE TABLE usuarios (
+    usuario_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    email VARCHAR(200) NOT NULL UNIQUE,
+    contraseña_hash VARCHAR(255) NOT NULL COMMENT 'Contraseña encriptada con bcrypt',
+    departamento_id INT DEFAULT NULL,
+    puesto VARCHAR(100),
+    rol ENUM('Admin Logística', 'Personal Almacén', 'Jefe Departamento', 'Empleado General') NOT NULL,
+    estado ENUM('Activo', 'Inactivo') DEFAULT 'Activo' NOT NULL,
+    fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ultimo_acceso DATETIME DEFAULT NULL,
+    
+    CONSTRAINT fk_usuario_departamento FOREIGN KEY (departamento_id)
+        REFERENCES departamentos(departamento_id)
+        ON UPDATE CASCADE
+        ON DELETE SET NULL,
+    
+    INDEX idx_email (email),
+    INDEX idx_rol (rol),
+    INDEX idx_estado (estado),
+    INDEX idx_departamento (departamento_id),
+    INDEX idx_nombre_completo (nombre, apellido)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Usuarios del sistema con roles y permisos';
+
+-- Agregar FK de jefe_departamento después de crear tabla usuarios
+ALTER TABLE departamentos
+ADD CONSTRAINT fk_departamento_jefe FOREIGN KEY (jefe_departamento_id)
+    REFERENCES usuarios(usuario_id)
+    ON UPDATE CASCADE
+    ON DELETE SET NULL;
+________________________________________
+🟤 TABLA: PRODUCTOS (ML-TAB-04)
+sql
+CREATE TABLE productos (
+    producto_id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(50) NOT NULL UNIQUE COMMENT 'Código único del producto (ej: OFF-PAP-001)',
+    nombre VARCHAR(200) NOT NULL,
+    descripcion TEXT,
+    categoria_id INT NOT NULL,
+    unidad_medida ENUM('Unidad', 'Caja', 'Paquete', 'Resma', 'Litro', 'Kilo', 'Metro') NOT NULL,
+    precio_unitario DECIMAL(10,2) NOT NULL CHECK (precio_unitario >= 0),
+    stock_minimo INT NOT NULL DEFAULT 0 CHECK (stock_minimo >= 0),
+    stock_maximo INT NOT NULL DEFAULT 100 CHECK (stock_maximo >= stock_minimo),
+    imagen VARCHAR(500) DEFAULT NULL,
+    estado ENUM('Activo', 'Inactivo') DEFAULT 'Activo' NOT NULL,
+    fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    CONSTRAINT fk_producto_categoria FOREIGN KEY (categoria_id)
+        REFERENCES categorias(categoria_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    INDEX idx_codigo (codigo),
+    INDEX idx_nombre (nombre),
+    INDEX idx_categoria (categoria_id),
+    INDEX idx_estado (estado),
+    INDEX idx_stock_minimo (stock_minimo),
+    FULLTEXT idx_busqueda (nombre, descripcion)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Catálogo de productos administrativos';
+________________________________________
+🟤 TABLA: SOLICITUDES (ML-TAB-05)
+sql
+CREATE TABLE solicitudes (
+    solicitud_id INT AUTO_INCREMENT PRIMARY KEY,
+    numero_solicitud VARCHAR(50) NOT NULL UNIQUE COMMENT 'Formato: SJB-YYYYMMDD-NNNN',
+    departamento_id INT NOT NULL,
+    usuario_solicitante_id INT NOT NULL,
+    fecha_solicitud DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    fecha_requerida DATE NOT NULL,
+    estado ENUM('Pendiente', 'En Revisión', 'Aprobada', 'Despachada', 'Entregada', 'Rechazada', 'Cancelada') 
+        DEFAULT 'Pendiente' NOT NULL,
+    prioridad ENUM('Normal', 'Urgente') DEFAULT 'Normal' NOT NULL,
+    justificacion TEXT,
+    usuario_aprobador_id INT DEFAULT NULL,
+    fecha_aprobacion DATETIME DEFAULT NULL,
+    motivo_rechazo TEXT DEFAULT NULL,
+    usuario_despachador_id INT DEFAULT NULL,
+    fecha_despacho DATETIME DEFAULT NULL,
+    usuario_receptor_id INT DEFAULT NULL,
+    fecha_recepcion DATETIME DEFAULT NULL,
+    observaciones_recepcion TEXT DEFAULT NULL,
+    costo_total_estimado DECIMAL(10,2) DEFAULT 0.00 CHECK (costo_total_estimado >= 0),
+    origen_solicitud ENUM('Manual', 'Link Compartido', 'OCR Imagen') DEFAULT 'Manual' NOT NULL,
+    
+    CONSTRAINT fk_solicitud_departamento FOREIGN KEY (departamento_id)
+        REFERENCES departamentos(departamento_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    CONSTRAINT fk_solicitud_solicitante FOREIGN KEY (usuario_solicitante_id)
+        REFERENCES usuarios(usuario_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    CONSTRAINT fk_solicitud_aprobador FOREIGN KEY (usuario_aprobador_id)
+        REFERENCES usuarios(usuario_id)
+        ON UPDATE CASCADE
+        ON DELETE SET NULL,
+    
+    CONSTRAINT fk_solicitud_despachador FOREIGN KEY (usuario_despachador_id)
+        REFERENCES usuarios(usuario_id)
+        ON UPDATE CASCADE
+        ON DELETE SET NULL,
+    
+    CONSTRAINT fk_solicitud_receptor FOREIGN KEY (usuario_receptor_id)
+        REFERENCES usuarios(usuario_id)
+        ON UPDATE CASCADE
+        ON DELETE SET NULL,
+    
+    INDEX idx_numero_solicitud (numero_solicitud),
+    INDEX idx_estado (estado),
+    INDEX idx_prioridad (prioridad),
+    INDEX idx_departamento (departamento_id),
+    INDEX idx_solicitante (usuario_solicitante_id),
+    INDEX idx_fecha_solicitud (fecha_solicitud),
+    INDEX idx_fecha_requerida (fecha_requerida),
+    INDEX idx_estado_prioridad (estado, prioridad)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Solicitudes de materiales administrativos';
+________________________________________
+🟤 TABLA: DETALLE_SOLICITUDES (ML-TAB-06)
+sql
+CREATE TABLE detalle_solicitudes (
+    detalle_id INT AUTO_INCREMENT PRIMARY KEY,
+    solicitud_id INT NOT NULL,
+    producto_id INT NOT NULL,
+    cantidad_solicitada INT NOT NULL CHECK (cantidad_solicitada > 0),
+    cantidad_aprobada INT DEFAULT NULL CHECK (cantidad_aprobada >= 0),
+    cantidad_despachada INT DEFAULT NULL CHECK (cantidad_despachada >= 0),
+    cantidad_recibida INT DEFAULT NULL CHECK (cantidad_recibida >= 0),
+    especificaciones TEXT DEFAULT NULL,
+    precio_unitario_estimado DECIMAL(10,2) DEFAULT NULL,
+    subtotal_estimado DECIMAL(10,2) GENERATED ALWAYS AS (cantidad_solicitada * IFNULL(precio_unitario_estimado, 0)) STORED,
+    estado_item ENUM('Pendiente', 'Aprobado', 'Despachado', 'Recibido', 'Rechazado') DEFAULT 'Pendiente' NOT NULL,
+    
+    CONSTRAINT fk_detalle_solicitud FOREIGN KEY (solicitud_id)
+        REFERENCES solicitudes(solicitud_id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+    
+    CONSTRAINT fk_detalle_producto FOREIGN KEY (producto_id)
+        REFERENCES productos(producto_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    INDEX idx_solicitud (solicitud_id),
+    INDEX idx_producto (producto_id),
+    INDEX idx_estado_item (estado_item)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Detalle de productos en cada solicitud';
+________________________________________
+🟤 TABLA: MOVIMIENTOS_INVENTARIO (ML-TAB-07)
+sql
+CREATE TABLE movimientos_inventario (
+    movimiento_id INT AUTO_INCREMENT PRIMARY KEY,
+    producto_id INT NOT NULL,
+    tipo_movimiento ENUM('Entrada', 'Salida', 'Ajuste', 'Transferencia') NOT NULL,
+    cantidad INT NOT NULL COMMENT 'Puede ser positivo (entrada) o negativo (salida/ajuste)',
+    stock_anterior INT NOT NULL CHECK (stock_anterior >= 0),
+    stock_nuevo INT NOT NULL CHECK (stock_nuevo >= 0),
+    fecha_movimiento DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    usuario_responsable_id INT NOT NULL,
+    solicitud_id INT DEFAULT NULL COMMENT 'Si movimiento fue por solicitud',
+    motivo VARCHAR(200),
+    observaciones TEXT,
+    lote_serie VARCHAR(100) DEFAULT NULL,
+    fecha_vencimiento DATE DEFAULT NULL,
+    ubicacion_fisica VARCHAR(100) DEFAULT NULL COMMENT 'Ubicación en almacén',
+    precio_unitario DECIMAL(10,2) DEFAULT NULL,
+    
+    CONSTRAINT fk_movimiento_producto FOREIGN KEY (producto_id)
+        REFERENCES productos(producto_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    CONSTRAINT fk_movimiento_usuario FOREIGN KEY (usuario_responsable_id)
+        REFERENCES usuarios(usuario_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    CONSTRAINT fk_movimiento_solicitud FOREIGN KEY (solicitud_id)
+        REFERENCES solicitudes(solicitud_id)
+        ON UPDATE CASCADE
+        ON DELETE SET NULL,
+    
+    INDEX idx_producto (producto_id),
+    INDEX idx_tipo_movimiento (tipo_movimiento),
+    INDEX idx_fecha_movimiento (fecha_movimiento),
+    INDEX idx_usuario (usuario_responsable_id),
+    INDEX idx_solicitud (solicitud_id),
+    INDEX idx_producto_fecha (producto_id, fecha_movimiento)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Registro de movimientos de inventario';
+________________________________________
+🟤 TABLA: PROVEEDORES (ML-TAB-08) - Fase 2
+sql
+CREATE TABLE proveedores (
+    proveedor_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(200) NOT NULL,
+    ruc VARCHAR(11) NOT NULL UNIQUE,
+    direccion TEXT,
+    telefono VARCHAR(20),
+    email VARCHAR(200),
+    contacto_nombre VARCHAR(100),
+    contacto_telefono VARCHAR(20),
+    condiciones_pago TEXT,
+    calificacion DECIMAL(3,2) DEFAULT NULL CHECK (calificacion BETWEEN 1.00 AND 5.00),
+    estado ENUM('Activo', 'Inactivo') DEFAULT 'Activo' NOT NULL,
+    fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
+    fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    INDEX idx_ruc (ruc),
+    INDEX idx_nombre (nombre),
+    INDEX idx_estado (estado)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Proveedores de productos administrativos';
+________________________________________
+🟤 TABLA: BITACORA_AUDITORIA (ML-TAB-09)
+sql
+CREATE TABLE bitacora_auditoria (
+    auditoria_id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    accion VARCHAR(100) NOT NULL COMMENT 'CREATE, UPDATE, DELETE, LOGIN, etc.',
+    tabla_afectada VARCHAR(50) NOT NULL,
+    registro_id INT DEFAULT NULL COMMENT 'ID del registro afectado',
+    valores_anteriores JSON DEFAULT NULL,
+    valores_nuevos JSON DEFAULT NULL,
+    fecha_hora DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    ip_address VARCHAR(45) DEFAULT NULL,
+    user_agent VARCHAR(500) DEFAULT NULL,
+    
+    CONSTRAINT fk_auditoria_usuario FOREIGN KEY (usuario_id)
+        REFERENCES usuarios(usuario_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+    
+    INDEX idx_usuario (usuario_id),
+    INDEX idx_accion (accion),
+    INDEX idx_tabla (tabla_afectada),
+    INDEX idx_fecha (fecha_hora),
+    INDEX idx_usuario_fecha (usuario_id, fecha_hora)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Registro de auditoría de todas las operaciones';
+________________________________________
+3. VISTAS (VIEWS)
+VISTA: v_solicitudes_completas
+sql
+CREATE OR REPLACE VIEW v_solicitudes_completas AS
+SELECT 
+    s.solicitud_id,
+    s.numero_solicitud,
+    s.estado,
+    s.prioridad,
+    s.fecha_solicitud,
+    s.fecha_requerida,
+    d.nombre AS departamento,
+    d.codigo AS codigo_departamento,
+    CONCAT(u1.nombre, ' ', u1.apellido) AS solicitante,
+    u1.email AS solicitante_email,
+    CONCAT(u2.nombre, ' ', u2.apellido) AS aprobador,
+    s.fecha_aprobacion,
+    CONCAT(u3.nombre, ' ', u3.apellido) AS despachador,
+    s.fecha_despacho,
+    CONCAT(u4.nombre, ' ', u4.apellido) AS receptor,
+    s.fecha_recepcion,
+    COUNT(ds.detalle_id) AS total_productos,
+    SUM(ds.cantidad_solicitada) AS total_cantidad,
+    s.costo_total_estimado,
+    DATEDIFF(COALESCE(s.fecha_recepcion, CURRENT_DATE), s.fecha_solicitud) AS dias_transcurridos,
+    CASE 
+        WHEN s.estado = 'Entregada' AND s.fecha_recepcion <= s.fecha_requerida THEN 'A Tiempo'
+        WHEN s.estado = 'Entregada' AND s.fecha_recepcion > s.fecha_requerida THEN 'Retrasada'
+        WHEN s.estado IN ('Pendiente', 'En Revisión', 'Aprobada', 'Despachada') 
+             AND CURRENT_DATE > s.fecha_requerida THEN 'Vencida'
+        ELSE 'En Proceso'
+    END AS estado_cumplimiento
+FROM solicitudes s
+INNER JOIN departamentos d ON s.departamento_id = d.departamento_id
+INNER JOIN usuarios u1 ON s.usuario_solicitante_id = u1.usuario_id
+LEFT JOIN usuarios u2 ON s.usuario_aprobador_id = u2.usuario_id
+LEFT JOIN usuarios u3 ON s.usuario_despachador_id = u3.usuario_id
+LEFT JOIN usuarios u4 ON s.usuario_receptor_id = u4.usuario_id
+LEFT JOIN detalle_solicitudes ds ON s.solicitud_id = ds.solicitud_id
+GROUP BY s.solicitud_id;
+________________________________________
+VISTA: v_stock_actual
+sql
+CREATE OR REPLACE VIEW v_stock_actual AS
+SELECT 
+    p.producto_id,
+    p.codigo,
+    p.nombre,
+    p.descripcion,
+    c.nombre AS categoria,
+    p.unidad_medida,
+    p.precio_unitario,
+    p.stock_minimo,
+    p.stock_maximo,
+    COALESCE(
+        SUM(CASE 
+            WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+            WHEN m.tipo_movimiento IN ('Salida', 'Ajuste') THEN -m.cantidad
+            ELSE 0
+        END), 
+        0
+    ) AS stock_actual,
+    CASE 
+        WHEN COALESCE(SUM(CASE 
+                WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+                WHEN m.tipo_movimiento IN ('Salida', 'Ajuste') THEN -m.cantidad
+                ELSE 0
+            END), 0) = 0 THEN 'Crítico'
+        WHEN COALESCE(SUM(CASE 
+                WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+                WHEN m.tipo_movimiento IN ('Salida', 'Ajuste') THEN -m.cantidad
+                ELSE 0
+            END), 0) <= p.stock_minimo THEN 'Bajo'
+        WHEN COALESCE(SUM(CASE 
+                WHEN m.tipo_movimiento = 'Entrada' THEN m.cantidad
+                WHEN m.tipo_movimiento IN ('Salida', 'Ajuste') THEN -m.cantidad
+                ELSE 0
+            END), 0) >= p.stock_maximo THEN 'Exceso'
+        ELSE 'Normal'
+    END AS estado_stock,
+    p.estado AS estado_producto,
+    MAX(m.fecha_movimiento) AS ultimo_movimiento
+FROM productos p
+INNER JOIN categorias c ON p.categoria_id = c.categoria_id
+LEFT JOIN movimientos_inventario m ON p.producto_id = m.producto_id
+WHERE p.estado = 'Activo'
+GROUP BY p.producto_id;
+________________________________________
+VISTA: v_productos_alerta_stock
+sql
+CREATE OR REPLACE VIEW v_productos_alerta_stock AS
+SELECT 
+    p.producto_id,
+    p.codigo,
+    p.nombre,
+    c.nombre AS categoria,
+    stock_actual,
+    p.stock_minimo,
+    (p.stock_minimo - stock_actual) AS cantidad_requerida,
+    estado_stock
+FROM v_stock_actual vsa
+INNER JOIN productos p ON vsa.producto_id = p.producto_id
+INNER JOIN categorias c ON p.categoria_id = c.categoria_id
+WHERE estado_stock IN ('Crítico', 'Bajo')
+ORDER BY 
+    CASE estado_stock
+        WHEN 'Crítico' THEN 1
+        WHEN 'Bajo' THEN 2
+    END,
+    stock_actual ASC;
+________________________________________
+VISTA: v_dashboard_kpis
+sql
+CREATE OR REPLACE VIEW v_dashboard_kpis AS
+SELECT 
+    -- Solicitudes del mes actual
+    (SELECT COUNT(*) FROM solicitudes WHERE MONTH(fecha_solicitud) = MONTH(CURRENT_DATE) AND YEAR(fecha_solicitud) = YEAR(CURRENT_DATE)) AS solicitudes_mes,
+    
+    -- Solicitudes completadas este mes
+    (SELECT COUNT(*) FROM solicitudes WHERE estado = 'Entregada' AND MONTH(fecha_recepcion) = MONTH(CURRENT_DATE) AND YEAR(fecha_recepcion) = YEAR(CURRENT_DATE)) AS solicitudes_completadas_mes,
+    
+    -- Solicitudes pendientes
+    (SELECT COUNT(*) FROM solicitudes WHERE estado IN ('Pendiente', 'En Revisión', 'Aprobada', 'Despachada')) AS solicitudes_pendientes,
+    
+    -- Tiempo promedio de atención (días)
+    (SELECT AVG(DATEDIFF(fecha_recepcion, fecha_solicitud)) FROM solicitudes WHERE estado = 'Entregada' AND MONTH(fecha_recepcion) = MONTH(CURRENT_DATE)) AS tiempo_promedio_atencion_dias,
+    
+    -- Productos en stock crítico
+    (SELECT COUNT(*) FROM v_stock_actual WHERE estado_stock = 'Crítico') AS productos_stock_critico,
+    
+    -- Productos en stock bajo
+    (SELECT COUNT(*) FROM v_stock_actual WHERE estado_stock = 'Bajo') AS productos_stock_bajo,
+    
+    -- Costo total estimado del mes
+    (SELECT SUM(costo_total_estimado) FROM solicitudes WHERE estado = 'Entregada' AND MONTH(fecha_recepcion) = MONTH(CURRENT_DATE) AND YEAR(fecha_recepcion) = YEAR(CURRENT_DATE)) AS costo_total_mes,
+    
+    -- Tasa de cumplimiento on-time (%)
+    (SELECT 
+        ROUND(
+            (COUNT(CASE WHEN fecha_recepcion <= fecha_requerida THEN 1 END) * 100.0 / COUNT(*)), 
+            2
+        )
+     FROM solicitudes 
+     WHERE estado = 'Entregada' AND MONTH(fecha_recepcion) = MONTH(CURRENT_DATE)
+    ) AS tasa_cumplimiento_ontime;
+________________________________________
+4. TRIGGERS
+TRIGGER: Calcular Costo Total de Solicitud (AFTER INSERT/UPDATE)
+sql
+DELIMITER $$
+
+CREATE TRIGGER trg_calcular_costo_solicitud_insert
+AFTER INSERT ON detalle_solicitudes
+FOR EACH ROW
+BEGIN
+    UPDATE solicitudes
+    SET costo_total_estimado = (
+        SELECT SUM(subtotal_estimado)
+        FROM detalle_solicitudes
+        WHERE solicitud_id = NEW.solicitud_id
+    )
+    WHERE solicitud_id = NEW.solicitud_id;
+END$$
+
+CREATE TRIGGER trg_calcular_costo_solicitud_update
+AFTER UPDATE ON detalle_solicitudes
+FOR EACH ROW
+BEGIN
+    UPDATE solicitudes
+    SET costo_total_estimado = (
+        SELECT SUM(subtotal_estimado)
+        FROM detalle_solicitudes
+        WHERE solicitud_id = NEW.solicitud_id
+    )
+    WHERE solicitud_id = NEW.solicitud_id;
+END$$
+
+CREATE TRIGGER trg_calcular_costo_solicitud_delete
+AFTER DELETE ON detalle_solicitudes
+FOR EACH ROW
+BEGIN
+    UPDATE solicitudes
+    SET costo_total_estimado = (
+        SELECT COALESCE(SUM(subtotal_estimado), 0)
+        FROM detalle_solicitudes
+        WHERE solicitud_id = OLD.solicitud_id
+    )
+    WHERE solicitud_id = OLD.solicitud_id;
+END$$
+
+DELIMITER ;
+________________________________________
+TRIGGER: Auditoría Automática en Solicitudes
+sql
+DELIMITER $$
+
+CREATE TRIGGER trg_auditoria_solicitud_update
+AFTER UPDATE ON solicitudes
+FOR EACH ROW
+BEGIN
+    IF OLD.estado != NEW.estado THEN
+        INSERT INTO bitacora_auditoria (
+            usuario_id,
+            accion,
+            tabla_afectada,
+            registro_id,
+            valores_anteriores,
+            valores_nuevos
+        ) VALUES (
+            NEW.usuario_aprobador_id,  -- Asume que el usuario que cambió estado es el aprobador
+            'UPDATE_ESTADO',
+            'solicitudes',
+            NEW.solicitud_id,
+            JSON_OBJECT('estado', OLD.estado, 'fecha', OLD.fecha_aprobacion),
+            JSON_OBJECT('estado', NEW.estado, 'fecha', NEW.fecha_aprobacion)
+        );
+    END IF;
+END$$
+
+DELIMITER ;
+________________________________________
+TRIGGER: Validar Stock Antes de Despacho
+sql
+DELIMITER $$
+
+CREATE TRIGGER trg_validar_stock_antes_despacho
+BEFORE UPDATE ON detalle_solicitudes
+FOR EACH ROW
+BEGIN
+    DECLARE stock_disponible INT;
+    
+    IF NEW.cantidad_despachada IS NOT NULL AND NEW.cantidad_despachada > 0 THEN
+        -- Obtener stock actual del producto
+        SELECT COALESCE(SUM(CASE 
+                WHEN tipo_movimiento = 'Entrada' THEN cantidad
+                WHEN tipo_movimiento IN ('Salida', 'Ajuste') THEN -cantidad
+            END), 0)
+        INTO stock_disponible
+        FROM movimientos_inventario
+        WHERE producto_id = NEW.producto_id;
+        
+        -- Validar que hay stock suficiente
+        IF stock_disponible < NEW.cantidad_despachada THEN
+            SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT = 'Stock insuficiente para despachar la cantidad solicitada';
+        END IF;
+    END IF;
+END$$
+
+DELIMITER ;
+________________________________________
+TRIGGER: Generar Número de Solicitud Automáticamente
+sql
+DELIMITER $$
+
+CREATE TRIGGER trg_generar_numero_solicitud
+BEFORE INSERT ON solicitudes
+FOR EACH ROW
+BEGIN
+    DECLARE siguiente_secuencial INT;
+    DECLARE fecha_actual VARCHAR(8);
+    
+    SET fecha_actual = DATE_FORMAT(CURRENT_DATE, '%Y%m%d');
+    
+    -- Obtener el siguiente secuencial para hoy
+    SELECT COALESCE(MAX(CAST(SUBSTRING(numero_solicitud, -4) AS UNSIGNED)), 0) + 1
+    INTO siguiente_secuencial
+    FROM solicitudes
+    WHERE numero_solicitud LIKE CONCAT('SJB-', fecha_actual, '-%');
+    
+    -- Generar número con formato SJB-YYYYMMDD-NNNN
+    SET NEW.numero_solicitud = CONCAT('SJB-', fecha_actual, '-', LPAD(siguiente_secuencial, 4, '0'));
+END$$
+
+DELIMITER ;
+________________________________________
+5. STORED PROCEDURES
+Procedimiento: Registrar Movimiento de Inventario
+sql
+DELIMITER $$
+
+CREATE PROCEDURE sp_registrar_movimiento_inventario(
+    IN p_producto_id INT,
+    IN p_tipo_movimiento ENUM('Entrada', 'Salida', 'Ajuste', 'Transferencia'),
+    IN p_cantidad INT,
+    IN p_usuario_id INT,
+    IN p_solicitud_id INT,
+    IN p_motivo VARCHAR(200),
+    IN p_observaciones TEXT
+)
+BEGIN
+    DECLARE v_stock_anterior INT;
+    DECLARE v_stock_nuevo INT;
+    
+    -- Obtener stock actual
+    SELECT COALESCE(SUM(CASE 
+            WHEN tipo_movimiento = 'Entrada' THEN cantidad
+            WHEN tipo_movimiento IN ('Salida', 'Ajuste') THEN -cantidad
+        END), 0)
+    INTO v_stock_anterior
+    FROM movimientos_inventario
+    WHERE producto_id = p_producto_id;
+    
+    -- Calcular nuevo stock
+    IF p_tipo_movimiento = 'Entrada' THEN
+        SET v_stock_nuevo = v_stock_anterior + p_cantidad;
+    ELSEIF p_tipo_movimiento IN ('Salida', 'Ajuste') THEN
+        SET v_stock_nuevo = v_stock_anterior - p_cantidad;
+    ELSE
+        SET v_stock_nuevo = v_stock_anterior;
+    END IF;
+    
+    -- Validar que stock no sea negativo
+    IF v_stock_nuevo < 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'El movimiento resultaría en stock negativo';
+    END IF;
+    
+    -- Registrar movimiento
+    INSERT INTO movimientos_inventario (
+        producto_id,
+        tipo_movimiento,
+        cantidad,
+        stock_anterior,
+        stock_nuevo,
+        usuario_responsable_id,
+        solicitud_id,
+        motivo,
+        observaciones
+    ) VALUES (
+        p_producto_id,
+        p_tipo_movimiento,
+        p_cantidad,
+        v_stock_anterior,
+        v_stock_nuevo,
+        p_usuario_id,
+        p_solicitud_id,
+        p_motivo,
+        p_observaciones
+    );
+    
+    SELECT 'Movimiento registrado exitosamente' AS mensaje, LAST_INSERT_ID() AS movimiento_id;
+END$$
+
+DELIMITER ;
+________________________________________
+Procedimiento: Aprobar Solicitud
+sql
+DELIMITER $$
+
+CREATE PROCEDURE sp_aprobar_solicitud(
+    IN p_solicitud_id INT,
+    IN p_usuario_aprobador_id INT
+)
+BEGIN
+    DECLARE v_estado_actual VARCHAR(50);
+    
+    -- Obtener estado actual
+    SELECT estado INTO v_estado_actual
+    FROM solicitudes
+    WHERE solicitud_id = p_solicitud_id;
+    
+    -- Validar que esté en estado pendiente
+    IF v_estado_actual != 'Pendiente' THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Solo se pueden aprobar solicitudes en estado Pendiente';
+    END IF;
+    
+    -- Actualizar solicitud
+    UPDATE solicitudes
+    SET 
+        estado = 'Aprobada',
+        usuario_aprobador_id = p_usuario_aprobador_id,
+        fecha_aprobacion = CURRENT_TIMESTAMP
+    WHERE solicitud_id = p_solicitud_id;
+    
+    -- Actualizar detalles
+    UPDATE detalle_solicitudes
+    SET 
+        estado_item = 'Aprobado',
+        cantidad_aprobada = cantidad_solicitada
+    WHERE solicitud_id = p_solicitud_id;
+    
+    SELECT 'Solicitud aprobada exitosamente' AS mensaje;
+END$$
+
+DELIMITER ;
+________________________________________
+6. ÍNDICES ADICIONALES RECOMENDADOS
+sql
+-- Índices compuestos para consultas frecuentes
+CREATE INDEX idx_solicitudes_estado_fecha ON solicitudes(estado, fecha_solicitud);
+CREATE INDEX idx_movimientos_producto_tipo ON movimientos_inventario(producto_id, tipo_movimiento);
+CREATE INDEX idx_detalle_solicitud_producto ON detalle_solicitudes(solicitud_id, producto_id);
+
+-- Índices para búsquedas FULLTEXT
+ALTER TABLE productos ADD FULLTEXT INDEX idx_fulltext_busqueda (nombre, descripcion);
+________________________________________
+7. DATOS INICIALES (SEEDS)
+sql
+-- Insertar categorías por defecto
+INSERT INTO categorias (nombre, descripcion, color_identificador, icono) VALUES
+('Material de Oficina', 'Papelería y útiles de escritorio', '#3498db', 'fa-clipboard'),
+('Equipos de Cómputo', 'Computadoras, impresoras y accesorios', '#e74c3c', 'fa-laptop'),
+('Mobiliario', 'Muebles y equipamiento de oficina', '#f39c12', 'fa-chair'),
+('Consumibles', 'Tóner, tintas y materiales de consumo', '#2ecc71', 'fa-print'),
+('Material de Limpieza', 'Productos de aseo y desinfección', '#9b59b6', 'fa-broom');
+
+-- Insertar departamentos por defecto
+INSERT INTO departamentos (nombre, codigo, descripcion, presupuesto_mensual) VALUES
+('Administración', 'ADM', 'Departamento administrativo central', 5000.00),
+('Finanzas', 'FIN', 'Departamento de contabilidad y finanzas', 3000.00),
+('Recursos Humanos', 'RRHH', 'Gestión de personal', 2000.00),
+('Logística', 'LOG', 'Área de logística y almacén', 8000.00),
+('Servicios Generales', 'SGEN', 'Mantenimiento y servicios', 4000.00);
+
+-- Insertar usuario administrador por defecto (contraseña: admin123 - cambiar en producción)
+INSERT INTO usuarios (nombre, apellido, email, contraseña_hash, departamento_id, puesto, rol) VALUES
+('Administrador', 'Sistema', 'admin@clinicasjb.pe', '$2y$10$abcdefghijklmnopqrstuvwxyz', 4, 'Jefe de Logística', 'Admin Logística');
+Este modelo físico completo incluye:
+✅ Tablas con tipos de datos apropiados y restricciones
+✅ Índices optimizados para consultas frecuentes
+✅ Vistas para simplificar consultas complejas
+✅ Triggers para automatización y auditoría
+✅ Stored Procedures para operaciones críticas
+✅ Integridad referencial completa
+✅ Optimización de rendimiento
+✅ Seguridad y auditoría integradas
+
+
+

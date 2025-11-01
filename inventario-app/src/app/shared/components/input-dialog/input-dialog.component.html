@@ -1,0 +1,19 @@
+<ng-container *ngIf="inputDialogService.state$ | async as state">
+  <div *ngIf="state.isVisible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-auto p-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">{{ state.title }}</h3>
+      <p class="text-gray-600 mb-4">{{ state.message }}</p>
+
+      <textarea [(ngModel)]="inputValue" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+
+      <div class="flex justify-end space-x-4 mt-6">
+        <button (click)="onCancel(state)" class="px-4 py-2 rounded-md text-gray-700 bg-gray-200 hover:bg-gray-300 font-semibold">
+          Cancelar
+        </button>
+        <button (click)="onConfirm(state)" [disabled]="!inputValue" class="px-4 py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 font-semibold disabled:bg-blue-300 disabled:cursor-not-allowed">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-container>

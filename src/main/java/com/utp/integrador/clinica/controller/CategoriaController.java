@@ -1,52 +1,41 @@
 package com.utp.integrador.clinica.controller;
 
-import com.utp.integrador.clinica.dto.CategoriaDto;
+import com.utp.integrador.clinica.model.Categoria;
 import com.utp.integrador.clinica.service.CategoriaService;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/categories")
+@RequestMapping("/categorias")
 public class CategoriaController {
 
-    private final CategoriaService categoriaService;
-
-    public CategoriaController(CategoriaService categoriaService) {
-        this.categoriaService = categoriaService;
-    }
+    @Autowired
+    private CategoriaService categoriaService;
 
     @GetMapping
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<List<CategoriaDto>> getAllCategorias() {
-        return ResponseEntity.ok(categoriaService.findAll());
+    public List<Categoria> getAllCategorias() {
+        return categoriaService.getAllCategorias();
     }
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<CategoriaDto> getCategoriaById(@PathVariable Long id) {
-        CategoriaDto categoriaDto = categoriaService.findById(id);
-        return categoriaDto != null ? ResponseEntity.ok(categoriaDto) : ResponseEntity.notFound().build();
+    public Categoria getCategoriaById(@PathVariable Integer id) {
+        return categoriaService.getCategoriaById(id);
     }
 
     @PostMapping
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<CategoriaDto> createCategoria(@RequestBody CategoriaDto categoriaDto) {
-        return ResponseEntity.ok(categoriaService.save(categoriaDto));
-    }
-
-    @PutMapping("/{id}")
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<CategoriaDto> updateCategoria(@PathVariable Long id, @RequestBody CategoriaDto categoriaDto) {
-        return ResponseEntity.ok(categoriaService.update(id, categoriaDto));
+    public Categoria saveCategoria(@RequestBody Categoria categoria) {
+        return categoriaService.saveCategoria(categoria);
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<Void> deleteCategoria(@PathVariable Long id) {
-        categoriaService.delete(id);
-        return ResponseEntity.noContent().build();
+    public void deleteCategoria(@PathVariable Integer id) {
+        categoriaService.deleteCategoria(id);
     }
 }

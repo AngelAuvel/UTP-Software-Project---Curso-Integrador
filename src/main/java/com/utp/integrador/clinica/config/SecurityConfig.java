@@ -1,54 +1,73 @@
 package com.utp.integrador.clinica.config;
 
-import java.util.List;
+import com.utp.integrador.clinica.security.ForcePasswordChangeFilter;
+import com.utp.integrador.clinica.security.JwtAuthenticationFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.http.HttpMethod; // Importar HttpMethod
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.cors.CorsConfiguration;
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true) // Habilitar @PreAuthorize
+@EnableMethodSecurity(prePostEnabled = true) // Habilitar seguridad a nivel de método
 public class SecurityConfig {
 
-    private final JwtAuthenticationFilter jwtAuthenticationFilter;
-    private final AuthenticationProvider authProvider;
+    @Autowired
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter, AuthenticationProvider authProvider) {
-        this.jwtAuthenticationFilter = jwtAuthenticationFilter;
-        this.authProvider = authProvider;
+    @Autowired
+    private ForcePasswordChangeFilter forcePasswordChangeFilter;
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
     }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http
-                .csrf(csrf -> csrf.disable())
-                .cors(cors -> cors.configurationSource(request -> {
-                    CorsConfiguration configuration = new CorsConfiguration();
-                    configuration.setAllowedOrigins(List.of("http://localhost:4200"));
-                    configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-                    configuration.setAllowedHeaders(List.of("*"));
-                    configuration.setAllowCredentials(true);
-                    return configuration;
-                }))
-                .authorizeHttpRequests(authRequest ->
-                        authRequest
-                                // Endpoints de autenticación públicos
-                                .requestMatchers("/auth/**").permitAll()
-                                // Todas las demás rutas requieren autenticación
-                                .anyRequest().authenticated()
-                )
-                .sessionManagement(sessionManager ->
-                        sessionManager
-                                .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authenticationProvider(authProvider)
-                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-                .build();
+        http
+            .csrf(csrf -> csrf.disable())
+            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .authorizeHttpRequests(authz -> authz
+                .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/usuarios/cambiar-clave").authenticated()
+                // Reglas de autorización para productos
+                .requestMatchers(HttpMethod.POST, "/productos").hasRole("ADMIN_LOGISTICA") // Crear producto
+                .requestMatchers(HttpMethod.PUT, "/productos/**").hasRole("ADMIN_LOGISTICA") // Editar producto
+                .requestMatchers(HttpMethod.DELETE, "/productos/**").hasRole("ADMIN_LOGISTICA") // Eliminar producto
+                .requestMatchers(HttpMethod.GET, "/productos/**").authenticated() // Ver productos (cualquier autenticado)
+                .requestMatchers(HttpMethod.GET, "/productos").authenticated() // Listar productos (cualquier autenticado)
+                .requestMatchers(HttpMethod.GET, "/categorias").authenticated() // Listar categorías (cualquier autenticado)
+                
+                // NUEVAS REGLAS DE AUTORIZACIÓN PARA SOLICITUDES
+                // .requestMatchers(HttpMethod.POST, "/solicitudes").authenticated() // TEMPORALMENTE: Permitir a cualquier autenticado
+                .requestMatchers(HttpMethod.POST, "/solicitudes").hasAnyRole("ADMIN_LOGISTICA", "JEFE_DEPARTAMENTO", "EMPLEADO_GENERAL") // Original
+                .requestMatchers(HttpMethod.GET, "/solicitudes/**").authenticated() // Ver solicitudes (cualquier autenticado)
+                .requestMatchers(HttpMethod.GET, "/solicitudes").authenticated() // Listar solicitudes (cualquier autenticado)
+                // Puedes añadir más reglas para PUT/DELETE de solicitudes si es necesario
+
+                // Asegúrate de que las reglas más específicas vayan antes que las más generales
+                .anyRequest().authenticated()
+            );
+
+        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+        http.addFilterAfter(forcePasswordChangeFilter, JwtAuthenticationFilter.class);
+
+        return http.build();
     }
 }

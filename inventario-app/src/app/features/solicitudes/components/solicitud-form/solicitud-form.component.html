@@ -1,0 +1,97 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-6 text-gray-800">
+    {{ isEditMode ? 'Detalle de la Solicitud' : 'Nueva Solicitud de Materiales' }}
+  </h1>
+
+  <form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()">
+    <!-- Sección de Datos Generales -->
+    <div class="bg-white p-8 rounded-lg shadow-md mb-6">
+      <h2 class="text-xl font-semibold mb-4 text-gray-700">Datos Generales</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Departamento -->
+        <div>
+          <label for="departamento" class="block text-sm font-medium text-gray-700">Departamento Solicitante</label>
+          <input id="departamento" type="text" [value]="userDepartmentName" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" readonly>
+        </div>
+        <!-- Fecha Requerida -->
+        <div>
+          <label for="fechaRequerida" class="block text-sm font-medium text-gray-700">Fecha Requerida</label>
+          <input id="fechaRequerida" formControlName="fechaRequerida" type="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+        </div>
+        <!-- Prioridad -->
+        <div>
+          <label for="prioridad" class="block text-sm font-medium text-gray-700">Prioridad</label>
+          <select id="prioridad" formControlName="prioridad" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <option *ngFor="let prio of prioridades" [value]="prio">{{ prio }}</option>
+          </select>
+        </div>
+      </div>
+      <!-- Justificación -->
+      <div class="mt-6">
+        <label for="justificacion" class="block text-sm font-medium text-gray-700">Justificación (Opcional)</label>
+        <textarea id="justificacion" formControlName="justificacion" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+      </div>
+    </div>
+
+    <!-- Sección de Productos/Detalles -->
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-gray-700">Productos Solicitados</h2>
+        <button *ngIf="!isEditMode" type="button" (click)="agregarProducto()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md">
+          + Añadir Producto
+        </button>
+      </div>
+
+      <div formArrayName="detalles" class="space-y-4">
+        <div *ngFor="let detalle of detalles.controls; let i=index" [formGroupName]="i" class="grid grid-cols-12 gap-4 items-center p-4 border rounded-lg">
+          <!-- Selector de Producto -->
+          <div class="col-span-5">
+            <label class="block text-sm font-medium text-gray-700">Producto</label>
+            <select formControlName="producto" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+              <option [ngValue]="null" disabled>Seleccione un producto</option>
+              <option *ngFor="let prod of productos$ | async" [ngValue]="prod.id">{{ prod.nombre }}</option>
+            </select>
+          </div>
+          <!-- Cantidad -->
+          <div class="col-span-2">
+            <label class="block text-sm font-medium text-gray-700">Cantidad</label>
+            <input formControlName="cantidadSolicitada" type="number" min="1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+          <!-- Especificaciones -->
+          <div class="col-span-4">
+            <label class="block text-sm font-medium text-gray-700">Especificaciones</label>
+            <input formControlName="especificaciones" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          </div>
+          <!-- Botón Eliminar -->
+          <div class="col-span-1 flex items-end">
+            <button *ngIf="!isEditMode" type="button" (click)="removerProducto(i)" class="mt-6 w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z" clip-rule="evenodd" /></svg>
+            </button>
+          </div>
+        </div>
+        <div *ngIf="detalles.length === 0" class="text-center py-6 text-gray-500">
+          Añada al menos un producto a la solicitud.
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de Acción -->
+    <div class="flex justify-end space-x-4 mt-6">
+      <a routerLink="/solicitudes" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg shadow-md">
+        {{ isEditMode ? 'Volver' : 'Cancelar' }}
+      </a>
+      <button *ngIf="!isEditMode" type="submit" [disabled]="solicitudForm.invalid" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg shadow-md disabled:bg-indigo-300 disabled:cursor-not-allowed">
+        Guardar Solicitud
+      </button>
+
+      <!-- Botones de Cambio de Estado -->
+      <div *ngIf="isEditMode && solicitud">
+        <button *appHasRole="Rol.ADMIN_LOGISTICA" [hidden]="solicitud.estado !== 'PENDIENTE'" (click)="aprobar()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md ml-4">Aprobar</button>
+        <button *appHasRole="Rol.ADMIN_LOGISTICA" [hidden]="solicitud.estado !== 'PENDIENTE'" (click)="rechazar()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg shadow-md ml-4">Rechazar</button>
+        <button *appHasRole="Rol.PERSONAL_ALMACEN" [hidden]="solicitud.estado !== 'APROBADA'" (click)="despachar()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md ml-4">Despachar</button>
+        <button *appHasRole="[Rol.JEFE_DEPARTAMENTO, Rol.EMPLEADO_GENERAL]" [hidden]="solicitud.estado !== 'DESPACHADA'" (click)="recibir()" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-md ml-4">Confirmar Recepción</button>
+      </div>
+    </div>
+
+  </form>
+</div>

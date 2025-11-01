@@ -1,0 +1,88 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-6 text-gray-800">
+    {{ isEditMode ? 'Editar Producto' : 'Nuevo Producto' }}
+  </h1>
+
+  <div class="bg-white p-8 rounded-lg shadow-md">
+    <form [formGroup]="productoForm" (ngSubmit)="onSubmit()" class="space-y-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Código -->
+        <div>
+          <label for="codigo" class="block text-sm font-medium text-gray-700">Código</label>
+          <input id="codigo" formControlName="codigo" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          <app-form-control-error [control]="productoForm.get('codigo')"></app-form-control-error>
+        </div>
+
+        <!-- Nombre -->
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+          <input id="nombre" formControlName="nombre" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          <app-form-control-error [control]="productoForm.get('nombre')"></app-form-control-error>
+        </div>
+      </div>
+
+      <!-- Descripción -->
+      <div>
+        <label for="descripcion" class="block text-sm font-medium text-gray-700">Descripción</label>
+        <textarea id="descripcion" formControlName="descripcion" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Categoría -->
+        <div>
+          <label for="categoria" class="block text-sm font-medium text-gray-700">Categoría</label>
+          <select id="categoria" formControlName="categoriaId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            <option [ngValue]="null" disabled>Seleccione una categoría</option>
+            <option *ngFor="let categoria of categorias$ | async" [ngValue]="categoria.id">{{ categoria.nombre }}</option>
+          </select>
+          <app-form-control-error [control]="productoForm.get('categoriaId')"></app-form-control-error>
+        </div>
+
+        <!-- Unidad de Medida -->
+        <div>
+          <label for="unidadMedida" class="block text-sm font-medium text-gray-700">Unidad de Medida</label>
+          <select id="unidadMedida" formControlName="unidadMedida" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm_text-sm">
+            <option [ngValue]="null" disabled>Seleccione una unidad</option>
+            <option *ngFor="let unidad of unidadesMedida" [ngValue]="unidad">{{ unidad }}</option>
+          </select>
+          <app-form-control-error [control]="productoForm.get('unidadMedida')"></app-form-control-error>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Precio Unitario -->
+        <div>
+          <label for="precioUnitario" class="block text-sm font-medium text-gray-700">Precio Unitario</label>
+          <input id="precioUnitario" formControlName="precioUnitario" type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          <app-form-control-error [control]="productoForm.get('precioUnitario')"></app-form-control-error>
+        </div>
+
+        <!-- Stock Mínimo -->
+        <div>
+          <label for="stockMinimo" class="block text-sm font-medium text-gray-700">Stock Mínimo</label>
+          <input id="stockMinimo" formControlName="stockMinimo" type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          <app-form-control-error [control]="productoForm.get('stockMinimo')"></app-form-control-error>
+        </div>
+
+        <!-- Stock Máximo -->
+        <div>
+          <label for="stockMaximo" class="block text-sm font-medium text-gray-700">Stock Máximo</label>
+          <input id="stockMaximo" formControlName="stockMaximo" type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+          <app-form-control-error [control]="productoForm.get('stockMaximo')"></app-form-control-error>
+        </div>
+      </div>
+
+      <!-- Botones de Acción -->
+      <div class="flex justify-end space-x-4">
+        <button type="button" routerLink="/productos" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg shadow-md">
+          Cancelar
+        </button>
+        <button type="submit" [disabled]="productoForm.invalid" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg shadow-md disabled:bg-indigo-300 disabled:cursor-not-allowed">
+          {{ isEditMode ? 'Actualizar' : 'Guardar' }}
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

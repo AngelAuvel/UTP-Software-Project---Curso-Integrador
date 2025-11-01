@@ -1,0 +1,57 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-6 text-gray-800">Inicio</h1>
+
+  <div *ngIf="kpis$ | async as kpis; else loading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Solicitudes Pendientes -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Solicitudes Pendientes</h3>
+      <p class="text-4xl font-bold text-yellow-500 mt-2">{{ kpis.solicitudesPendientes }}</p>
+    </div>
+
+    <!-- Productos en Stock Crítico -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Productos en Stock Crítico</h3>
+      <p class="text-4xl font-bold text-red-500 mt-2">{{ kpis.productosStockCritico }}</p>
+    </div>
+
+    <!-- Tasa de Cumplimiento -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Tasa de Cumplimiento (OTIF)</h3>
+      <p class="text-4xl font-bold text-green-500 mt-2">{{ kpis.tasaCumplimientoOntime | number:'1.0-1' }}%</p>
+    </div>
+
+    <!-- Tiempo Promedio de Atención -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Tiempo Promedio de Atención</h3>
+      <p class="text-4xl font-bold text-blue-500 mt-2">{{ kpis.tiempoPromedioAtencionDias | number:'1.1-1' }} <span class="text-2xl">días</span></p>
+    </div>
+
+    <!-- Más KPIs -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Solicitudes del Mes</h3>
+      <p class="text-4xl font-bold text-gray-800 mt-2">{{ kpis.solicitudesMes }}</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Completadas este Mes</h3>
+      <p class="text-4xl font-bold text-gray-800 mt-2">{{ kpis.solicitudesCompletadasMes }}</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Productos con Stock Bajo</h3>
+      <p class="text-4xl font-bold text-orange-500 mt-2">{{ kpis.productosStockBajo }}</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold text-gray-500">Costo Total del Mes</h3>
+      <p class="text-4xl font-bold text-gray-800 mt-2">S/ {{ kpis.costoTotalMes | number:'1.2-2' }}</p>
+    </div>
+
+  </div>
+
+  <ng-template #loading>
+    <p class="text-center text-gray-500">Cargando KPIs...</p>
+  </ng-template>
+
+</div>
